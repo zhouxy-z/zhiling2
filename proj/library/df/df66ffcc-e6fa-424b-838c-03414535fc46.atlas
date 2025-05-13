@@ -1,0 +1,153 @@
+
+cardrole_0005.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fx1_00000
+  rotate: true
+  xy: 1671, 1175
+  size: 376, 350
+  orig: 614, 614
+  offset: 118, 84
+  index: -1
+fx1_00001
+  rotate: false
+  xy: 1233, 491
+  size: 415, 384
+  orig: 614, 614
+  offset: 98, 91
+  index: -1
+fx1_00002
+  rotate: false
+  xy: 1245, 877
+  size: 420, 386
+  orig: 614, 614
+  offset: 96, 96
+  index: -1
+fx1_00003
+  rotate: false
+  xy: 819, 1264
+  size: 424, 389
+  orig: 614, 614
+  offset: 94, 98
+  index: -1
+fx1_00004
+  rotate: false
+  xy: 1245, 1265
+  size: 424, 388
+  orig: 614, 614
+  offset: 94, 101
+  index: -1
+fx1_00005
+  rotate: true
+  xy: 2, 1229
+  size: 424, 391
+  orig: 614, 614
+  offset: 94, 101
+  index: -1
+fx1_00006
+  rotate: false
+  xy: 864, 1655
+  size: 427, 391
+  orig: 614, 614
+  offset: 91, 101
+  index: -1
+fx1_00007
+  rotate: false
+  xy: 2, 1655
+  size: 429, 391
+  orig: 614, 614
+  offset: 91, 101
+  index: -1
+fx1_00008
+  rotate: false
+  xy: 433, 1655
+  size: 429, 391
+  orig: 614, 614
+  offset: 91, 101
+  index: -1
+fx1_00009
+  rotate: false
+  xy: 1293, 1655
+  size: 427, 391
+  orig: 614, 614
+  offset: 91, 101
+  index: -1
+fx1_00010
+  rotate: false
+  xy: 395, 1262
+  size: 422, 391
+  orig: 614, 614
+  offset: 94, 101
+  index: -1
+fx1_00011
+  rotate: false
+  xy: 819, 873
+  size: 412, 389
+  orig: 614, 614
+  offset: 96, 103
+  index: -1
+fx1_00012
+  rotate: true
+  xy: 1667, 778
+  size: 395, 379
+  orig: 614, 614
+  offset: 101, 110
+  index: -1
+fx1_00013
+  rotate: false
+  xy: 395, 903
+  size: 358, 357
+  orig: 614, 614
+  offset: 110, 127
+  index: -1
+fx1_00014
+  rotate: true
+  xy: 1722, 1756
+  size: 290, 314
+  orig: 614, 614
+  offset: 127, 158
+  index: -1
+fx1_00015
+  rotate: true
+  xy: 1722, 1553
+  size: 201, 264
+  orig: 614, 614
+  offset: 180, 186
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 1065
+  size: 297, 162
+  orig: 308, 174
+  offset: 6, 6
+  index: -1
+st
+  rotate: false
+  xy: 2, 957
+  size: 201, 106
+  orig: 201, 106
+  offset: 0, 0
+  index: -1
+t
+  rotate: false
+  xy: 1650, 387
+  size: 396, 389
+  orig: 397, 389
+  offset: 1, 0
+  index: -1
+ys
+  rotate: true
+  xy: 205, 933
+  size: 130, 144
+  orig: 176, 145
+  offset: 0, 0
+  index: -1
+zs
+  rotate: false
+  xy: 301, 1111
+  size: 65, 116
+  orig: 65, 116
+  offset: 0, 0
+  index: -1

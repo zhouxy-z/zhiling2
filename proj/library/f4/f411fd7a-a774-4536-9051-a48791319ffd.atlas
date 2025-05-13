@@ -1,0 +1,90 @@
+
+ui_an_djgl.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_00000
+  rotate: false
+  xy: 354, 834
+  size: 331, 179
+  orig: 512, 512
+  offset: 90, 167
+  index: -1
+1_00001
+  rotate: false
+  xy: 10, 648
+  size: 330, 177
+  orig: 512, 512
+  offset: 90, 168
+  index: -1
+1_00002
+  rotate: false
+  xy: 10, 835
+  size: 334, 178
+  orig: 512, 512
+  offset: 88, 167
+  index: -1
+1_00003
+  rotate: false
+  xy: 350, 650
+  size: 330, 174
+  orig: 512, 512
+  offset: 90, 169
+  index: -1
+1_00004
+  rotate: false
+  xy: 350, 464
+  size: 328, 176
+  orig: 512, 512
+  offset: 91, 168
+  index: -1
+1_00005
+  rotate: false
+  xy: 695, 859
+  size: 318, 154
+  orig: 512, 512
+  offset: 96, 179
+  index: -1
+1_00006
+  rotate: false
+  xy: 695, 697
+  size: 317, 152
+  orig: 512, 512
+  offset: 97, 180
+  index: -1
+1_00007
+  rotate: false
+  xy: 690, 547
+  size: 310, 140
+  orig: 512, 512
+  offset: 100, 185
+  index: -1
+1_00008
+  rotate: false
+  xy: 688, 420
+  size: 291, 117
+  orig: 512, 512
+  offset: 110, 197
+  index: -1
+1_00009
+  rotate: false
+  xy: 10, 555
+  size: 276, 83
+  orig: 512, 512
+  offset: 117, 215
+  index: -1
+1_00010
+  rotate: false
+  xy: 10, 462
+  size: 275, 83
+  orig: 512, 512
+  offset: 118, 215
+  index: -1
+1_00011
+  rotate: false
+  xy: 295, 371
+  size: 274, 83
+  orig: 512, 512
+  offset: 118, 215
+  index: -1

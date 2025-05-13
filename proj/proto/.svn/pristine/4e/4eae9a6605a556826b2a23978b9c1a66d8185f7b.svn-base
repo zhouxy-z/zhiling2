@@ -1,0 +1,116 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.player.proto";
+
+message ShopIndexContent  {
+  uint32 shop_index_id = 1;//商店索引ID
+  uint32 shop_type = 2;//商店类型ID
+  uint32 shop_index_type = 3;//商店类型ID
+  ShopContent shop = 4;//普通商店
+  LuckyContent lucky = 5;//抽奖商店
+}
+
+message ShopItem {
+  uint32 id = 1;//商品ID
+  repeated base.Thing sell_things = 2;//商品
+  repeated base.Thing price_things = 3;//价格
+  uint64 count = 4;//可购买次数
+  uint64 count_max = 5;//最大购买次数
+  int32 order = 6;//显示排序
+  int64 expiration_time = 7;//过期时间
+  double discount = 8;//折扣
+  int32 rand_index = 9;//随机生成顺序
+}
+
+message ShopContent {
+  uint32 shop_id = 1;//商店ID
+  string name = 2;//商店名称
+  int64 refresh_time = 3;//下次刷新时间
+  int64 open_time = 4;//开启时间
+  int64 expiration_time = 5;//过期时间
+  repeated base.Thing manual_price = 6;//手动刷新价格
+  repeated ShopItem shop_items = 7;//商品列表
+  repeated ShopItem ad_shop_items = 8;//广告商品列表
+}
+
+message LuckyContent {
+  uint32 lucky_id = 1;//抽奖ID
+  string name = 2;//奖池名称
+  int32 freeX1_count = 3;//单抽免费次数
+  int64 freeX1_refresh_update = 4;//单抽免费次数下次刷新时间
+  int32 freeX10_count = 5;//10连抽免费次数
+  int64 freeX10_refresh_update = 6;//10连抽免费次数下次刷新时间
+  uint32 frequency = 7;//剩余抽奖次数
+  uint32 frequency_max = 8;//最大抽奖次数
+  int64 frequency_next_update = 9;//抽奖次数重置时间
+  uint32 do_count = 10;//已抽次数
+  uint32 global_frequency = 11;//全局剩余抽奖次数
+  uint32 global_frequency_max = 12;//全局最大抽奖次数
+  int64 global_frequency_next_update = 13;//全局抽奖次数重置时间
+  int32 ad_count = 14;//剩余广告次数
+  int32 ad_count_max = 15;//最大广告次数
+  int64 ad_refresh_update = 16;//广告次数下次刷新时间
+  repeated base.Thing price_x1_things = 17;//单抽价格
+  repeated base.Thing price_x10_things = 18;//十连抽价格
+  repeated base.Thing convert_price_things = 19;//兑换价格
+  string banner = 20;//抽奖banner (客户端显示)
+  repeated base.Thing lucky_items = 21;//奖励预览
+  int32 get_number = 22;//必中剩余次数
+  int32 global_get_number = 23;//全局必中剩余次数
+}
+
+message ShopBuyItemReq {
+  uint32 shop_index_id = 1;//商店id
+  uint32 buy_id = 2;//购买的商品ID
+  uint64 buy_count = 3;//购买的数量
+}
+
+message ShopBuyItemRes {
+  base.Res res = 1;
+  repeated base.Thing new_things = 2;
+  ShopIndexContent shop_index_content = 3;
+}
+
+message ShopDoLuckyReq {
+  uint32 shop_index_id = 1;//商店id
+  bool skip_free = 2;//是否跳过免费抽奖
+  uint32 count = 3;//抽奖次数, 1 或 10
+  uint32 convert_count = 4;//兑换的次数
+}
+
+message ShopDoLuckyRes {
+  base.Res res = 1;
+  repeated base.Thing new_things = 2;
+  ShopIndexContent shop_index_content = 3;
+}
+
+message ShopGetIndexReq {
+  repeated uint32 shop_index_id = 1;// 商店索引ID, 不传表示获取所有类型的商店
+}
+
+message ShopGetIndexRes {
+  base.Res res = 1;
+  repeated ShopIndexContent shop_index_content = 2;
+}
+
+// 手动刷新商店
+message ShopManualRefreshReq {
+  uint32 shop_index_id = 1;//商店id
+}
+
+message ShopManualRefreshRes {
+  base.Res res = 1;
+  ShopIndexContent shop_index_content = 2;
+}
+
+message ShopConvertLuckyItemReq {
+  uint32 shop_index_id = 1;//商店id
+  uint32 count = 2;//兑换的次数
+}
+
+message ShopConvertLuckyItemRes {
+  base.Res res = 1;
+  repeated base.Thing new_things = 2;
+}

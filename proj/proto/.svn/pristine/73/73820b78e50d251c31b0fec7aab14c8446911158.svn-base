@@ -1,0 +1,22 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+// 交易订单消息
+message MarketItemOrder {
+    string id = 1;
+    string order_id = 2;   // 交易单唯一 ID
+    string order_type = 3; // 订单类型 sell卖单/buy买单
+    string maker_id = 4; // 挂单玩家 ID
+    optional string taker_id = 5; // 吃单玩家 ID
+    uint64 item_id = 6; // 道具 ID
+    int32 item_type = 7; // 道具类型（用作筛选）
+    uint64 quantity = 8; // 数量
+    uint64 currency = 9; // 计价道具ID
+    uint64 price = 10; // 单价
+    uint64 total_price = 11; // 总价
+    string status = 12; // "active"已创建,活跃状态/"cancelled"已取消/"done"已成交
+    string status_remark = 13; // 订单状态备注信息
+    int64 created_at = 14; // 创建时间
+    int64 updated_at = 15; // 更新时间
+}

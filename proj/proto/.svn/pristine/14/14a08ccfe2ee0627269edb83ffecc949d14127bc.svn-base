@@ -1,0 +1,28 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/model.player.proto";
+
+message EventPlayerItemChange {
+  string uid = 1;
+  base.PlayerItemRecord record = 2;
+  string item_name = 3;
+  double item_value = 4;
+}
+
+message EventPlayerUseItemBenefitCard {
+  string player_id = 1;
+  uint64 item_id = 2;
+  string item_name = 3;
+  double item_value = 4;
+  int32 benefit_card_id = 5;
+  int64 benefit_card_expires = 6;
+  string benefit_card_expires_show = 7;
+}
+
+message EventTaskEvent {
+  string player_id = 1;
+  int32 event_type = 2;
+  repeated int32 event_num = 3;
+  int32 count = 4;
+}

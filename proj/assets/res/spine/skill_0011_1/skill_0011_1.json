@@ -1,0 +1,127 @@
+{
+"skeleton": {
+	"hash": "BEP3dHrmZNwxZOMXTAvEtg8jFiM",
+	"spine": "3.8.99",
+	"x": -180,
+	"y": -180,
+	"width": 360,
+	"height": 360,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "gq1", "parent": "root" },
+	{ "name": "feixue1", "parent": "root" },
+	{ "name": "qiliu1", "parent": "root" },
+	{ "name": "qiliu2", "parent": "root" }
+],
+"slots": [
+	{ "name": "images/49bef23f3cf746ad6b90cc9cb2ac7c91539b945c9c85-f4YbKv", "bone": "qiliu1", "attachment": "images/49bef23f3cf746ad6b90cc9cb2ac7c91539b945c9c85-f4YbKv" },
+	{ "name": "images/49bef23f3cf746ad6b90cc9cb2ac7c91539b945c9c85-f4YbKv2", "bone": "qiliu2", "attachment": "images/49bef23f3cf746ad6b90cc9cb2ac7c91539b945c9c85-f4YbKv" },
+	{ "name": "images/ebdb7d6cc674cc61584d883e01a55a7118bcbc57dc75-wF1e4I", "bone": "gq1", "attachment": "images/ebdb7d6cc674cc61584d883e01a55a7118bcbc57dc75-wF1e4I" },
+	{ "name": "images/ef703ee4c7b72ccc3491c10bd06b4109586ac4a12646-w8r0dz", "bone": "feixue1", "attachment": "images/ef703ee4c7b72ccc3491c10bd06b4109586ac4a12646-w8r0dz" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"images/49bef23f3cf746ad6b90cc9cb2ac7c91539b945c9c85-f4YbKv": {
+				"images/49bef23f3cf746ad6b90cc9cb2ac7c91539b945c9c85-f4YbKv": { "width": 256, "height": 256 }
+			},
+			"images/49bef23f3cf746ad6b90cc9cb2ac7c91539b945c9c85-f4YbKv2": {
+				"images/49bef23f3cf746ad6b90cc9cb2ac7c91539b945c9c85-f4YbKv": { "width": 256, "height": 256 }
+			},
+			"images/ebdb7d6cc674cc61584d883e01a55a7118bcbc57dc75-wF1e4I": {
+				"images/ebdb7d6cc674cc61584d883e01a55a7118bcbc57dc75-wF1e4I": { "width": 360, "height": 360 }
+			},
+			"images/ef703ee4c7b72ccc3491c10bd06b4109586ac4a12646-w8r0dz": {
+				"images/ef703ee4c7b72ccc3491c10bd06b4109586ac4a12646-w8r0dz": { "y": 28.97, "width": 254, "height": 256 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"images/49bef23f3cf746ad6b90cc9cb2ac7c91539b945c9c85-f4YbKv": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffff00" },
+					{ "time": 0.5667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.6333, "color": "ffffffff" },
+					{ "time": 0.8, "color": "ffffff00" }
+				]
+			},
+			"images/49bef23f3cf746ad6b90cc9cb2ac7c91539b945c9c85-f4YbKv2": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.7, "color": "ffffff00" },
+					{ "time": 0.7667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.8333, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"images/ebdb7d6cc674cc61584d883e01a55a7118bcbc57dc75-wF1e4I": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffff00" },
+					{ "time": 0.5333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.6, "color": "ffffffff" },
+					{ "time": 0.8, "color": "ffffff00" }
+				]
+			},
+			"images/ef703ee4c7b72ccc3491c10bd06b4109586ac4a12646-w8r0dz": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffff00" },
+					{ "time": 0.5333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffffff" },
+					{ "time": 0.7333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"gq1": {
+				"scale": [
+					{ "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5, "x": 0, "y": 0 },
+					{ "time": 0.7667, "x": 3, "y": 3 }
+				]
+			},
+			"qiliu1": {
+				"scale": [
+					{ "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5, "x": 0, "y": 0 },
+					{ "time": 0.7667, "x": 3, "y": 3 }
+				]
+			},
+			"qiliu2": {
+				"rotate": [
+					{ "angle": 90, "curve": "stepped" },
+					{ "time": 0.5, "angle": 90 }
+				],
+				"scale": [
+					{ "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.7, "x": 0, "y": 0 },
+					{ "time": 0.9667, "x": 3, "y": 3 }
+				]
+			},
+			"feixue1": {
+				"scale": [
+					{ "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 0.5, "x": 0, "y": 0 },
+					{ "time": 0.7333 }
+				]
+			},
+			"root": {
+				"translate": [
+					{ "y": 150 }
+				]
+			}
+		}
+	}
+}
+}

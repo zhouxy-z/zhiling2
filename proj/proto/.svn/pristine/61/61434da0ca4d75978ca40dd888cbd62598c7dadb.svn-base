@@ -1,0 +1,22 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+message PlayerInfoChange {
+  int32 nick_name_chang_times = 1;
+}
+
+message PlayerInfo {
+  string id = 1;               // 对应 primitive.ObjectID 转为字符串存储
+  string player_id = 2;
+  string init_inviter_id = 3;
+  string union_id = 4;
+  string wechat_id = 5;
+  string qq_id = 6;
+  string contact_wechat = 7;
+  string contact_qq = 8;
+  string nick_name = 9;
+  string icon_url = 10;
+  string avatar_url = 11;
+  PlayerInfoChange change = 12; // 嵌套结构
+}

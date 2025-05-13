@@ -1,0 +1,55 @@
+
+skill_0012_2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/ef_baozhu_1
+  rotate: true
+  xy: 262, 77
+  size: 147, 192
+  orig: 214, 228
+  offset: 38, 20
+  index: -1
+images/ef_baozhu_2
+  rotate: false
+  xy: 395, 400
+  size: 157, 152
+  orig: 214, 228
+  offset: 33, 44
+  index: -1
+images/ef_baozhu_3
+  rotate: true
+  xy: 262, 226
+  size: 163, 152
+  orig: 214, 228
+  offset: 29, 40
+  index: -1
+images/ef_baozhu_5
+  rotate: true
+  xy: 262, 226
+  size: 163, 152
+  orig: 214, 228
+  offset: 29, 40
+  index: -1
+images/ef_baozhu_4
+  rotate: false
+  xy: 225, 391
+  size: 168, 161
+  orig: 214, 228
+  offset: 26, 31
+  index: -1
+images/grow
+  rotate: false
+  xy: 2, 16
+  size: 258, 258
+  orig: 287, 284
+  offset: 19, 13
+  index: -1
+images/gy
+  rotate: false
+  xy: 2, 276
+  size: 221, 276
+  orig: 360, 360
+  offset: 61, 43
+  index: -1

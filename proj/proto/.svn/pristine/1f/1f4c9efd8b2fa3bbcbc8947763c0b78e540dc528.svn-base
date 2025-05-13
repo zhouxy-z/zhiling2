@@ -1,0 +1,29 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/ps";
+package ps;
+import "base/model.battle.proto";
+import "base/model.battle.mode.proto";
+
+// 房间结算事件
+message EventBattleSettlement {
+  base.BattleRoomContext room_context = 1;
+  base.BattleRoomSettlement settlement = 2;
+  map<string, base.BattleTaskRecord> task_record = 3;
+}
+
+// 战斗房间创建事件
+message EventBattleCreate {
+  base.BattleRoomSummary room_summary = 1;
+}
+
+// 战斗房间销毁事件
+message EventBattleDestroy {
+  string room_id = 1;
+}
+
+message EventBattleWaitPlayerEnterTimeOut {
+  string room_id = 1; // 房间ID，外部创建房间时不需要指定，由 battle_mgr 生成
+  repeated string all_player_id = 2;  //所有玩家id
+  repeated string enter_player_id = 3;  //已进入玩家id
+  base.BattleModeInfo mode_info = 4; // 战斗模式信息
+}

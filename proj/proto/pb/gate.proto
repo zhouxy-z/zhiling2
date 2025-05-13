@@ -1,0 +1,23 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+
+message ServerTimeRes {
+  base.Res res = 1;
+  int64 timestamp = 2;
+}
+
+message MarqueeMsg {
+  uint32 type = 1;
+  uint32 loop_count = 2;
+  int64 delay = 3;
+  int64 interval = 4;
+  int64 speed = 5;
+  string content = 6;
+  string icon = 7;
+}
+
+message MarqueeMsgsPush {
+ repeated MarqueeMsg messages = 1;
+}

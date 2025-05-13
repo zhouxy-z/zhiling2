@@ -1,0 +1,59 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/model.mail.proto";
+import "base/base.proto";
+import "base/model.player.proto";
+
+message NewMailPush {
+}
+
+message GetMailsReq {
+  int32 read_flag = 1;// 邮件读取状态筛选条件: 0-所有邮件, 1-已读邮件, 2-未读邮件
+  int32 page = 2;// 邮件列表的页码,用于分页
+  int32 page_size = 3;// 每页的邮件数量,用于分页
+  repeated int32 source_filter = 4;
+  int32 contains_mode = 5;// 邮件包含模式，0只含自己的邮件，1只含自己发送的邮件，2混合都有
+  bool contains_del = 6;
+}
+
+message GetMailsRes {
+  base.Res res = 1;
+  repeated base.PlayerMailData mails = 2;
+}
+
+message DeleteMailsReq {
+  repeated string mail_ids = 1;//为空则删除全部邮件
+}
+
+message DeleteMailRes {
+  base.Res res = 1;
+  repeated string deleted_mail_ids = 2;//为空则删除全部邮件
+}
+
+message ReadMailReq {
+  string mail_id = 1;
+}
+
+message ReadMailRes {
+  base.Res res = 1;
+  base.PlayerMailData mail = 2;
+}
+
+message ClaimMailAttachmentReq {
+  string mail_id = 1;
+}
+
+message ClaimMailAttachmentRes {
+  base.Res res = 1;
+  base.PlayerMailData mail = 2;
+}
+
+message ClaimMailsAttachmentReq {
+  repeated string mail_ids = 1;//为空则领取全部邮件
+}
+
+message ClaimMailsAttachmentRes {
+  base.Res res = 1;
+  repeated base.Thing things = 2;
+}

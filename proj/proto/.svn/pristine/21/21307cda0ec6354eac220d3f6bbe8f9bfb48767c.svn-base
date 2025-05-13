@@ -1,0 +1,47 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+// 道具挂单订单
+message MarketItemOrder {
+    string id = 1;
+    string order_id = 2;   // 交易单唯一 ID
+    string order_type = 3; // 订单类型 sell卖单/buy买单
+    string maker_id = 4; // 挂单玩家 ID
+    uint64 item_id = 5; // 道具 ID
+    int32 item_type = 6; // 道具类型（用作筛选）
+    uint64 group_num = 7; // 组数
+    uint64 quantity = 8; // 数量
+    int64 quantity_remaining = 9; // 剩余数量
+    int64 quantity_taking = 10; // 交易中总数
+    uint64 currency = 11; // 计价道具ID
+    uint64 price = 12; // 单价
+    uint64 total_price = 13; // 总价
+    int64 total_fee = 19; // 总手续费
+    string status = 14; // "active"已创建,活跃状态/"cancelled"已取消/"done"已成交
+    string status_remark = 15; // 订单状态备注信息
+    int64 created_at = 16; // 创建时间
+    int64 expires_at = 17; // 过期时间
+    int64 updated_at = 18; // 更新时间
+}
+
+// 道具吃单订单
+message MarketItemTakeOrder {
+    string id = 1;
+    string maker_order_id = 2; // Maker交易单唯一 ID
+    string maker_order_type = 3; // Maker订单类型
+    string maker_id = 4; // 挂单玩家 ID
+    string taker_order_id = 5; // Taker单唯一 ID
+    string taker_id = 6; // 吃单玩家 ID
+    uint64 item_id = 7; // 道具 ID
+    int32 item_type = 8; // 道具类型（用作筛选）
+    uint64 quantity = 9; // 数量
+    uint64 currency = 10; // 计价道具ID
+    uint64 cost = 11; // 计价花费数量
+    uint64 fee = 12; // 手续费（从currency流向扣除）
+    string status = 13; // "active"已创建,活跃状态/"cancelled"已取消/"done"已成交
+    string status_remark = 14; // 订单状态备注信息
+    int64 created_at = 15; // 创建时间
+    int64 expires_at = 16; // 过期时间
+    int64 updated_at = 17; // 更新时间
+}

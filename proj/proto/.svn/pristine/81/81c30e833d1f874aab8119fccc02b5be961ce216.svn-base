@@ -1,0 +1,9 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+message DeckAttrs {
+  string id = 1; // deck id
+  string name = 2; // deck name
+  int32 type = 3; // deck type (by most card type)
+}

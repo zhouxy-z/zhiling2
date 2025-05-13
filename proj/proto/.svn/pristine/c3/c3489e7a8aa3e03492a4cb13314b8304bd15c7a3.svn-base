@@ -1,0 +1,138 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+import "base/model.player.proto";
+
+message DoubleMap {
+  map<string, double> values = 1;
+}
+
+// 字典的主键是卡牌ID，
+message BattleRoomAttrValue {
+  int32 final_value = 1; // final_value = ((base *  (1 + base_add_mul)) + add_0) *  (1 + add_mul_0))
+  map<string, DoubleMap> base = 2;
+  map<string, DoubleMap> base_add_mul = 3;
+  map<string, DoubleMap> add0 = 4;
+  map<string, DoubleMap> add_mul0 = 5;
+}
+
+message BattleRoomPlayerContext {
+  string player_id = 1;
+  string name = 2;
+  uint32 level = 3;
+  bool is_ai = 4;
+  repeated BattleCard cards = 5;
+}
+
+message BattleRoomContext {
+  string room_id = 1;
+  uint32 level_id = 2;
+  repeated BattleRoomPlayerContext players = 3;
+}
+
+// 房间数据摘要
+message BattleRoomSummary {
+  string room_id = 1;
+  string server_id = 2;
+  uint64 create_time = 3;
+  repeated string player_ids = 4;
+}
+
+// 游戏状态
+message BattleRoomGamePlayData {
+  map<string, BattleRoomPlayerData> players = 1;
+  repeated BattleRoomTerrainData terrains = 2;
+  uint32 alloc_id = 3;
+  uint32 current_round = 4; // 当前回合
+  BattleRoomLevelData level_data = 5; // 关卡相关配置数据
+}
+
+// 关卡信息
+message BattleRoomLevelData {
+  uint32 level_id = 1; // 关卡表id
+  BattleRoomAttrValue round_max = 2; // 最大回合数
+  uint32 hand_card_init = 3; // 初始卡牌数量
+  BattleRoomAttrValue hand_card_max = 4; // 最大手牌数
+  uint32 terrain_card_max = 5; // 最大地放置排数量
+  uint32 terrain_max = 6; // 最大地形数量
+  string room_id = 7; // 房间id
+  BattleRoomAttrValue round_init = 8; // 初始回合数
+}
+
+enum BattleRoomCardLocation {
+  Unknown = 0; // 未知
+  Deck = 1; // 卡组
+  Hand = 2; // 手牌
+  Drop = 3; // 丢弃
+  Del = 4; // 删除
+  Terrain = 5; // 地形
+}
+
+enum BattleRoomCardTerrainState {
+  TerrainCardUnknown = 0; // 未知
+  TerrainCardHide = 1;
+  TerrainCardShow = 2;
+}
+
+// 卡片实例状态
+message BattleRoomCardData {
+  uint32 config_id = 1; // 卡片系统实例ID
+  string inst_id = 2; // 战斗内部实例ID
+  string bag_id = 3; // 系统玩法背包中的实例id
+  uint32 card_type = 4;
+  uint32 quality = 5;
+
+  BattleRoomCardLocation location = 6;
+  BattleRoomCardTerrainState terrain_state = 7;
+  int32 area = 8; // 所在区域
+
+  BattleRoomAttrValue power = 9; // 卡牌战力
+  BattleRoomAttrValue cost = 10; // 卡牌消耗
+
+  repeated BattleRoomSkillData skills = 11; // 技能列表
+
+  string player_id = 12;
+}
+
+message BattleRoomSkillData {
+  uint32 skill_id = 1; // 读表
+  uint32 round = 2;//生效round
+}
+
+// 玩家实例状态
+message BattleRoomPlayerData {
+  string player_id = 1;
+  string inst_id = 2;
+  string name = 3;
+  uint32 level = 4;
+  bool is_ai = 5; // AI 托管
+
+  repeated BattleRoomCardData deck_cards = 6; // 卡组卡牌
+  repeated BattleRoomCardData hand_cards = 7; // 手牌
+  repeated BattleRoomCardData drop_cards = 8; // 丢弃卡牌
+  repeated BattleRoomCardData del_cards = 9; // 删除卡牌
+  repeated BattleRoomAttrValue round_energy = 10; // 每回合能量
+  repeated BattleRoomAttrValue round_card_draw = 11; // 每回合抽卡数量
+  repeated BattleRoomTerrainPlayerData terrain = 12; // 地形数据
+}
+
+message BattleRoomTerrainPlayerData {
+  repeated BattleRoomCardData cards = 1; // 已放置再地形上的卡片
+  BattleRoomAttrValue power = 2; // 玩家在每个地形上的战力
+}
+
+enum BattleRoomTerrainState {
+  TerrainUnknown = 0; // 未知
+  TerrainHide = 1; // 盖牌
+  TerrainShow = 2; // 展示
+  TerrainDestroy = 3; // 销毁
+}
+
+// 环境
+message BattleRoomTerrainData {
+  uint32 config_id = 1;//地形配置id
+  string inst_id = 2;//实例id
+  BattleRoomTerrainState state = 3;
+  repeated BattleRoomSkillData skills = 5;
+  int32 area = 6; // 所在区域
+}

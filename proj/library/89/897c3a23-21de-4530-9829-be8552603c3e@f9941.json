@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "红色选中",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 121,
+      "height": 158
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 121,
+      "height": 158
+    },
+    "rotated": false,
+    "capInsets": [
+      21,
+      45,
+      48,
+      46
+    ],
+    "vertices": {
+      "rawPosition": [
+        -60.5,
+        -79,
+        0,
+        60.5,
+        -79,
+        0,
+        -60.5,
+        79,
+        0,
+        60.5,
+        79,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        158,
+        121,
+        158,
+        0,
+        0,
+        121,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -60.5,
+        "y": -79,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 60.5,
+        "y": 79,
+        "z": 0
+      }
+    },
+    "texture": "897c3a23-21de-4530-9829-be8552603c3e@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

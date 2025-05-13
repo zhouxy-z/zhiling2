@@ -1,0 +1,48 @@
+
+skill_0029_1.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/fuwen3
+  rotate: true
+  xy: 311, 549
+  size: 238, 239
+  orig: 256, 256
+  offset: 8, 9
+  index: -1
+images/fuwenzhen1
+  rotate: false
+  xy: 2, 480
+  size: 307, 307
+  orig: 307, 307
+  offset: 0, 0
+  index: -1
+images/fuwenzhen2
+  rotate: false
+  xy: 262, 2
+  size: 222, 222
+  orig: 307, 307
+  offset: 42, 42
+  index: -1
+images/fuwenzhen3
+  rotate: false
+  xy: 2, 52
+  size: 166, 166
+  orig: 307, 307
+  offset: 69, 70
+  index: -1
+images/grow
+  rotate: false
+  xy: 2, 220
+  size: 258, 258
+  orig: 287, 284
+  offset: 19, 13
+  index: -1
+images/lianhua
+  rotate: false
+  xy: 262, 226
+  size: 252, 252
+  orig: 256, 256
+  offset: 0, 4
+  index: -1

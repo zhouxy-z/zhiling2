@@ -1,0 +1,20 @@
+
+skill_0038_1.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/shuihua
+  rotate: false
+  xy: 2, 2
+  size: 165, 78
+  orig: 165, 78
+  offset: 0, 0
+  index: -1
+images/wan
+  rotate: false
+  xy: 2, 82
+  size: 168, 131
+  orig: 168, 131
+  offset: 0, 0
+  index: -1

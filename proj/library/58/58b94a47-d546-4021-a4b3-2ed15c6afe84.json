@@ -1,0 +1,948 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "skill_0038_2",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "xMf4TMUGkWAZd5WbDodKD31zi04",
+      "spine": "3.8.99",
+      "x": -358.4,
+      "y": -358.4,
+      "width": 925.13,
+      "height": 796.77,
+      "images": "",
+      "audio": ""
+    },
+    "bones": [
+      {
+        "name": "root",
+        "scaleX": 0.7,
+        "scaleY": 0.7
+      },
+      {
+        "name": "sh",
+        "parent": "root"
+      },
+      {
+        "name": "sh1",
+        "parent": "root"
+      },
+      {
+        "name": "sh2",
+        "parent": "root"
+      },
+      {
+        "name": "sh3",
+        "parent": "root"
+      },
+      {
+        "name": "sh4",
+        "parent": "root"
+      },
+      {
+        "name": "guang",
+        "parent": "root"
+      }
+    ],
+    "slots": [
+      {
+        "name": "images/grow",
+        "bone": "guang",
+        "color": "ffffff00",
+        "attachment": "images/grow",
+        "blend": "screen"
+      },
+      {
+        "name": "images/shuihua1_01",
+        "bone": "sh",
+        "attachment": "images/shuihua1_01"
+      },
+      {
+        "name": "images/shuihua2_01",
+        "bone": "sh1",
+        "attachment": "images/shuihua2_01"
+      },
+      {
+        "name": "images/shuihua2_1",
+        "bone": "sh3",
+        "attachment": "images/shuihua2_01"
+      },
+      {
+        "name": "images/shuihua2_2",
+        "bone": "sh4",
+        "attachment": "images/shuihua2_01"
+      },
+      {
+        "name": "images/shuihua4_01",
+        "bone": "sh2",
+        "attachment": "images/shuihua4_01"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "images/grow": {
+            "images/grow": {
+              "x": 0.5,
+              "width": 287,
+              "height": 284
+            }
+          },
+          "images/shuihua1_01": {
+            "images/shuihua1_01": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_02": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_03": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_04": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_05": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_06": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_07": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_08": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_09": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_10": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_11": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_12": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_13": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_14": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_15": {
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua1_16": {
+              "width": 1024,
+              "height": 1024
+            }
+          },
+          "images/shuihua2_01": {
+            "images/shuihua2_01": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_02": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_03": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_04": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_05": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_06": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_07": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_08": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_09": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_10": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_11": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_12": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            }
+          },
+          "images/shuihua2_1": {
+            "images/shuihua2_01": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_02": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_03": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_04": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_05": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_06": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_07": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_08": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_09": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_10": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_11": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_12": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            }
+          },
+          "images/shuihua2_2": {
+            "images/shuihua2_01": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_02": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_03": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_04": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_05": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_06": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_07": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_08": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_09": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_10": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_11": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            },
+            "images/shuihua2_12": {
+              "x": 377.62,
+              "y": 40.63,
+              "width": 864,
+              "height": 770
+            }
+          },
+          "images/shuihua4_01": {
+            "images/shuihua4_01": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_02": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_03": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_04": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_05": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_06": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_07": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_08": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_09": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_10": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_11": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_12": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_13": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_14": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_15": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            },
+            "images/shuihua4_16": {
+              "x": 6.8,
+              "y": 114.24,
+              "width": 1024,
+              "height": 1024
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "animation": {
+        "slots": {
+          "images/grow": {
+            "color": [
+              {
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.1333,
+                "color": "ffffffff",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.2,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.4,
+                "color": "ffffff00"
+              }
+            ]
+          },
+          "images/shuihua1_01": {
+            "attachment": [
+              {
+                "name": null
+              },
+              {
+                "time": 0.1,
+                "name": null
+              },
+              {
+                "time": 0.1333,
+                "name": "images/shuihua1_01"
+              },
+              {
+                "time": 0.1667,
+                "name": "images/shuihua1_02"
+              },
+              {
+                "time": 0.2,
+                "name": "images/shuihua1_03"
+              },
+              {
+                "time": 0.2333,
+                "name": "images/shuihua1_04"
+              },
+              {
+                "time": 0.2667,
+                "name": "images/shuihua1_05"
+              },
+              {
+                "time": 0.3,
+                "name": "images/shuihua1_06"
+              },
+              {
+                "time": 0.3333,
+                "name": "images/shuihua1_07"
+              },
+              {
+                "time": 0.3667,
+                "name": "images/shuihua1_08"
+              },
+              {
+                "time": 0.4,
+                "name": "images/shuihua1_09"
+              },
+              {
+                "time": 0.4333,
+                "name": "images/shuihua1_10"
+              },
+              {
+                "time": 0.4667,
+                "name": "images/shuihua1_11"
+              },
+              {
+                "time": 0.5,
+                "name": "images/shuihua1_12"
+              },
+              {
+                "time": 0.5333,
+                "name": "images/shuihua1_13"
+              },
+              {
+                "time": 0.5667,
+                "name": "images/shuihua1_14"
+              },
+              {
+                "time": 0.6,
+                "name": "images/shuihua1_15"
+              },
+              {
+                "time": 0.6333,
+                "name": "images/shuihua1_16"
+              },
+              {
+                "time": 0.6667,
+                "name": null
+              }
+            ]
+          },
+          "images/shuihua2_01": {
+            "attachment": [
+              {
+                "name": null
+              },
+              {
+                "time": 0.1333,
+                "name": null
+              },
+              {
+                "time": 0.2,
+                "name": "images/shuihua2_01"
+              },
+              {
+                "time": 0.2667,
+                "name": "images/shuihua2_02"
+              },
+              {
+                "time": 0.3333,
+                "name": "images/shuihua2_03"
+              },
+              {
+                "time": 0.4,
+                "name": "images/shuihua2_04"
+              },
+              {
+                "time": 0.4667,
+                "name": "images/shuihua2_05"
+              },
+              {
+                "time": 0.5333,
+                "name": "images/shuihua2_06"
+              },
+              {
+                "time": 0.6,
+                "name": "images/shuihua2_07"
+              },
+              {
+                "time": 0.6667,
+                "name": "images/shuihua2_08"
+              },
+              {
+                "time": 0.7333,
+                "name": "images/shuihua2_09"
+              },
+              {
+                "time": 0.8,
+                "name": "images/shuihua2_10"
+              },
+              {
+                "time": 0.8667,
+                "name": "images/shuihua2_11"
+              },
+              {
+                "time": 0.9333,
+                "name": "images/shuihua2_12"
+              },
+              {
+                "time": 1,
+                "name": "images/shuihua2_12"
+              },
+              {
+                "time": 1.0667,
+                "name": null
+              }
+            ]
+          },
+          "images/shuihua2_1": {
+            "attachment": [
+              {
+                "name": null
+              },
+              {
+                "time": 0.0667,
+                "name": null
+              },
+              {
+                "time": 0.1333,
+                "name": "images/shuihua2_01"
+              },
+              {
+                "time": 0.2,
+                "name": "images/shuihua2_02"
+              },
+              {
+                "time": 0.2667,
+                "name": "images/shuihua2_03"
+              },
+              {
+                "time": 0.3333,
+                "name": "images/shuihua2_04"
+              },
+              {
+                "time": 0.4,
+                "name": "images/shuihua2_05"
+              },
+              {
+                "time": 0.4667,
+                "name": "images/shuihua2_06"
+              },
+              {
+                "time": 0.5333,
+                "name": "images/shuihua2_07"
+              },
+              {
+                "time": 0.6,
+                "name": "images/shuihua2_08"
+              },
+              {
+                "time": 0.6667,
+                "name": "images/shuihua2_09"
+              },
+              {
+                "time": 0.7333,
+                "name": "images/shuihua2_10"
+              },
+              {
+                "time": 0.8,
+                "name": "images/shuihua2_11"
+              },
+              {
+                "time": 0.8667,
+                "name": "images/shuihua2_12"
+              },
+              {
+                "time": 0.9333,
+                "name": "images/shuihua2_12"
+              },
+              {
+                "time": 1,
+                "name": null
+              }
+            ]
+          },
+          "images/shuihua2_2": {
+            "attachment": [
+              {
+                "name": null
+              },
+              {
+                "time": 0.2667,
+                "name": null
+              },
+              {
+                "time": 0.3333,
+                "name": "images/shuihua2_01"
+              },
+              {
+                "time": 0.4,
+                "name": "images/shuihua2_02"
+              },
+              {
+                "time": 0.4667,
+                "name": "images/shuihua2_03"
+              },
+              {
+                "time": 0.5333,
+                "name": "images/shuihua2_04"
+              },
+              {
+                "time": 0.6,
+                "name": "images/shuihua2_05"
+              },
+              {
+                "time": 0.6667,
+                "name": "images/shuihua2_06"
+              },
+              {
+                "time": 0.7333,
+                "name": "images/shuihua2_07"
+              },
+              {
+                "time": 0.8,
+                "name": "images/shuihua2_08"
+              },
+              {
+                "time": 0.8667,
+                "name": "images/shuihua2_09"
+              },
+              {
+                "time": 0.9333,
+                "name": "images/shuihua2_10"
+              },
+              {
+                "time": 1,
+                "name": "images/shuihua2_11"
+              },
+              {
+                "time": 1.0667,
+                "name": "images/shuihua2_12"
+              },
+              {
+                "time": 1.1333,
+                "name": "images/shuihua2_12"
+              },
+              {
+                "time": 1.2,
+                "name": null
+              }
+            ]
+          },
+          "images/shuihua4_01": {
+            "attachment": [
+              {
+                "name": null
+              },
+              {
+                "time": 0.0333,
+                "name": "images/shuihua4_01"
+              },
+              {
+                "time": 0.0667,
+                "name": "images/shuihua4_02"
+              },
+              {
+                "time": 0.1,
+                "name": "images/shuihua4_03"
+              },
+              {
+                "time": 0.1333,
+                "name": "images/shuihua4_04"
+              },
+              {
+                "time": 0.1667,
+                "name": "images/shuihua4_05"
+              },
+              {
+                "time": 0.2,
+                "name": "images/shuihua4_06"
+              },
+              {
+                "time": 0.2333,
+                "name": "images/shuihua4_07"
+              },
+              {
+                "time": 0.2667,
+                "name": "images/shuihua4_08"
+              },
+              {
+                "time": 0.3,
+                "name": "images/shuihua4_09"
+              },
+              {
+                "time": 0.3333,
+                "name": "images/shuihua4_10"
+              },
+              {
+                "time": 0.3667,
+                "name": "images/shuihua4_11"
+              },
+              {
+                "time": 0.4,
+                "name": "images/shuihua4_12"
+              },
+              {
+                "time": 0.4333,
+                "name": "images/shuihua4_13"
+              },
+              {
+                "time": 0.4667,
+                "name": "images/shuihua4_14"
+              },
+              {
+                "time": 0.5,
+                "name": "images/shuihua4_15"
+              },
+              {
+                "time": 0.5333,
+                "name": "images/shuihua4_16"
+              },
+              {
+                "time": 0.5667,
+                "name": null
+              }
+            ]
+          }
+        },
+        "bones": {
+          "sh": {
+            "scale": [
+              {}
+            ]
+          },
+          "sh1": {
+            "scale": [
+              {
+                "curve": "stepped"
+              },
+              {
+                "time": 0.1333
+              },
+              {
+                "time": 1.0667,
+                "x": 1.5,
+                "y": 1.5
+              }
+            ]
+          },
+          "sh3": {
+            "rotate": [
+              {
+                "angle": 110.96
+              }
+            ],
+            "scale": [
+              {},
+              {
+                "time": 0.0667,
+                "x": 0.8,
+                "y": 0.8
+              },
+              {
+                "time": 1,
+                "x": 1.2,
+                "y": 1.2
+              }
+            ]
+          },
+          "sh4": {
+            "rotate": [
+              {
+                "angle": -151.38
+              }
+            ],
+            "scale": [
+              {},
+              {
+                "time": 0.2667,
+                "x": 0.8,
+                "y": 0.8
+              },
+              {
+                "time": 1.2,
+                "x": 1.3,
+                "y": 1.3
+              }
+            ]
+          },
+          "guang": {
+            "scale": [
+              {},
+              {
+                "time": 0.3333,
+                "x": 4,
+                "y": 4
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "textures": [
+    {
+      "__uuid__": "1418f7de-b427-472f-b6cf-774923906500@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    }
+  ],
+  "textureNames": [
+    "skill_0038_2.png"
+  ],
+  "scale": 1,
+  "_atlasText": "\nskill_0038_2.png\nsize: 2048,2048\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nimages/grow\n  rotate: true\n  xy: 884, 636\n  size: 103, 104\n  orig: 115, 114\n  offset: 8, 5\n  index: -1\nimages/shuihua1_01\n  rotate: false\n  xy: 952, 1034\n  size: 49, 47\n  orig: 410, 410\n  offset: 180, 184\n  index: -1\nimages/shuihua1_02\n  rotate: false\n  xy: 1568, 835\n  size: 111, 114\n  orig: 410, 410\n  offset: 150, 158\n  index: -1\nimages/shuihua1_03\n  rotate: true\n  xy: 10, 300\n  size: 185, 191\n  orig: 410, 410\n  offset: 134, 161\n  index: -1\nimages/shuihua1_04\n  rotate: false\n  xy: 1306, 698\n  size: 252, 251\n  orig: 410, 410\n  offset: 86, 127\n  index: -1\nimages/shuihua1_05\n  rotate: false\n  xy: 322, 875\n  size: 279, 275\n  orig: 410, 410\n  offset: 62, 107\n  index: -1\nimages/shuihua1_06\n  rotate: false\n  xy: 657, 896\n  size: 285, 283\n  orig: 410, 410\n  offset: 59, 103\n  index: -1\nimages/shuihua1_07\n  rotate: false\n  xy: 1065, 1439\n  size: 295, 290\n  orig: 410, 410\n  offset: 50, 98\n  index: -1\nimages/shuihua1_08\n  rotate: false\n  xy: 10, 1136\n  size: 302, 296\n  orig: 410, 410\n  offset: 44, 94\n  index: -1\nimages/shuihua1_09\n  rotate: true\n  xy: 1753, 1730\n  size: 308, 285\n  orig: 410, 410\n  offset: 43, 90\n  index: -1\nimages/shuihua1_10\n  rotate: false\n  xy: 335, 1160\n  size: 312, 287\n  orig: 410, 410\n  offset: 41, 89\n  index: -1\nimages/shuihua1_11\n  rotate: false\n  xy: 10, 1442\n  size: 315, 289\n  orig: 410, 410\n  offset: 40, 87\n  index: -1\nimages/shuihua1_12\n  rotate: false\n  xy: 1370, 1224\n  size: 322, 261\n  orig: 410, 410\n  offset: 36, 86\n  index: -1\nimages/shuihua1_13\n  rotate: true\n  xy: 1750, 1394\n  size: 326, 264\n  orig: 410, 410\n  offset: 33, 85\n  index: -1\nimages/shuihua1_14\n  rotate: false\n  xy: 1410, 1495\n  size: 330, 265\n  orig: 410, 410\n  offset: 30, 84\n  index: -1\nimages/shuihua1_15\n  rotate: false\n  xy: 1410, 1770\n  size: 333, 268\n  orig: 410, 410\n  offset: 29, 83\n  index: -1\nimages/shuihua1_16\n  rotate: false\n  xy: 698, 1189\n  size: 336, 253\n  orig: 410, 410\n  offset: 27, 97\n  index: -1\nimages/shuihua2_01\n  rotate: true\n  xy: 1596, 1076\n  size: 138, 84\n  orig: 346, 308\n  offset: 5, 109\n  index: -1\nimages/shuihua2_02\n  rotate: false\n  xy: 503, 463\n  size: 171, 158\n  orig: 346, 308\n  offset: 8, 80\n  index: -1\nimages/shuihua2_03\n  rotate: false\n  xy: 278, 672\n  size: 227, 193\n  orig: 346, 308\n  offset: 18, 63\n  index: -1\nimages/shuihua2_04\n  rotate: true\n  xy: 1800, 388\n  size: 253, 221\n  orig: 346, 308\n  offset: 24, 57\n  index: -1\nimages/shuihua2_05\n  rotate: false\n  xy: 1537, 408\n  size: 253, 233\n  orig: 346, 308\n  offset: 32, 47\n  index: -1\nimages/shuihua2_06\n  rotate: false\n  xy: 1011, 600\n  size: 259, 240\n  orig: 346, 308\n  offset: 36, 42\n  index: -1\nimages/shuihua2_07\n  rotate: false\n  xy: 1690, 884\n  size: 261, 251\n  orig: 346, 308\n  offset: 43, 33\n  index: -1\nimages/shuihua2_08\n  rotate: false\n  xy: 611, 631\n  size: 263, 255\n  orig: 346, 308\n  offset: 45, 29\n  index: -1\nimages/shuihua2_09\n  rotate: false\n  xy: 1029, 850\n  size: 267, 252\n  orig: 346, 308\n  offset: 45, 26\n  index: -1\nimages/shuihua2_10\n  rotate: false\n  xy: 1318, 959\n  size: 268, 255\n  orig: 346, 308\n  offset: 47, 25\n  index: -1\nimages/shuihua2_11\n  rotate: false\n  xy: 1280, 444\n  size: 247, 244\n  orig: 346, 308\n  offset: 71, 27\n  index: -1\nimages/shuihua2_12\n  rotate: true\n  xy: 10, 495\n  size: 157, 235\n  orig: 346, 308\n  offset: 162, 36\n  index: -1\nimages/shuihua4_01\n  rotate: true\n  xy: 952, 1091\n  size: 88, 67\n  orig: 410, 410\n  offset: 156, 135\n  index: -1\nimages/shuihua4_02\n  rotate: true\n  xy: 884, 749\n  size: 137, 117\n  orig: 410, 410\n  offset: 134, 122\n  index: -1\nimages/shuihua4_03\n  rotate: false\n  xy: 211, 306\n  size: 174, 155\n  orig: 410, 410\n  offset: 119, 114\n  index: -1\nimages/shuihua4_04\n  rotate: false\n  xy: 278, 471\n  size: 215, 191\n  orig: 410, 410\n  offset: 101, 105\n  index: -1\nimages/shuihua4_05\n  rotate: false\n  xy: 10, 662\n  size: 258, 203\n  orig: 410, 410\n  offset: 88, 102\n  index: -1\nimages/shuihua4_06\n  rotate: false\n  xy: 1689, 651\n  size: 272, 223\n  orig: 410, 410\n  offset: 78, 97\n  index: -1\nimages/shuihua4_07\n  rotate: false\n  xy: 1702, 1145\n  size: 286, 239\n  orig: 410, 410\n  offset: 72, 95\n  index: -1\nimages/shuihua4_08\n  rotate: false\n  xy: 10, 875\n  size: 297, 251\n  orig: 410, 410\n  offset: 64, 90\n  index: -1\nimages/shuihua4_09\n  rotate: true\n  xy: 1044, 1112\n  size: 317, 264\n  orig: 410, 410\n  offset: 54, 87\n  index: -1\nimages/shuihua4_10\n  rotate: false\n  xy: 365, 1457\n  size: 332, 276\n  orig: 410, 410\n  offset: 48, 81\n  index: -1\nimages/shuihua4_11\n  rotate: false\n  xy: 719, 1452\n  size: 336, 284\n  orig: 410, 410\n  offset: 46, 78\n  index: -1\nimages/shuihua4_12\n  rotate: false\n  xy: 719, 1746\n  size: 342, 292\n  orig: 410, 410\n  offset: 44, 75\n  index: -1\nimages/shuihua4_13\n  rotate: false\n  xy: 365, 1743\n  size: 344, 295\n  orig: 410, 410\n  offset: 43, 75\n  index: -1\nimages/shuihua4_14\n  rotate: false\n  xy: 10, 1741\n  size: 345, 297\n  orig: 410, 410\n  offset: 43, 74\n  index: -1\nimages/shuihua4_15\n  rotate: false\n  xy: 1071, 1739\n  size: 329, 299\n  orig: 410, 410\n  offset: 60, 73\n  index: -1\nimages/shuihua4_16\n  rotate: true\n  xy: 657, 1315\n  size: 132, 31\n  orig: 410, 410\n  offset: 136, 340\n  index: -1\n"
+}

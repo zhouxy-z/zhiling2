@@ -1,0 +1,113 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "ui_txkg",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "liokU/i118weJuDWBbfPzmkf8y8",
+      "spine": "3.8.99",
+      "x": -128,
+      "y": -128,
+      "width": 256,
+      "height": 256,
+      "images": "./images/",
+      "audio": ""
+    },
+    "bones": [
+      {
+        "name": "root"
+      }
+    ],
+    "slots": [
+      {
+        "name": "1_00000",
+        "bone": "root",
+        "attachment": "2_00000",
+        "blend": "screen"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "1_00000": {
+            "1_00000": {
+              "width": 256,
+              "height": 256
+            },
+            "2_00000": {
+              "width": 256,
+              "height": 256
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "blue": {
+        "slots": {
+          "1_00000": {
+            "color": [
+              {
+                "color": "ffffffff",
+                "curve": 0.25,
+                "c3": 0.75
+              },
+              {
+                "time": 1,
+                "color": "ffffff9b",
+                "curve": 0.25,
+                "c3": 0.75
+              },
+              {
+                "time": 2,
+                "color": "ffffffff"
+              }
+            ]
+          }
+        }
+      },
+      "red": {
+        "slots": {
+          "1_00000": {
+            "color": [
+              {
+                "color": "ffffffff",
+                "curve": 0.25,
+                "c3": 0.75
+              },
+              {
+                "time": 1,
+                "color": "ffffff9b",
+                "curve": 0.25,
+                "c3": 0.75
+              },
+              {
+                "time": 2,
+                "color": "ffffffff"
+              }
+            ],
+            "attachment": [
+              {
+                "name": "1_00000"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "textures": [
+    {
+      "__uuid__": "6fd8eba5-81be-4fee-bd90-d386029864ed@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    }
+  ],
+  "textureNames": [
+    "ui_txkg.png"
+  ],
+  "scale": 1,
+  "_atlasText": "\nui_txkg.png\nsize: 512,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\n1_00000\n  rotate: false\n  xy: 10, 174\n  size: 154, 154\n  orig: 256, 256\n  offset: 52, 51\n  index: -1\n2_00000\n  rotate: false\n  xy: 10, 10\n  size: 154, 154\n  orig: 256, 256\n  offset: 52, 51\n  index: -1\n"
+}

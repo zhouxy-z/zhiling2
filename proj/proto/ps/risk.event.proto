@@ -1,0 +1,19 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+
+message EventItemSentWarn {
+  string player_id = 1;
+  int32 days = 2; // 统计周期天数
+  int64 thresholds = 3; // 阈值
+  uint64 item_id = 4; // 道具ID
+  int64 item_count = 5; // 道具数量
+}
+
+message EventItemRecvWarn {
+  string player_id = 1;
+  int32 days = 2; // 统计周期天数
+  int64 thresholds = 3; // 阈值
+  uint64 item_id = 4; // 道具ID
+  int64 item_count = 5; // 道具数量
+}

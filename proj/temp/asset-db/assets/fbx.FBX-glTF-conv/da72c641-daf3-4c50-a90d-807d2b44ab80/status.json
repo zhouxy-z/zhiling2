@@ -1,0 +1,15 @@
+{
+  "version": "2.3.13",
+  "sourceTimeStamp": 1741074171832.612,
+  "outputTimeStamps": {
+    "log.json": 1741074188575.7278,
+    "out.gltf": 1741074188575.7278,
+    "out.bin": 1741074188573.727,
+    "桌子贴图1.png": 1741074188554.723,
+    ".fbm/5C5C15E6/table.fbm/桌子贴图1.png": 1741074188554.723
+  },
+  "options": {
+    "smartMaterialEnabled": true,
+    "matchMeshNames": true
+  }
+}

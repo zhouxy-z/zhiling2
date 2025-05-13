@@ -1,0 +1,20 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/model.user.proto";
+
+message EventPlayerCreate {
+  base.PlayerInfo player_info = 1;
+}
+
+message EventPlayerOnline {
+  string uid = 1;
+  string ip = 2;
+  string connectTime = 3;
+}
+
+message EventPlayerOffline {
+  string uid = 1;
+  string ip = 2;
+  string connectTime = 3;
+}

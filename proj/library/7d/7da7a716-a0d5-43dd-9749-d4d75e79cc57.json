@@ -1,0 +1,62 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "cardbg_0007",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "ooDKiU5ySC0TWLXdgdZsYzngihs",
+      "spine": "3.8.99",
+      "x": -185,
+      "y": -241,
+      "width": 370,
+      "height": 482,
+      "images": "./image/",
+      "audio": "F:/端点游戏项目/动效/spine/卡牌新游戏/卡牌动画/frame_0001卡框1"
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "MoveCtrl",
+        "parent": "root"
+      }
+    ],
+    "slots": [
+      {
+        "name": "bg_1",
+        "bone": "root",
+        "attachment": "bg_6"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "bg_1": {
+            "bg_6": {
+              "width": 320,
+              "height": 434
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "idle": {}
+    }
+  },
+  "textures": [
+    {
+      "__uuid__": "c5e86696-9713-4b36-b68b-9f2012b3d773@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    }
+  ],
+  "textureNames": [
+    "cardbg_0007.png"
+  ],
+  "scale": 1,
+  "_atlasText": "\ncardbg_0007.png\nsize: 512,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nbg_6\n  rotate: false\n  xy: 10, 10\n  size: 310, 422\n  orig: 320, 434\n  offset: 6, 7\n  index: -1\n"
+}

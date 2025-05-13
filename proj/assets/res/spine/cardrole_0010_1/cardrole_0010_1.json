@@ -1,0 +1,80 @@
+{
+"skeleton": {
+	"hash": "+FMMRg30izrNBs00o0XM68g0/GY",
+	"spine": "3.8.99",
+	"x": -155.68,
+	"y": -75.6,
+	"width": 339.01,
+	"height": 419.24,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root", "scaleX": 0.7, "scaleY": 0.7 },
+	{ "name": "role", "parent": "root", "y": -14 },
+	{ "name": "shadow", "parent": "root", "x": 8, "scaleX": 1.2 }
+],
+"slots": [
+	{ "name": "shadow", "bone": "shadow", "color": "ffffff95", "attachment": "shadow" },
+	{ "name": "role", "bone": "role", "attachment": "石头" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"role": {
+				"石头": { "x": 23.4, "y": 241.67, "scaleX": 1.5, "scaleY": 1.5, "width": 318, "height": 351 }
+			},
+			"shadow": {
+				"shadow": { "x": 0.5, "y": 0.5, "width": 385, "height": 217 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"bones": {
+			"role": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 1 }
+				]
+			}
+		}
+	},
+	"show": {
+		"bones": {
+			"role": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "y": 143.01 },
+					{ "time": 0.5, "y": -5.19 },
+					{ "time": 0.6667 }
+				],
+				"scale": [
+					{ "x": 0, "y": 0 },
+					{ "time": 0.3333, "x": 1.429, "y": 1.429 },
+					{ "time": 0.5, "x": 0.929, "y": 0.929 },
+					{ "time": 0.6667 }
+				]
+			},
+			"shadow": {
+				"scale": [
+					{ "x": 0, "y": 0 },
+					{ "time": 0.3333 }
+				]
+			}
+		}
+	},
+	"skill": {
+		"bones": {
+			"role": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 1 }
+				]
+			}
+		}
+	}
+}
+}

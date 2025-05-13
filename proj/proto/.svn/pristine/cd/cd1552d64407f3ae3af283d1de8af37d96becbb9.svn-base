@@ -1,0 +1,79 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+import "base/model.player.proto";
+
+message DoubleMap {
+  map<string, double> values = 1;
+}
+
+// 字典的主键是卡牌ID，
+message BattleRoomAttrValue {
+  int32 final_value = 1; // final_value = ((base * base_mul) + add_0) * add_mul_0)
+  map<string, DoubleMap> base = 2;
+  map<string, DoubleMap> base_mul = 3;
+  map<string, DoubleMap> add0 = 4;
+  map<string, DoubleMap> add_mul0 = 5;
+}
+
+message BattleRoomPlayerContext {
+  string player_id = 1;
+  string name = 2;
+  uint32 level = 3;
+  repeated BattleCard cards = 4;
+}
+
+message BattleRoomContext {
+  string room_id = 1;
+  uint32 level_id = 2;
+  repeated BattleRoomPlayerContext players = 3;
+}
+
+// 房间数据摘要
+message BattleRoomSummary {
+  string room_id = 1;
+  string server_id = 2;
+  uint64 create_time = 3;
+  repeated string player_ids = 4;
+}
+
+// 游戏状态
+message BattleRoomGamePlayData {
+  repeated string players = 1;
+  repeated BattleRoomEnvironmentData environments = 2;
+}
+
+// 卡片实例状态
+message BattleRoomCardData {
+  string id = 1; // 卡片系统实例ID
+  string inst_id = 2; // 战斗内部实例ID
+  int32 card_type = 3;
+  int32 quality = 4;
+  
+  BattleRoomAttrValue atk = 5; // 卡牌战力
+  BattleRoomAttrValue fee = 6; // 卡牌消耗
+}
+
+// 玩家实例状态
+message BattleRoomPlayerData {
+  string player_id = 1;
+  string name = 2;
+  uint32 level = 3;
+  bool is_ai = 4; // AI 托管
+  repeated string card_draw_order = 5; // 抽卡顺序
+  map<string, BattleRoomCardData> unused_cards = 6; // 卡组卡牌
+  map<string, BattleRoomCardData> hand_cards = 7; // 手牌
+}
+
+// 玩家在环境的状态
+message BattleRoomEnvironmentPlayerData {
+  BattleRoomAttrValue atk_total = 1; // 玩家在该环境的总战力
+  repeated BattleRoomCardData placed_cards = 2; // 已放置的卡牌
+}
+
+// 环境
+message BattleRoomEnvironmentData {
+  string inst_id = 1;
+  int32 environment_type = 2;
+  map<string, BattleRoomEnvironmentPlayerData> players = 3;
+}

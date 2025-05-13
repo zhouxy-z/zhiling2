@@ -1,0 +1,48 @@
+
+ui_result_draw.png
+size: 1028,1028
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+3a
+  rotate: true
+  xy: 488, 98
+  size: 425, 276
+  orig: 425, 276
+  offset: 0, 0
+  index: -1
+3b
+  rotate: false
+  xy: 8, 48
+  size: 472, 475
+  orig: 488, 491
+  offset: 7, 8
+  index: -1
+3c
+  rotate: false
+  xy: 8, 531
+  size: 483, 488
+  orig: 483, 488
+  offset: 0, 0
+  index: -1
+3d
+  rotate: true
+  xy: 499, 729
+  size: 290, 234
+  orig: 291, 234
+  offset: 0, 0
+  index: -1
+black_00000
+  rotate: false
+  xy: 8, 8
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+draw
+  rotate: false
+  xy: 499, 547
+  size: 370, 174
+  orig: 370, 174
+  offset: 0, 0
+  index: -1

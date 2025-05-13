@@ -1,0 +1,122 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.player.proto";
+import "base/model.logic.proto";
+
+message BattleCardUpgradeReq {
+  string card_id = 1;
+  uint32 target_quality = 2;
+}
+
+message BattleCardUpgradeRes {
+  base.Res res = 1;
+  repeated base.Thing reward = 2;
+}
+
+message GetPlayerDecksRes {
+  base.Res res = 1;
+  repeated base.DeckAttrs decks = 2;
+}
+
+message SetDeckAttrsReq {
+  base.DeckAttrs attrs = 1; // 如果deck id为空，表示新增，否则表示修改
+  bool is_default = 2;
+}
+
+message SetDeckAttrsRes {
+  base.Res res = 1;
+  base.DeckAttrs attrs = 2;
+}
+
+message GetDeckCardsReq {
+  string deck_id = 1;
+}
+
+message GetDeckCardsRes {
+  base.Res res = 1;
+  map<string, base.BattleCard> cards = 2;
+}
+
+message SetDeckCardsReq {
+  string deck_id = 1;
+  base.DeckAttrs attrs = 2; // 同时修改属性
+  repeated string card_ids = 3; // 卡牌唯一ID
+}
+
+message SetDeckCardsRes {
+  base.Res res = 1;
+  base.DeckAttrs attrs = 2; // 同时修改属性
+  map<string, base.BattleCard> cards = 3;
+}
+
+message SetDeckDefaultReq {
+  string deck_id = 1;
+}
+
+message SetDeckDefaultRes {
+  base.Res res = 1;
+  base.DeckAttrs attrs = 2; // 同时修改属性
+  map<string, base.BattleCard> cards = 3;
+}
+
+message PlayerDefaultDeckPush {
+  string deck_id = 1;
+  base.DeckAttrs attrs = 2; // 同时修改属性
+  map<string, base.BattleCard> cards = 3;
+}
+
+message DelDeckReq {
+  string deck_id = 1;
+}
+
+message DelDeckRes {
+  base.Res res = 1;
+  string deck_id = 2;
+}
+
+message SendGiveMailReq {
+  string receiver_id = 1;
+  map<uint64, uint64> items = 2;
+}
+
+message SendGiveMailRes {
+  base.Res res = 1; // ResCode 1222 风控触发
+}
+
+message GetProcessBoxRewardsRes {
+  base.Res res = 1;
+  repeated base.ProcessBoxReward rewards = 2;
+}
+
+message ProcessBoxOpenReq {
+  uint32 box_id = 1;
+  uint32 open_count = 2;
+}
+
+message ProcessBoxOpenRes {
+  base.Res res = 1;
+  base.ProcessBoxReward box_reward = 2;
+  repeated base.Thing reward_things = 3;
+}
+
+message PlayerLevelRewardClaimReq {
+  int32 level = 1;
+}
+
+message PlayerLevelRewardClaimRes {
+  base.Res res = 1;
+  base.Thing reward_thing = 2;
+  base.PlayerLevelRewardCache level_reward = 3;
+}
+
+message GetPlayerLevelRewardsRes {
+  base.Res res = 1;
+  map<int64, base.PlayerLevelRewardCache>  level_rewards = 2; // 等级：奖励
+}
+
+message PlayerDailyTaskRefreshTimesChangePush { // 根据before和change计算最新的更新（每日重置会推送0，0的数据）
+  int32 change = 1;
+  int32 change_before = 2;
+}

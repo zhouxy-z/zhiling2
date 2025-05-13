@@ -1,0 +1,9 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/model.guild.proto";
+
+message EventGuildCreate {
+  string player_id = 1;
+  base.Guild guild = 2;
+}

@@ -1,0 +1,118 @@
+
+cardrole_0019.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 271, 390
+  size: 73, 72
+  orig: 73, 72
+  offset: 0, 0
+  index: -1
+10
+  rotate: false
+  xy: 271, 286
+  size: 56, 51
+  orig: 57, 51
+  offset: 0, 0
+  index: -1
+11
+  rotate: false
+  xy: 271, 339
+  size: 59, 49
+  orig: 59, 49
+  offset: 0, 0
+  index: -1
+12
+  rotate: true
+  xy: 96, 3
+  size: 36, 77
+  orig: 36, 77
+  offset: 0, 0
+  index: -1
+13
+  rotate: true
+  xy: 2, 41
+  size: 172, 114
+  orig: 172, 114
+  offset: 0, 0
+  index: -1
+14
+  rotate: true
+  xy: 2, 3
+  size: 36, 92
+  orig: 36, 92
+  offset: 0, 0
+  index: -1
+15
+  rotate: false
+  xy: 2, 215
+  size: 267, 293
+  orig: 267, 293
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 175, 4
+  size: 115, 76
+  orig: 115, 81
+  offset: 0, 5
+  index: -1
+3
+  rotate: true
+  xy: 346, 321
+  size: 69, 51
+  orig: 70, 51
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 403, 326
+  size: 72, 65
+  orig: 72, 66
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 271, 464
+  size: 127, 44
+  orig: 128, 44
+  offset: 1, 0
+  index: -1
+6
+  rotate: true
+  xy: 361, 392
+  size: 70, 34
+  orig: 70, 34
+  offset: 0, 0
+  index: -1
+7
+  rotate: false
+  xy: 292, 5
+  size: 109, 75
+  orig: 109, 75
+  offset: 0, 0
+  index: -1
+8
+  rotate: false
+  xy: 403, 459
+  size: 99, 49
+  orig: 99, 50
+  offset: 0, 0
+  index: -1
+9
+  rotate: false
+  xy: 397, 393
+  size: 111, 64
+  orig: 112, 65
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 118, 82
+  size: 241, 131
+  orig: 250, 141
+  offset: 5, 5
+  index: -1

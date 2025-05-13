@@ -1,0 +1,83 @@
+
+cardrole_0016.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 117, 191
+  size: 110, 100
+  orig: 110, 101
+  offset: 0, 1
+  index: -1
+denglong1
+  rotate: true
+  xy: 2, 7
+  size: 93, 88
+  orig: 158, 118
+  offset: 34, 7
+  index: -1
+denglong2
+  rotate: false
+  xy: 92, 2
+  size: 55, 76
+  orig: 55, 76
+  offset: 0, 0
+  index: -1
+ed1
+  rotate: false
+  xy: 2, 102
+  size: 113, 199
+  orig: 113, 199
+  offset: 0, 0
+  index: -1
+ed2
+  rotate: false
+  xy: 273, 116
+  size: 101, 229
+  orig: 101, 233
+  offset: 0, 4
+  index: -1
+head
+  rotate: false
+  xy: 2, 303
+  size: 269, 267
+  orig: 269, 268
+  offset: 0, 0
+  index: -1
+hf
+  rotate: true
+  xy: 270, 28
+  size: 86, 96
+  orig: 86, 96
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 273, 347
+  size: 223, 122
+  orig: 231, 130
+  offset: 4, 4
+  index: -1
+ypf
+  rotate: true
+  xy: 210, 107
+  size: 82, 58
+  orig: 82, 58
+  offset: 0, 0
+  index: -1
+ys
+  rotate: false
+  xy: 219, 252
+  size: 46, 49
+  orig: 46, 49
+  offset: 0, 0
+  index: -1
+zs
+  rotate: true
+  xy: 117, 80
+  size: 109, 91
+  orig: 109, 91
+  offset: 0, 0
+  index: -1

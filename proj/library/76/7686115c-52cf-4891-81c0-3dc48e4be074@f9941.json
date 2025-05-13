@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pz1",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1667,
+      "height": 750
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 1667,
+      "height": 750
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "vertices": {
+      "rawPosition": [
+        -833.5,
+        -375,
+        0,
+        833.5,
+        -375,
+        0,
+        -833.5,
+        375,
+        0,
+        833.5,
+        375,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        750,
+        1667,
+        750,
+        0,
+        0,
+        1667,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -833.5,
+        "y": -375,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 833.5,
+        "y": 375,
+        "z": 0
+      }
+    },
+    "texture": "7686115c-52cf-4891-81c0-3dc48e4be074@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

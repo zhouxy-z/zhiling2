@@ -1,0 +1,60 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.player.proto";
+import "base/model.shop.proto";
+
+message ShopBuyItemReq {
+  uint32 shop_index_id = 1;//商店id
+  uint32 buy_id = 2;//购买的商品ID
+  uint64 buy_count = 3;//购买的数量
+}
+
+message ShopBuyItemRes {
+  base.Res res = 1;
+  repeated base.Thing new_things = 2;
+  base.ShopIndexContent shop_index_content = 3;
+}
+
+message ShopDoLuckyReq {
+  uint32 shop_index_id = 1;//商店id
+  bool skip_free = 2;//是否跳过免费抽奖
+  uint32 count = 3;//抽奖次数, 1 或 10
+  uint32 convert_count = 4;//兑换的次数
+}
+
+message ShopDoLuckyRes {
+  base.Res res = 1;
+  repeated base.Thing new_things = 2;
+  base.ShopIndexContent shop_index_content = 3;
+}
+
+message ShopGetIndexReq {
+  repeated uint32 shop_index_id = 1;// 商店索引ID, 不传表示获取所有类型的商店
+}
+
+message ShopGetIndexRes {
+  base.Res res = 1;
+  repeated base.ShopIndexContent shop_index_content = 2;
+}
+
+// 手动刷新商店
+message ShopManualRefreshReq {
+  uint32 shop_index_id = 1;//商店id
+}
+
+message ShopManualRefreshRes {
+  base.Res res = 1;
+  base.ShopIndexContent shop_index_content = 2;
+}
+
+message ShopConvertLuckyItemReq {
+  uint32 shop_index_id = 1;//商店id
+  uint32 count = 2;//兑换的次数
+}
+
+message ShopConvertLuckyItemRes {
+  base.Res res = 1;
+  repeated base.Thing new_things = 2;
+}

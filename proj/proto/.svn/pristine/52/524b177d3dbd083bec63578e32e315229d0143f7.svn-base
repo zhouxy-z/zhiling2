@@ -1,0 +1,96 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+// 玩家信息
+message PlayerGuild {
+    string player_id = 1;
+    string guild_id = 2;
+    string message = 3; // 留言
+}
+
+// 公会信息
+message Guild {
+    // 公开字段
+    string guild_id = 1;
+    int32 type = 2; // 公会类型
+    string name = 3;
+    int32 level = 4;
+    int32 exp = 5;
+    string logo = 6;
+    int64 create_time = 7; // 创建时间
+    GuildAnnouncement announcement = 8;
+    GuildJoinCriteria join_criteria = 9; // 公会加入条件
+    GuildMember leader_info = 10; // 公会会长信息
+    int32 member_count = 11; // 仅用于显示
+
+    // 私有字段
+    int32 name_changed = 12; // 名称修改次数
+    map<string, GuildMember> members = 13; // 所有成员信息
+}
+
+message GuildAnnouncement {
+    string content = 1;
+}
+
+// 公会成员
+message GuildMember {
+    string player_id = 1;
+    int32 role = 2; // 成员类型, 见配置表
+    int64 join_time = 3;
+    string appointed_by = 4; // 任命者
+
+    // 这些字段不落库mongo
+    string name = 5;
+    string message = 6;
+    int32 level = 7;
+    int32 battle_power = 8;
+}
+
+// 公会申请
+message GuildApplication {
+    string guild_id = 1;
+    string player_id = 2;
+    int64 time = 3;
+
+    // 这些字段不落库mongo
+    string name = 4;
+    string message = 5;
+    int32 level = 6;
+    int32 battle_power = 7;
+}
+
+// 公会事件类型
+enum GuildEventType {
+    GUILD_EVENT_TYPE_UNSPECIFIED = 0;
+    GUILD_EVENT_TYPE_CREATE = 1;
+    GUILD_EVENT_TYPE_JOIN = 2;
+    GUILD_EVENT_TYPE_LEAVE = 3;
+    GUILD_EVENT_TYPE_ROLE_CHANGE = 4;
+    GUILD_EVENT_TYPE_KICK = 7;
+}
+
+// 公会角色常量
+enum GuildRole {
+    GUILD_ROLE_UNSPECIFIED = 0;
+    GUILD_ROLE_LEADER = 1; // 会长
+    GUILD_ROLE_VICE_LEADER = 2; // 副会长
+    GUILD_ROLE_OFFICER = 3; // 官员
+    GUILD_ROLE_MEMBER = 4; // 成员
+}
+
+// 公会事件
+message GuildEvent {
+    string guild_id = 1; // 公会ID
+    string player_id = 2; // 事件发起者
+    string target_player_id = 3; // 目标玩家(如果有)
+    GuildEventType event_type = 4; // 事件类型
+    repeated string event_args = 5; // 事件参数
+    int64 time = 6; // 事件发生时间
+}
+
+// 公会申请审批条件
+message GuildJoinCriteria {
+    int32 need_applications = 1; // 是否需要申请
+    int32 min_home_level = 2; // 最低家园等级
+}

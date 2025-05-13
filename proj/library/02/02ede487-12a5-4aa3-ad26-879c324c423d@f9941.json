@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "已领取",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 107,
+      "height": 112
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 107,
+      "height": 112
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "vertices": {
+      "rawPosition": [
+        -53.5,
+        -56,
+        0,
+        53.5,
+        -56,
+        0,
+        -53.5,
+        56,
+        0,
+        53.5,
+        56,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        112,
+        107,
+        112,
+        0,
+        0,
+        107,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -53.5,
+        "y": -56,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 53.5,
+        "y": 56,
+        "z": 0
+      }
+    },
+    "texture": "02ede487-12a5-4aa3-ad26-879c324c423d@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

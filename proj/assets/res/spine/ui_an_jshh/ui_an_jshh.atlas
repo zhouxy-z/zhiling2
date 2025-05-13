@@ -1,0 +1,34 @@
+
+ui_an_jshh.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+d
+  rotate: false
+  xy: 10, 312
+  size: 325, 177
+  orig: 512, 512
+  offset: 92, 177
+  index: -1
+d_00000
+  rotate: false
+  xy: 10, 125
+  size: 325, 177
+  orig: 512, 512
+  offset: 92, 177
+  index: -1
+l
+  rotate: false
+  xy: 10, 10
+  size: 264, 105
+  orig: 512, 512
+  offset: 123, 215
+  index: -1
+l2_00000
+  rotate: true
+  xy: 345, 193
+  size: 296, 138
+  orig: 512, 512
+  offset: 107, 198
+  index: -1

@@ -1,0 +1,41 @@
+
+icon_battlepower.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/bz_1
+  rotate: false
+  xy: 261, 395
+  size: 262, 260
+  orig: 356, 362
+  offset: 48, 48
+  index: -1
+image/bz_2
+  rotate: false
+  xy: 2, 68
+  size: 272, 269
+  orig: 356, 362
+  offset: 44, 43
+  index: -1
+image/bz_3
+  rotate: false
+  xy: 2, 339
+  size: 257, 316
+  orig: 356, 362
+  offset: 48, 41
+  index: -1
+image/bz_4
+  rotate: true
+  xy: 276, 138
+  size: 255, 247
+  orig: 356, 362
+  offset: 3, 40
+  index: -1
+image/power_icon
+  rotate: true
+  xy: 276, 2
+  size: 134, 152
+  orig: 145, 166
+  offset: 5, 9
+  index: -1

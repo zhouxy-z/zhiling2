@@ -1,0 +1,9 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+// 约定，客户端请求消息以Req结尾，响应以Res结尾，客户端通知服务端以Notify结尾，服务端推送客户端以Push结尾
+message Res {
+  int32 code = 1;
+  string msg = 2;
+}

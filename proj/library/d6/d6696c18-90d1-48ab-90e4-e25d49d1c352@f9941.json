@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bluebtn1",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 16,
+      "width": 284,
+      "height": 112
+    },
+    "offset": {
+      "x": 0,
+      "y": -8
+    },
+    "originalSize": {
+      "width": 284,
+      "height": 128
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "vertices": {
+      "rawPosition": [
+        -142,
+        -56,
+        0,
+        142,
+        -56,
+        0,
+        -142,
+        56,
+        0,
+        142,
+        56,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        112,
+        284,
+        112,
+        0,
+        0,
+        284,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.875,
+        1,
+        0.875
+      ],
+      "minPos": {
+        "x": -142,
+        "y": -56,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 142,
+        "y": 56,
+        "z": 0
+      }
+    },
+    "texture": "d6696c18-90d1-48ab-90e4-e25d49d1c352@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

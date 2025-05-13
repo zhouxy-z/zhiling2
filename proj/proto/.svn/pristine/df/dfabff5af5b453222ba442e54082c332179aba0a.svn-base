@@ -1,0 +1,9 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/model.risk.proto";
+
+message RiskLevelPush {
+  base.RiskLevel level = 1;
+  int64 timestamp = 2; // 纳秒时间戳，客户端用于确认先后
+}

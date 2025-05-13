@@ -1,0 +1,137 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+message PlayerData {
+  string player_id = 1;
+  string player_union_id = 2;
+  bool initialized = 3;
+  int32 level = 4;
+  int64 level_exp = 15;
+  int64 created_at = 5;
+  int64 last_update_time = 6;
+  int64 last_reset_time = 7;
+  int64 last_online_time = 8;
+  int64 last_save_time = 9;
+  map<uint64, int64> item_counts = 10; // 对应 map[uint64]int64
+  repeated PlayerDataItemProduction item_productions = 11;
+  map<int32, PlayerDataTask> tasks = 12; // 对应 map[int]*PlayerDataTask
+  PlayerBenefitCard benefit_card = 13;
+  repeated BattleCard battle_cards = 14;
+}
+
+message PlayerDataBase {
+  string player_id = 1;
+  string player_union_id = 2;
+  bool initialized = 3;
+  int32 level = 4;
+  int64 created_at = 5;
+  int64 last_update_time = 6;
+  int64 last_reset_time = 7;
+  int64 last_online_time = 8;
+  int64 last_save_time = 9;
+}
+
+message PlayerDataEquity {
+  string player_id = 1;
+  string player_union_id = 2;
+  int32 level = 4;
+  map<int32, bool> equities = 10;
+}
+
+message PlayerDataTask {
+  int32 id = 1;//TopTask
+  int32 start = 2;//已完成taskId，从未完成为0
+  int32 end = 3;//已领取到的taskId，从未领取为0
+  int32 value = 4;//正在完成任务的taskId的值(第一个taskId或者已完成taskId下一级)
+  int32 task_id = 5; //如果是每日任务,该字段记录为配置id,start==end==task_id,则为该任务完成
+}
+
+message PlayerDataItemProduction {
+  uint32 id = 1;
+  uint64 item_id = 2;
+  int64 finish_time = 3;
+  uint64 count = 4;
+}
+
+message PlayerBenefitCard {
+  map<int32, int64> cards = 1; // 对应 map[int]int64
+  map<int32, uint32> claimed_day = 2; // 对应 map[int]uint32
+}
+
+message PlayerItemRecord {
+  string record_id = 1; // 对应 primitive.ObjectID
+  string player_id = 2;
+  string from_id = 10;
+  uint64 item_id = 3;
+  int64 count = 4;
+  int64 count_after = 5;
+  int64 count_before = 6;
+  string source = 7;
+  bytes data = 8;
+  int64 time = 9;
+}
+
+message BattleCard {
+  string id = 1;      // 唯一id
+  uint32 card_id = 2;  // 卡牌ID
+  uint32 level = 3;    // 等级，预留
+  uint32 quality = 4;  // 品质
+  uint32 exp = 5;      // 经验值
+  uint32 ownership_type = 6;   // 权属类型，0默认，1绑定
+  uint64 update_id = 7;       // 更新id，小于当前id的修改会被丢弃
+  int64 trade_cd = 8; // 交易CD
+  int64 nft_lock_expires = 9; // nft锁定过期事件
+  int64 created_at = 10; // 创建时间
+}
+
+message BattleCards {
+  repeated BattleCard cards = 1;
+}
+
+// Thing 结构体对应的 proto 定义
+message Thing {
+  string type = 1; // "item": 道具, "equipment": 装备, "battlecard": 卡牌, "playerexp": 玩家经验
+  ThingItem item = 2; // 道具
+  BattleCard card = 3; // 卡牌
+  uint64 player_exp = 6; // 玩家经验
+  string source = 4; // 仅对于当前Thing，内层的source会覆盖外层的source值
+  bytes data = 5;   // 仅对于当前Thing，内层的data会覆盖外层的data值
+}
+
+// ThingItem 结构体对应的 proto 定义
+message ThingItem {
+  uint64 id = 1;    // 道具 ID
+  uint64 count = 2; // 道具 数量
+}
+
+enum TaskType {
+  Task_None = 0;//无
+  Task_Login_Day = 1;//累计登录天数
+  Task_Upgrade_Card = 2;//升级卡牌次数
+  Task_Get_Card = 3;//获得对应编号卡牌
+  Task_Card_Upgrade_Level = 4;//将某个卡牌提升到对应等级
+  Task_Cost_Resource = 5;//累计消耗对应资源达到N值
+  Task_Get_Resource = 6;//累计获得对应资源达到N值
+  Task_Play_Game = 7;//使用对应卡牌参与比赛并且获得胜利（否）达到对应次数
+  Task_Play_Game_Role = 8;//使用某职业卡牌参与比赛达到对应次数并且获得胜利（否）达到对应次数
+  Task_Play_Game_Double = 9;//使用加倍并赢得比赛达到对应次数
+  Task_Play_Game_Win = 10;//用K点或者更少战力赢下一个区域达到对应次数
+  Task_Play_Game_Init = 11;//放置初始费点为某值的卡牌达到对应次数
+  Task_Play_Game_Extract = 12;//抽取卡牌达到对应次数（战斗）
+  Task_Play_Game_Move = 13;//战斗中移动卡牌达到对应次数
+  Task_Collection_Level = 14;//收藏等级达到对应等级
+  Task_Play_Game_Friend = 15;//创建或者加入好友对战达到对应次数
+  Task_Invite_Friend = 16;//成功邀请N次好友
+  Task_Invite_Friend_Count = 17;//累计邀请好友N次
+  Task_Open_Treasure = 18;//累计开启秘宝数量
+  Task_Play_Game_3Win = 19;//在一场对战中赢下3个区域达到对应次数
+  Task_Join_Guild = 20;//加入公会
+  Task_Mall_Buy = 21;//商城购买对应道具对应次数
+  Task_Reward_Pool = 22;//奖池抽奖达到对应次数
+  Task_Card_Quality = 23;//拥有对应品质的卡牌达到对应数量
+  Task_Card_Rarity = 24;//拥有对应稀有度的卡牌达到对应数量
+  Task_Season_Rank = 25;//赛季段位达到N
+  Task_Task = 26;//完成对应类型任务对应次数
+  Task_Card_Id = 1001;//获取对应卡牌编号人数
+}

@@ -1,0 +1,37 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/base.proto";
+import "base/model.pvp.proto";
+
+message GetPlayerRankInfoReq {
+  string player_id = 1;
+  int32 season_id = 2;
+  bool with_user_info = 3;
+}
+
+message GetPlayerRankInfoRes {
+  base.Res res = 1;
+  base.PlayerRankInfo rank_info = 2;
+}
+
+message GetPlayerRankInfoBatchReq {
+  repeated string player_ids = 1;
+  int32 season_id = 2;
+  bool with_user_info = 3;
+}
+
+message GetPlayerRankInfoBatchRes {
+  base.Res res = 1;
+  map<string, base.PlayerRankInfo> player_rank_info = 2; // player id : rank info
+}
+
+message GMChangePvpRankPointsReq {
+  int32 season_id = 1;
+  map<string, int64> change_points = 2;  // player id : change points
+}
+
+message GMChangePvpRankPointsRes {
+  base.Res res = 1;
+  map<string, int64> changed_points = 2; // player id : changed points
+}

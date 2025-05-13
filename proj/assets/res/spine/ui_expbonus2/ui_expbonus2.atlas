@@ -1,0 +1,13 @@
+
+ui_expbonus2.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+五角星亮
+  rotate: false
+  xy: 10, 10
+  size: 54, 60
+  orig: 54, 60
+  offset: 0, 0
+  index: -1

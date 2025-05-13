@@ -1,0 +1,76 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/model.guild.proto";
+
+message EventGuildCreate {
+  string player_id = 1;
+  base.Guild guild = 2;
+}
+
+message EventGuildDelete {
+  string player_id = 1;
+  base.Guild guild = 2;
+  string guild_id = 3;
+}
+
+message EventGuildJoin {
+  string player_id = 1;
+  string guild_id = 2;
+}
+
+message EventGuildLeave {
+  string player_id = 1;
+  string guild_id = 2;
+}
+
+message EventGuildKick {
+  string player_id = 1;
+  string guild_id = 2;
+  string target_player_id = 3;
+  base.GuildMember member_info = 4;
+}
+
+message EventGuildChangeAnnouncement {
+  string player_id = 1;
+  string guild_id = 2;
+  string announcement_text = 3;
+}
+
+message EventGuildChangeLogo {
+  string player_id = 1;
+  string guild_id = 2;
+  string logo = 3;
+}
+
+message EventGuildChangeName {
+  string player_id = 1;
+  string guild_id = 2;
+  string name = 3;
+}
+
+message EventGuildChangeJoinCriteria {
+  string player_id = 1;
+  string guild_id = 2;
+  int32 need_applications = 3;
+  int32 min_level = 4;
+}
+
+message EventGuildCreateApplications {
+  string player_id = 1;
+  string guild_id = 2;
+}
+
+message EventGuildChangeRole {
+  string player_id = 1;
+  string guild_id = 2;
+  string target_player_id = 3;
+  int32 before_role = 4;
+  int32 role = 5;
+}
+
+message EventGuildChangeLeaderRole {
+  string player_id = 1;
+  string guild_id = 2;
+  string target_player_id = 3;
+}

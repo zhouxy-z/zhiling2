@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "pb/battle_room_client.proto";
+import "pb/battle_room_mgr_client.proto";
+import "pb/common_client.proto";
+import "pb/gate_client.proto";
+import "pb/guild_client.proto";
+import "pb/guild_bank_client.proto";
+import "pb/logic_client.proto";
+import "pb/mail_client.proto";
+import "pb/market_client.proto";
+import "pb/match_client.proto";
+import "pb/player_client.proto";
+import "pb/pvp_client.proto";
+import "pb/risk_client.proto";
+import "pb/shop_client.proto";
+import "pb/user_client.proto";

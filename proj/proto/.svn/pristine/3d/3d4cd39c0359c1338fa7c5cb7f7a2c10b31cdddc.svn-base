@@ -1,0 +1,60 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/base.proto";
+import "base/model.player.proto";
+
+message PlayerIdReq {
+  string player_id = 1;
+}
+
+message GetPlayerBaseDataRes {
+  base.Res res = 1;
+  base.PlayerDataBase base_data = 2;
+}
+
+message PlayerCreateReq {
+  string player_id = 1;
+  string union_id = 2;
+}
+
+message PlayerCreateRes {
+  base.Res res = 1;
+}
+
+message PlayerChangeThingsReq {
+  string player_id = 1;
+  string source = 2;
+  bytes data = 3;
+  repeated base.Thing things = 4;
+}
+
+message PlayerChangeThingsRes {
+  base.Res res = 1;
+}
+
+message PlayerBattleCardsCheckRes {
+  base.Res res = 1;
+}
+
+message PlayerBattleCardsGetReq {
+  string player_id = 1;
+  repeated string card_ids = 2;
+}
+
+message PlayerBattleCardsGetRes {
+  base.Res res = 1;
+  map <string, base.BattleCard> cards = 2;
+}
+
+message PlayerBattleCardsUpdateReq {
+  string player_id = 1;
+  string source = 2;
+  bytes data = 3;
+  repeated base.BattleCard updateCards = 4; // 卡牌更新数据
+  repeated base.Thing consume_things = 5;   // 卡牌更新同步需要消耗的物品
+}
+
+message PlayerBattleCardsUpdateRes {
+  base.Res res = 1;
+}

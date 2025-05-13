@@ -1,0 +1,17 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+enum BattleRoomOpInputType {
+  In_HandToTerrain = 0; // 手牌移动到环境
+}
+
+message BattleRoomOpInput {
+  BattleRoomOpInputType op_type = 1;
+  BattleRoomOpInput_HandToTerrain HandToTerrain = 2; 
+}
+
+message BattleRoomOpInput_HandToTerrain {
+  string card_inst_id = 1;// 手牌实例id
+  string terrain_inst_id = 2; // 环境实例id
+}

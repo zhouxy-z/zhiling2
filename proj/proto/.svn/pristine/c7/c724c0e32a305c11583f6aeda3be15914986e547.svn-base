@@ -1,0 +1,168 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/base.proto";
+import "base/model.player.proto";
+
+message PlayerIdReq {
+  string player_id = 1;
+}
+
+message GetPlayerAllDataRes {
+  base.Res res = 1;
+  base.PlayerData data = 2;
+}
+
+message GetPlayerBaseDataRes {
+  base.Res res = 1;
+  base.PlayerDataBase base_data = 2;
+}
+
+message PlayerCreateReq {
+  string player_id = 1;
+  string union_id = 2;
+}
+
+message PlayerCreateRes {
+  base.Res res = 1;
+}
+
+message PlayerChangeThingsReq {
+  string player_id = 1;
+  string source = 2;
+  bytes data = 3;
+  repeated base.Thing things = 4;
+  map<string, bool> mark_status_set = 5;
+}
+
+message PlayerChangeThingsRes {
+  base.Res res = 1;
+}
+
+message PlayerBattleCardsCheckRes {
+  base.Res res = 1;
+}
+
+message PlayerBattleCardsGetReq {
+  string player_id = 1;
+  repeated string card_ids = 2;
+}
+
+message PlayerBattleCardsGetRes {
+  base.Res res = 1;
+  map <string, base.BattleCard> cards = 2;
+}
+
+message PlayerBattleCardsGetAllRes {
+  base.Res res = 1;
+  repeated base.BattleCard cards = 2;
+}
+
+message PlayerBattleCardsUpdateReq {
+  string player_id = 1;
+  string source = 2;
+  bytes data = 3;
+  repeated base.BattleCard updateCards = 4; // 卡牌更新数据
+  repeated base.Thing consume_things = 5;   // 卡牌更新同步需要消耗的物品
+}
+
+message PlayerBattleCardsUpdateRes {
+  base.Res res = 1;
+}
+
+message GetPlayerEquitiesRes {
+  base.Res res = 1;
+  base.PlayerDataEquity data = 2;
+}
+
+message GetPlayerEquitiesBatchReq {
+  string player_id = 1;
+  repeated string player_ids = 2;
+  map<string, bool> look_servers = 3;
+}
+
+message GetPlayerEquitiesBatchRes {
+  base.Res res = 1;
+  map<string, base.PlayerDataEquity> player_data = 2;
+}
+
+message GetPlayerItemRecordsReq {
+  string player_id = 1;
+  string from_id = 2;
+  string start = 3; // 查询起始id，用作分页
+  uint64 item_id = 4; // 道具ID，可选
+  int32 limit = 5; // 每页数据量，默认10
+  repeated string sources = 6; // source来源筛选
+}
+
+message GetPlayerItemRecordsRes {
+  base.Res res = 1;
+  repeated base.PlayerItemRecord records = 2;
+  int64 total = 3;
+}
+
+message PlayerRefreshDailyTaskReq {
+  string player_id = 1;
+  repeated base.Thing consume_things = 2;
+}
+
+message PlayerRefreshDailyTaskRes {
+  base.Res res = 1;
+}
+
+message GetPlayerItemsCountReq {
+  string player_id = 1;
+  repeated uint64 item_ids = 2; // 道具id
+  repeated string mark_status = 3; // 标记状态
+}
+
+message GetPlayerItemsCountRes {
+  base.Res res = 1;
+  map<uint64, int64> item_count = 2;  // 道具id : 道具数量
+  map<string, bool> mark_status = 3; // 标识：状态
+}
+
+message GetPlayerMarkStatusReq {
+  string player_id = 1;
+  repeated string mark_status = 2; // 标记状态
+}
+
+message GetPlayerMarkStatusRes {
+  base.Res res = 1;
+  map<string, bool> mark_status = 2; // 标识：状态
+}
+
+message SetPlayerMarkStatusReq {
+  string player_id = 1;
+  map<string, bool> mark_status_set = 2; // 标识：状态
+  bool force_update_with_no_check = 3; // 预留，强制更新不检查，谨慎使用
+}
+
+message SetPlayerMarkStatusRes {
+  base.Res res = 1;
+}
+
+message PlayerBenefitCardAddReq {
+  string player_id = 1;
+  int32 benefit_card_id= 2; // 权益卡ID
+  int64 add_duration = 3; // 添加时间（秒）
+  repeated base.Thing add_things= 4; // 可选：同时增加的物品
+  string source = 5; // 来源标识
+  bytes data = 6; // 来源标识数据
+}
+
+message PlayerBenefitCardAddRes {
+  base.Res res = 1;
+}
+
+message PlayerBenefitCardRemoveReq {
+  string player_id = 1;
+  int32 benefit_card_id= 2; // 权益卡ID
+  int64 remove_duration = 3; // 移除时间（秒），为0直接截止
+  string source = 5; // 来源标识
+  bytes data = 6; // 来源标识数据
+}
+
+message PlayerBenefitCardRemoveRes {
+  base.Res res = 1;
+}

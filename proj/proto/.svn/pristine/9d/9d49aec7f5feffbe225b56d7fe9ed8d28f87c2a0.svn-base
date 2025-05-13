@@ -1,0 +1,32 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/ps";
+package ps;
+import "base/base.proto";
+import "base/model.battle.proto";
+
+// 请求创建房间 (由其他服务器调用)
+message CreateBattleMgrRoomReq {
+  base.BattleRoomContext context = 1;
+}
+
+message CreateBattleMgrRoomRes {
+  base.Res res = 1;
+}
+
+// 创建房间通知 (由 battle 通知 battle_mgr)
+message CreateBattleMgrRoomNotifyReq { 
+  base.BattleRoomSummary room_summary = 1;
+}
+
+message CreateBattleMgrRoomNotifyRes {
+  base.Res res = 1;
+}
+
+// 销毁房间通知 (由 battle 通知 battle_mgr)
+message DestroyBattleMgrRoomNotifyReq {
+  string room_id = 1;
+}
+
+message DestroyBattleMgrRoomNotifyRes {
+  base.Res res = 1;
+}

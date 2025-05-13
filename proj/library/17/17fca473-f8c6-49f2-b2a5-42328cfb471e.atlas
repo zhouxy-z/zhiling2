@@ -1,0 +1,13 @@
+
+skill_0038_3.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/wenhao
+  rotate: false
+  xy: 2, 2
+  size: 105, 126
+  orig: 116, 137
+  offset: 5, 7
+  index: -1

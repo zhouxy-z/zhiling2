@@ -1,0 +1,167 @@
+
+card_0004.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 477
+  size: 384, 531
+  orig: 384, 543
+  offset: 0, 0
+  index: -1
+bomao
+  rotate: false
+  xy: 257, 5
+  size: 264, 143
+  orig: 264, 143
+  offset: 0, 0
+  index: -1
+eye1
+  rotate: false
+  xy: 220, 125
+  size: 35, 23
+  orig: 37, 23
+  offset: 0, 0
+  index: -1
+eye2
+  rotate: true
+  xy: 236, 100
+  size: 23, 17
+  orig: 25, 18
+  offset: 2, 1
+  index: -1
+hand
+  rotate: false
+  xy: 2, 125
+  size: 177, 350
+  orig: 177, 350
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 388, 597
+  size: 170, 156
+  orig: 185, 171
+  offset: 0, 15
+  index: -1
+m
+  rotate: false
+  xy: 446, 489
+  size: 54, 38
+  orig: 54, 38
+  offset: 0, 0
+  index: -1
+meimao1
+  rotate: false
+  xy: 388, 483
+  size: 56, 44
+  orig: 63, 44
+  offset: 7, 0
+  index: -1
+meimao2
+  rotate: false
+  xy: 181, 125
+  size: 37, 23
+  orig: 37, 23
+  offset: 0, 0
+  index: -1
+mm1
+  rotate: false
+  xy: 416, 340
+  size: 53, 73
+  orig: 62, 73
+  offset: 0, 0
+  index: -1
+mm2
+  rotate: true
+  xy: 357, 161
+  size: 66, 95
+  orig: 66, 95
+  offset: 0, 0
+  index: -1
+mm3
+  rotate: true
+  xy: 416, 238
+  size: 37, 54
+  orig: 37, 54
+  offset: 0, 0
+  index: -1
+shou
+  rotate: false
+  xy: 181, 229
+  size: 233, 246
+  orig: 233, 246
+  offset: 0, 0
+  index: -1
+yifuyou
+  rotate: true
+  xy: 2, 2
+  size: 121, 232
+  orig: 121, 232
+  offset: 0, 0
+  index: -1
+yifuzuo
+  rotate: true
+  xy: 181, 150
+  size: 77, 174
+  orig: 77, 174
+  offset: 0, 0
+  index: -1
+zy
+  rotate: true
+  xy: 388, 769
+  size: 239, 209
+  orig: 239, 210
+  offset: 0, 0
+  index: -1
+zz0
+  rotate: false
+  xy: 454, 188
+  size: 47, 48
+  orig: 54, 49
+  offset: 7, 1
+  index: -1
+zz1
+  rotate: false
+  xy: 388, 529
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+zz2
+  rotate: false
+  xy: 416, 415
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+zz3
+  rotate: false
+  xy: 456, 531
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+zz4
+  rotate: false
+  xy: 484, 430
+  size: 57, 57
+  orig: 57, 57
+  offset: 0, 0
+  index: -1
+zz5
+  rotate: false
+  xy: 416, 277
+  size: 61, 61
+  orig: 61, 61
+  offset: 0, 0
+  index: -1
+zz6
+  rotate: false
+  xy: 471, 355
+  size: 58, 58
+  orig: 58, 58
+  offset: 0, 0
+  index: -1

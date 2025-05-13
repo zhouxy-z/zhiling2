@@ -1,0 +1,11 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+
+message Server {
+  string id = 1;
+}
+
+message ReqWithServer {
+  Server server = 1;
+}

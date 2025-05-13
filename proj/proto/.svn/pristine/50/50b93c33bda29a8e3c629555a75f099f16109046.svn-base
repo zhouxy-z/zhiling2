@@ -1,0 +1,274 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+import "base/base.proto";
+import "base/model.guild.proto";
+package pb;
+
+// 创建公会请求
+message GuildCreateReq {
+  string name = 1; 
+  uint32 create_type = 2;  // 创建的公会类型
+  string logo = 3;
+  base.GuildAnnouncement announcement = 4; // 公告
+  base.GuildJoinCriteria join_criteria = 5; // 公会加入条件
+}
+
+message GuildCreateRes {
+  base.Res res = 1;
+  base.Guild guild = 2;
+}
+
+// 获取自己的公会
+message GuildGetSelfReq {
+
+}
+
+message GuildGetSelfRes {
+  base.Res res = 1;
+  base.Guild guild = 2;
+}
+
+// 获取自己公会的事件
+message GuildGetSelfEventRes {
+
+}
+
+message GuildGetSelfEventReq {
+  base.Res res = 1;
+	base.GuildEvent events = 2;
+}
+
+// 修改心情留言
+message GuildChangeSelfMessageReq {
+    string new_message = 1;
+}
+
+message GuildChangeSelfMessageRes {
+    base.Res res = 1;
+    string new_message = 2;
+}
+
+// 修改公会logo
+message GuildChangeLogoReq {
+    string guild_id = 1;
+    string new_logo = 2;
+}
+
+message GuildChangeLogoRes {
+    base.Res res = 1;
+    string guild_id = 2;
+    string new_logo = 3;
+}
+
+// 修改公会名称
+message GuildChangeNameReq {
+    string guild_id = 1;
+    string new_name = 2;
+}
+
+message GuildChangeNameRes {
+    base.Res res = 1;
+    string guild_id = 2;
+    string new_name = 3;
+    int32 new_count = 4;
+}
+
+// 踢出成员
+message GuildKickReq {
+    string guild_id = 1;
+    string player_id = 2;
+}
+
+message GuildKickRes {
+    base.Res res = 1;
+    string guild_id = 2;
+    string player_id = 3;
+}
+
+// 修改成员角色
+message GuildChangeMemberRoleReq {
+    string guild_id = 1;
+    string player_id = 2;
+    int32 role_id = 3;
+}
+
+message GuildChangeMemberRoleRes {
+    base.Res res = 1;
+    string guild_id = 2;
+    string player_id = 3;
+    int32 role_id = 4;
+}
+
+// 转让会长
+message GuildChangeMemberLeaderReq {
+    string guild_id = 1;
+    string player_id = 2;
+}
+
+message GuildChangeMemberLeaderRes {
+    base.Res res = 1;
+    string guild_id = 2;
+    string player_id = 3;
+}
+
+// 修改公告
+message GuildChangeAnnouncementReq {
+    string guild_id = 1;
+    base.GuildAnnouncement new_announcement = 2;
+}
+
+message GuildChangeAnnouncementRes {
+    base.Res res = 1;
+    string guild_id = 2;
+    base.GuildAnnouncement new_announcement = 3;
+}
+
+// 修改加入条件
+message GuildChangeJoinCriteriaReq {
+    string guild_id = 1;
+    base.GuildJoinCriteria new_join_criteria = 2;
+}
+
+message GuildChangeJoinCriteriaRes {
+    base.Res res = 1;
+    string guild_id = 2;
+    base.GuildJoinCriteria new_join_criteria = 3;
+}
+
+// 获取推荐列表
+message GuildRecommendedListReq {
+    int32 count = 1;
+}
+
+message GuildRecommendedListRes {
+    base.Res res = 1;
+    repeated base.Guild guild_list = 2;
+}
+
+// 搜索公会
+message GuildSearchByNameReq {
+    string name = 1;
+    int32 count = 2;
+}
+
+message GuildSearchByNameRes {
+    base.Res res = 1;
+    repeated base.Guild guild_list = 2;
+}
+
+message GuildSearchByIDReq {
+    repeated string guild_id_list = 1;
+    bool show_member = 2;
+}
+
+message GuildSearchByIDRes {
+    base.Res res = 1;
+    repeated base.Guild guild_list = 2;
+}
+
+// 申请加入
+message GuildJoinReq {
+    string guild_id = 1;
+}
+
+message GuildJoinRes {
+    base.Res res = 1;
+    string guild_id = 2;
+    bool is_join_immediately = 3;
+    bool is_send_applications = 4;
+    base.GuildApplication send_applications = 5;
+    base.Guild guild = 6;
+}
+
+// 申请离开
+message GuildLeaveReq {
+    string guild_id = 1;
+}
+
+message GuildLeaveRes {
+    base.Res res = 1;
+    string guild_id = 2;
+}
+
+// 获取上次离开公会的时间
+message GuildLastLeaveTimeReq {
+}
+
+message GuildLastLeaveTimeRes {
+    base.Res res = 1;
+    int64 time = 2; // 0 表示还没离开过
+}
+
+// 获取当前公会所有加入申请
+message GuildGetApplicationsReq {
+    string guild_id = 1;
+}
+
+message GuildGetApplicationsRes {
+    base.Res res = 1;
+    repeated base.GuildApplication applications = 2;
+}
+
+// 审批申请
+message GuildApprovalApplicationsReq {
+    string guild_id = 1;
+    repeated string applications_ids = 2;
+    bool is_permit = 3; // 是否许可加入 (否则就是拒绝)
+}
+
+message GuildApprovalApplicationsRes {
+    base.Res res = 1;
+    bool is_permit = 2;
+    repeated string applications_ids = 3;
+    repeated string failed_applications_ids = 4;
+    repeated int32 failed_applications_ids_codes = 5;
+}
+
+// 获取自己发出的申请
+message GuildGetSelfApplicationsReq {
+}
+
+message GuildGetSelfApplicationsRes {
+    base.Res res = 1;
+    repeated base.GuildApplication applications = 2;
+}
+
+message GuildRankingData {
+    repeated base.Guild guilds = 1;
+}
+
+// 获取公会排行榜列表
+message GuildGetRankingListReq {
+    int32 count = 1;
+}
+
+message GuildGetRankingListRes {
+    base.Res res = 1;
+    map<int32, GuildRankingData> guild_ranking = 2;
+}
+
+// ------------------ 推送
+
+// 公会成员更新
+message GuildMemberChangePush {
+    string guild_id = 1;
+    repeated base.GuildMember member_add = 2;
+    repeated base.GuildMember member_remove = 3;
+    repeated base.GuildMember member_update = 4;
+}
+
+// 被别人审批加入时推送
+message GuildJoinPush {
+    string guild_id = 1;
+    base.Guild guild = 2;
+}
+
+// 踢人推送
+message GuildKickPush {
+    string guild_id = 1;
+}
+
+// 公会基础信息发生改变时推送
+message GuildInfoChangePush {
+    base.Guild guild = 1;
+}

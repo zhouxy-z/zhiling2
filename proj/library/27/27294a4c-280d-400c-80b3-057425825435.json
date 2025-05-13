@@ -1,0 +1,159 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "ui_an_djgl",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "N9GQ1lqrRn3LzQJUWog+mQ2nfNU",
+      "spine": "3.8.99",
+      "x": -142,
+      "y": -64,
+      "width": 284,
+      "height": 128,
+      "images": "./images/",
+      "audio": ""
+    },
+    "bones": [
+      {
+        "name": "root"
+      }
+    ],
+    "slots": [
+      {
+        "name": "1_00000",
+        "bone": "root"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "1_00000": {
+            "1_00000": {
+              "width": 512,
+              "height": 512
+            },
+            "1_00001": {
+              "width": 512,
+              "height": 512
+            },
+            "1_00002": {
+              "width": 512,
+              "height": 512
+            },
+            "1_00003": {
+              "width": 512,
+              "height": 512
+            },
+            "1_00004": {
+              "width": 512,
+              "height": 512
+            },
+            "1_00005": {
+              "width": 512,
+              "height": 512
+            },
+            "1_00006": {
+              "width": 512,
+              "height": 512
+            },
+            "1_00007": {
+              "width": 512,
+              "height": 512
+            },
+            "1_00008": {
+              "width": 512,
+              "height": 512
+            },
+            "1_00009": {
+              "width": 512,
+              "height": 512
+            },
+            "1_00010": {
+              "width": 512,
+              "height": 512
+            },
+            "1_00011": {
+              "width": 512,
+              "height": 512
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "animation": {
+        "slots": {
+          "1_00000": {
+            "attachment": [
+              {
+                "name": "1_00000"
+              },
+              {
+                "time": 0.0333,
+                "name": "1_00001"
+              },
+              {
+                "time": 0.0667,
+                "name": "1_00002"
+              },
+              {
+                "time": 0.1,
+                "name": "1_00003"
+              },
+              {
+                "time": 0.1333,
+                "name": "1_00004"
+              },
+              {
+                "time": 0.1667,
+                "name": "1_00005"
+              },
+              {
+                "time": 0.2,
+                "name": "1_00006"
+              },
+              {
+                "time": 0.2333,
+                "name": "1_00007"
+              },
+              {
+                "time": 0.2667,
+                "name": "1_00008"
+              },
+              {
+                "time": 0.3,
+                "name": "1_00009"
+              },
+              {
+                "time": 0.3333,
+                "name": "1_00010"
+              },
+              {
+                "time": 0.3667,
+                "name": "1_00011"
+              },
+              {
+                "time": 0.4,
+                "name": null
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "textures": [
+    {
+      "__uuid__": "3635da9d-380a-4f7d-a9c6-92bdad0719a0@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    }
+  ],
+  "textureNames": [
+    "ui_an_djgl.png"
+  ],
+  "scale": 1,
+  "_atlasText": "\nui_an_djgl.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\n1_00000\n  rotate: false\n  xy: 354, 834\n  size: 331, 179\n  orig: 512, 512\n  offset: 90, 167\n  index: -1\n1_00001\n  rotate: false\n  xy: 10, 648\n  size: 330, 177\n  orig: 512, 512\n  offset: 90, 168\n  index: -1\n1_00002\n  rotate: false\n  xy: 10, 835\n  size: 334, 178\n  orig: 512, 512\n  offset: 88, 167\n  index: -1\n1_00003\n  rotate: false\n  xy: 350, 650\n  size: 330, 174\n  orig: 512, 512\n  offset: 90, 169\n  index: -1\n1_00004\n  rotate: false\n  xy: 350, 464\n  size: 328, 176\n  orig: 512, 512\n  offset: 91, 168\n  index: -1\n1_00005\n  rotate: false\n  xy: 695, 859\n  size: 318, 154\n  orig: 512, 512\n  offset: 96, 179\n  index: -1\n1_00006\n  rotate: false\n  xy: 695, 697\n  size: 317, 152\n  orig: 512, 512\n  offset: 97, 180\n  index: -1\n1_00007\n  rotate: false\n  xy: 690, 547\n  size: 310, 140\n  orig: 512, 512\n  offset: 100, 185\n  index: -1\n1_00008\n  rotate: false\n  xy: 688, 420\n  size: 291, 117\n  orig: 512, 512\n  offset: 110, 197\n  index: -1\n1_00009\n  rotate: false\n  xy: 10, 555\n  size: 276, 83\n  orig: 512, 512\n  offset: 117, 215\n  index: -1\n1_00010\n  rotate: false\n  xy: 10, 462\n  size: 275, 83\n  orig: 512, 512\n  offset: 118, 215\n  index: -1\n1_00011\n  rotate: false\n  xy: 295, 371\n  size: 274, 83\n  orig: 512, 512\n  offset: 118, 215\n  index: -1\n"
+}

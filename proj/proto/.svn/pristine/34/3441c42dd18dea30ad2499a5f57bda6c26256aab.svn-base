@@ -1,0 +1,61 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/base.proto";
+import "base/model.user.proto";
+
+message UserAuthReq {
+  string central_code = 1;
+  string verification = 2;
+}
+
+message UserAuthRes {
+  base.Res res = 1;
+  string uid = 2;
+}
+
+message GetUserInfoReq {
+  string uid = 1;
+}
+
+message GetUserInfoRes {
+  base.Res res = 1;
+  base.PlayerInfo info = 2;
+}
+
+message GetFriendsReq {
+  string uid = 1;
+  int32 level = 2;
+}
+
+message GetFriendsRes {
+  base.Res res = 1;
+  repeated base.Friend friends = 2;
+}
+
+message GetFriendsIdsReq {
+  string uid = 1;
+  int32 level = 2;
+}
+
+message GetFriendsIdsRes {
+  base.Res res = 1;
+  repeated string friends_ids = 2;
+}
+
+message CheckFriendChainReq {
+  string uid = 1;
+  string target_id = 2;
+}
+
+message CheckFriendChainRes {
+  base.Res res = 1;
+}
+
+message UserUnBindInviterReq {
+  string uid = 1;
+}
+
+message UserUnBindInviterRes {
+  base.Res res = 1;
+}

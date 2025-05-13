@@ -1,0 +1,96 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "6800fdf7-8da8-46fa-aeb1-b1a073a271b5",
+  "files": [],
+  "subMetas": {
+    "84b93": {
+      "importer": "gltf-mesh",
+      "uuid": "6800fdf7-8da8-46fa-aeb1-b1a073a271b5@84b93",
+      "displayName": "",
+      "id": "84b93",
+      "name": "light.001.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 48
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "22e2a": {
+      "importer": "gltf-material",
+      "uuid": "6800fdf7-8da8-46fa-aeb1-b1a073a271b5@22e2a",
+      "displayName": "",
+      "id": "22e2a",
+      "name": "材质.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e3cb4": {
+      "importer": "gltf-scene",
+      "uuid": "6800fdf7-8da8-46fa-aeb1-b1a073a271b5@e3cb4",
+      "displayName": "",
+      "id": "e3cb4",
+      "name": "cost_light1.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "6800fdf7-8da8-46fa-aeb1-b1a073a271b5@84b93"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "6800fdf7-8da8-46fa-aeb1-b1a073a271b5@22e2a"
+      ],
+      "scenes": [
+        "6800fdf7-8da8-46fa-aeb1-b1a073a271b5@e3cb4"
+      ]
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+"skeleton": {
+	"hash": "6+VqMz752zfeh1HKTgdvPsFq8Lo",
+	"spine": "3.8.99",
+	"x": -178,
+	"y": -181,
+	"width": 356,
+	"height": 362,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "power", "parent": "root" },
+	{ "name": "power2", "parent": "root" },
+	{ "name": "ef", "parent": "root" },
+	{ "name": "sz", "parent": "root" }
+],
+"slots": [
+	{ "name": "image/power_icon", "bone": "power", "attachment": "image/power_icon" },
+	{ "name": "image/power_icon2", "bone": "power2", "color": "ffffff00", "attachment": "image/power_icon", "blend": "screen" },
+	{ "name": "image/bz_1", "bone": "ef", "color": "ffffff00", "attachment": "image/bz_1", "blend": "screen" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"image/bz_1": {
+				"image/bz_1": { "width": 356, "height": 362 },
+				"image/bz_2": { "width": 356, "height": 362 },
+				"image/bz_3": { "width": 356, "height": 362 },
+				"image/bz_4": { "width": 356, "height": 362 }
+			},
+			"image/power_icon": {
+				"image/power_icon": { "x": 0.5, "width": 86, "height": 107 }
+			},
+			"image/power_icon2": {
+				"image/power_icon": { "x": 0.5, "width": 86, "height": 107 }
+			}
+		}
+	}
+],
+"animations": {
+	"change": {
+		"slots": {
+			"image/bz_1": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.1333, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			},
+			"image/power_icon2": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"power": {
+				"scale": [
+					{},
+					{ "time": 0.0667, "x": 0.9, "y": 0.9 },
+					{ "time": 0.2333, "x": 1.3, "y": 1.3 },
+					{ "time": 0.3, "x": 0.9, "y": 0.9 },
+					{ "time": 0.3667 }
+				]
+			},
+			"power2": {
+				"scale": [
+					{},
+					{ "time": 0.0667, "x": 0.9, "y": 0.9 },
+					{ "time": 0.3333, "x": 2.5, "y": 2.5 }
+				]
+			},
+			"ef": {
+				"scale": [
+					{ "x": 0, "y": 0 },
+					{ "time": 0.3333, "x": 1.5, "y": 1.5 }
+				]
+			},
+			"sz": {
+				"scale": [
+					{},
+					{ "time": 0.0667, "x": 0.9, "y": 0.9 },
+					{ "time": 0.1667, "x": 2, "y": 2 },
+					{ "time": 0.2333 }
+				]
+			}
+		}
+	},
+	"idle": {}
+}
+}

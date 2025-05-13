@@ -1,0 +1,10 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+
+message TaskComplexEvent {
+  string player_id = 1;
+  int32 event_count = 2;
+  int32 event_type = 3;
+  repeated int32 event_num = 4;
+}

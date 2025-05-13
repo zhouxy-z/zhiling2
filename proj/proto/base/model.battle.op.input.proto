@@ -1,0 +1,30 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+enum BattleRoomOpInputType {
+  In_HandToTerrain = 0; // 手牌移动到环境
+  In_TerrainToTerrain = 1;//区间移动卡牌
+  In_RobotHosting = 2; // 包含此OP的情况下会将实际的操作输入替换为机器人代替出牌
+}
+
+message BattleRoomOpInput {
+  BattleRoomOpInputType op_type = 1;
+  BattleRoomOpInput_HandToTerrain HandToTerrain = 2;
+  BattleRoomOpInput_TerrainToTerrain TerrainToTerrain = 3;
+  BattleRoomOpInput_RobotHosting robot_hosting = 4;
+}
+
+message BattleRoomOpInput_HandToTerrain {
+  string card_inst_id = 1;// 手牌实例id
+  string terrain_inst_id = 2; // 环境实例id
+}
+
+message BattleRoomOpInput_TerrainToTerrain {
+  string card_inst_id = 1;// 手牌实例id
+  string to_terrain_inst_id = 2; // 环境实例id
+}
+
+message BattleRoomOpInput_RobotHosting {
+
+}

@@ -1,0 +1,48 @@
+
+icon_cost.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/cost_icon
+  rotate: true
+  xy: 2, 365
+  size: 85, 95
+  orig: 85, 95
+  offset: 0, 0
+  index: -1
+image/ef_baozhu_1
+  rotate: true
+  xy: 99, 303
+  size: 147, 192
+  orig: 214, 228
+  offset: 38, 20
+  index: -1
+image/ef_baozhu_2
+  rotate: false
+  xy: 293, 298
+  size: 157, 152
+  orig: 214, 228
+  offset: 33, 44
+  index: -1
+image/ef_baozhu_3
+  rotate: false
+  xy: 2, 149
+  size: 163, 152
+  orig: 214, 228
+  offset: 29, 40
+  index: -1
+image/ef_baozhu_5
+  rotate: false
+  xy: 2, 149
+  size: 163, 152
+  orig: 214, 228
+  offset: 29, 40
+  index: -1
+image/ef_baozhu_4
+  rotate: false
+  xy: 167, 135
+  size: 168, 161
+  orig: 214, 228
+  offset: 26, 31
+  index: -1

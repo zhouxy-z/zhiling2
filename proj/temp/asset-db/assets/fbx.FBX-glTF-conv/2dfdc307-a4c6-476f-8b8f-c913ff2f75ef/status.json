@@ -1,0 +1,15 @@
+{
+  "version": "2.3.13",
+  "sourceTimeStamp": 1746501257777.206,
+  "outputTimeStamps": {
+    "card_1.png": 1746501278087.155,
+    "log.json": 1746501278102.1592,
+    "out.bin": 1746501278098.1592,
+    "out.gltf": 1746501278101.1597,
+    ".fbm/46001578/card.fbm/card_1.png": 1746501278087.155
+  },
+  "options": {
+    "smartMaterialEnabled": true,
+    "matchMeshNames": true
+  }
+}

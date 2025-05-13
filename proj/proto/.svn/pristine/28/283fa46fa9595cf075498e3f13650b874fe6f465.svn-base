@@ -1,0 +1,16 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+enum BattleRoomOpOutputType {
+  NewRound = 0; // 新回合
+}
+
+message BattleRoomOpOutput {
+  BattleRoomOpOutput evt_type = 1;
+  BattleRoomOpInput_NewRound new_round = 2;
+}
+
+message BattleRoomOpInput_NewRound {
+  uint32 new_round = 1;
+}

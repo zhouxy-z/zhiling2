@@ -1,0 +1,83 @@
+
+card_0005.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 647
+  size: 428, 374
+  orig: 428, 387
+  offset: 0, 0
+  index: -1
+bz
+  rotate: false
+  xy: 944, 772
+  size: 62, 48
+  orig: 62, 48
+  offset: 0, 0
+  index: -1
+ft02
+  rotate: false
+  xy: 432, 440
+  size: 341, 312
+  orig: 341, 313
+  offset: 0, 1
+  index: -1
+ft1
+  rotate: true
+  xy: 775, 420
+  size: 332, 193
+  orig: 332, 194
+  offset: 0, 0
+  index: -1
+pf
+  rotate: false
+  xy: 432, 754
+  size: 510, 267
+  orig: 510, 268
+  offset: 0, 1
+  index: -1
+tf1
+  rotate: false
+  xy: 944, 927
+  size: 64, 94
+  orig: 64, 94
+  offset: 0, 0
+  index: -1
+tf2
+  rotate: false
+  xy: 256, 535
+  size: 125, 110
+  orig: 125, 110
+  offset: 0, 0
+  index: -1
+tf3
+  rotate: false
+  xy: 944, 864
+  size: 73, 61
+  orig: 73, 61
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 2, 409
+  size: 236, 252
+  orig: 236, 252
+  offset: 0, 0
+  index: -1
+yj
+  rotate: false
+  xy: 944, 822
+  size: 77, 40
+  orig: 77, 40
+  offset: 0, 0
+  index: -1
+ys
+  rotate: true
+  xy: 256, 435
+  size: 98, 100
+  orig: 98, 100
+  offset: 0, 0
+  index: -1

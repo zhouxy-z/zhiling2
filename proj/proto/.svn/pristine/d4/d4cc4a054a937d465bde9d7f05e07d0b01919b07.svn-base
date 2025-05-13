@@ -1,0 +1,37 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/base.proto";
+import "base/model.market.proto";
+
+message GetMakerItemOrdersReq {
+  string player_id = 1; // 用户id
+  string order_type = 2; // 订单类型 sell卖单/buy买单
+  string start = 3; // 起始ID（用于替代offset，增强查询性能）
+  string status = 4; // 订单状态
+  int32 limit = 5; // 每页数据量
+  int32  item_type = 6; // 道具类型筛选
+  uint64 item_id = 7; // 道具ID筛选
+}
+
+message GetMakerItemOrdersRes{
+  base.Res res = 1;
+  int64 total = 2; // 数据总量
+  repeated base.MarketItemOrder orders = 3; // 道具订单列表
+}
+
+message GetTakerItemOrdersReq {
+  string player_id = 1; // 用户id
+  string order_type = 2; // 订单类型 sell卖单/buy买单
+  string start = 3; // 起始ID（用于替代offset，增强查询性能）
+  string status = 4; // 订单状态
+  int32 limit = 5; // 每页数据量
+  int32  item_type = 6; // 道具类型筛选
+  uint64 item_id = 7; // 道具ID筛选
+}
+
+message GetTakerItemOrdersRes{
+  base.Res res = 1;
+  int64 total = 2; // 数据总量
+  repeated base.MarketItemTakeOrder orders = 3; // 道具吃单订单列表
+}

@@ -1,0 +1,79 @@
+{
+"skeleton": {
+	"hash": "nVEw0XSELxEnEBJilzHfh1kGdGU",
+	"spine": "3.8.99",
+	"x": -40,
+	"y": -66,
+	"width": 81,
+	"height": 133,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "hq", "parent": "root" },
+	{ "name": "dw", "parent": "hq" }
+],
+"slots": [
+	{ "name": "image/fire05_1", "bone": "dw", "attachment": "image/fire05_1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"image/fire05_1": {
+				"image/fire05_1": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_2": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_3": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_4": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_5": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_6": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_7": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_8": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_9": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_10": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_11": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_12": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_13": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_14": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_15": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 },
+				"image/fire05_16": { "x": 0.5, "y": 0.5, "width": 81, "height": 133 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"image/fire05_1": {
+				"attachment": [
+					{ "name": "image/fire05_1" },
+					{ "time": 0.0667, "name": "image/fire05_2" },
+					{ "time": 0.1333, "name": "image/fire05_3" },
+					{ "time": 0.2, "name": "image/fire05_4" },
+					{ "time": 0.2667, "name": "image/fire05_5" },
+					{ "time": 0.3333, "name": "image/fire05_6" },
+					{ "time": 0.4, "name": "image/fire05_7" },
+					{ "time": 0.4667, "name": "image/fire05_8" },
+					{ "time": 0.5333, "name": "image/fire05_9" },
+					{ "time": 0.6, "name": "image/fire05_10" },
+					{ "time": 0.6667, "name": "image/fire05_11" },
+					{ "time": 0.7333, "name": "image/fire05_12" },
+					{ "time": 0.8, "name": "image/fire05_13" },
+					{ "time": 0.8667, "name": "image/fire05_14" },
+					{ "time": 0.9333, "name": "image/fire05_15" },
+					{ "time": 1, "name": "image/fire05_16" },
+					{ "time": 1.0667, "name": "image/fire05_1" }
+				]
+			}
+		},
+		"bones": {
+			"dw": {
+				"translate": [
+					{ "x": -2.77, "y": 35.64 }
+				]
+			}
+		}
+	}
+}
+}

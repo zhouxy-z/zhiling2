@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "进度02",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 81,
+      "height": 232
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 81,
+      "height": 232
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      45,
+      0,
+      97
+    ],
+    "vertices": {
+      "rawPosition": [
+        -40.5,
+        -116,
+        0,
+        40.5,
+        -116,
+        0,
+        -40.5,
+        116,
+        0,
+        40.5,
+        116,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        232,
+        81,
+        232,
+        0,
+        0,
+        81,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -40.5,
+        "y": -116,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 40.5,
+        "y": 116,
+        "z": 0
+      }
+    },
+    "texture": "f161c83e-2352-4c26-8625-d3a447802b40@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

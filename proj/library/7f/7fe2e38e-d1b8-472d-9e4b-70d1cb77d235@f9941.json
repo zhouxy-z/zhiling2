@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "通用货币底",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 48,
+      "height": 48
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 48,
+      "height": 48
+    },
+    "rotated": false,
+    "capInsets": [
+      18,
+      17,
+      18,
+      15
+    ],
+    "vertices": {
+      "rawPosition": [
+        -24,
+        -24,
+        0,
+        24,
+        -24,
+        0,
+        -24,
+        24,
+        0,
+        24,
+        24,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        48,
+        48,
+        48,
+        0,
+        0,
+        48,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -24,
+        "y": -24,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 24,
+        "y": 24,
+        "z": 0
+      }
+    },
+    "texture": "7fe2e38e-d1b8-472d-9e4b-70d1cb77d235@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

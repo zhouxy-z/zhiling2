@@ -1,0 +1,293 @@
+
+cardrole_0038.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 973, 1932
+  size: 100, 97
+  orig: 104, 99
+  offset: 4, 1
+  index: -1
+gh1
+  rotate: true
+  xy: 206, 1981
+  size: 48, 100
+  orig: 48, 100
+  offset: 0, 0
+  index: -1
+gh2
+  rotate: true
+  xy: 120, 1984
+  size: 45, 84
+  orig: 45, 84
+  offset: 0, 0
+  index: -1
+houfa
+  rotate: true
+  xy: 380, 1971
+  size: 58, 74
+  orig: 58, 79
+  offset: 0, 5
+  index: -1
+shadow
+  rotate: false
+  xy: 578, 1789
+  size: 261, 142
+  orig: 270, 152
+  offset: 5, 5
+  index: -1
+shuihua3_01
+  rotate: false
+  xy: 291, 1820
+  size: 285, 127
+  orig: 358, 358
+  offset: 54, 13
+  index: -1
+shuihua3_02
+  rotate: true
+  xy: 2, 972
+  size: 296, 314
+  orig: 358, 358
+  offset: 16, 15
+  index: -1
+shuihua3_03
+  rotate: true
+  xy: 1226, 1157
+  size: 278, 330
+  orig: 358, 358
+  offset: 17, 13
+  index: -1
+shuihua3_04
+  rotate: true
+  xy: 292, 1270
+  size: 273, 320
+  orig: 358, 358
+  offset: 17, 24
+  index: -1
+shuihua3_05
+  rotate: true
+  xy: 1558, 1076
+  size: 291, 335
+  orig: 358, 358
+  offset: 10, 16
+  index: -1
+shuihua3_06
+  rotate: true
+  xy: 318, 934
+  size: 296, 334
+  orig: 358, 358
+  offset: 9, 16
+  index: -1
+shuihua3_07
+  rotate: true
+  xy: 654, 914
+  size: 300, 335
+  orig: 358, 358
+  offset: 11, 18
+  index: -1
+shuihua3_08
+  rotate: true
+  xy: 1328, 769
+  size: 305, 335
+  orig: 358, 358
+  offset: 9, 19
+  index: -1
+shuihua3_09
+  rotate: true
+  xy: 991, 852
+  size: 303, 335
+  orig: 358, 358
+  offset: 11, 21
+  index: -1
+shuihua3_10
+  rotate: false
+  xy: 614, 1232
+  size: 304, 273
+  orig: 358, 358
+  offset: 13, 83
+  index: -1
+shuihua3_11
+  rotate: false
+  xy: 920, 1216
+  size: 304, 273
+  orig: 358, 358
+  offset: 13, 83
+  index: -1
+shuihua3_12
+  rotate: false
+  xy: 1032, 1759
+  size: 300, 168
+  orig: 358, 358
+  offset: 18, 188
+  index: -1
+shuihua3_13
+  rotate: false
+  xy: 2, 1872
+  size: 287, 107
+  orig: 358, 358
+  offset: 32, 248
+  index: -1
+shuihua3_14
+  rotate: false
+  xy: 1362, 1928
+  size: 285, 101
+  orig: 358, 358
+  offset: 36, 253
+  index: -1
+shuihua3_15
+  rotate: false
+  xy: 1075, 1929
+  size: 285, 100
+  orig: 358, 358
+  offset: 37, 253
+  index: -1
+shuihua3_16
+  rotate: false
+  xy: 535, 1949
+  size: 158, 80
+  orig: 358, 358
+  offset: 163, 253
+  index: -1
+shuihua4_01
+  rotate: false
+  xy: 456, 1970
+  size: 77, 59
+  orig: 358, 358
+  offset: 136, 118
+  index: -1
+shuihua4_02
+  rotate: false
+  xy: 1649, 1926
+  size: 120, 103
+  orig: 358, 358
+  offset: 117, 106
+  index: -1
+shuihua4_03
+  rotate: false
+  xy: 1771, 1894
+  size: 152, 135
+  orig: 358, 358
+  offset: 104, 100
+  index: -1
+shuihua4_04
+  rotate: false
+  xy: 841, 1762
+  size: 189, 168
+  orig: 358, 358
+  offset: 88, 91
+  index: -1
+shuihua4_05
+  rotate: false
+  xy: 1334, 1749
+  size: 225, 177
+  orig: 358, 358
+  offset: 77, 89
+  index: -1
+shuihua4_06
+  rotate: false
+  xy: 1561, 1698
+  size: 238, 194
+  orig: 358, 358
+  offset: 68, 85
+  index: -1
+shuihua4_07
+  rotate: false
+  xy: 2, 1661
+  size: 251, 209
+  orig: 358, 358
+  offset: 62, 83
+  index: -1
+shuihua4_08
+  rotate: true
+  xy: 1801, 1631
+  size: 261, 220
+  orig: 358, 358
+  offset: 55, 78
+  index: -1
+shuihua4_09
+  rotate: false
+  xy: 255, 1587
+  size: 277, 231
+  orig: 358, 358
+  offset: 47, 76
+  index: -1
+shuihua4_10
+  rotate: false
+  xy: 534, 1545
+  size: 290, 242
+  orig: 358, 358
+  offset: 42, 70
+  index: -1
+shuihua4_11
+  rotate: false
+  xy: 826, 1507
+  size: 294, 250
+  orig: 358, 358
+  offset: 40, 67
+  index: -1
+shuihua4_12
+  rotate: false
+  xy: 1122, 1491
+  size: 298, 256
+  orig: 358, 358
+  offset: 39, 65
+  index: -1
+shuihua4_13
+  rotate: false
+  xy: 1422, 1437
+  size: 302, 259
+  orig: 358, 358
+  offset: 37, 65
+  index: -1
+shuihua4_14
+  rotate: false
+  xy: 1726, 1369
+  size: 303, 260
+  orig: 358, 358
+  offset: 37, 65
+  index: -1
+shuihua4_15
+  rotate: false
+  xy: 2, 1324
+  size: 288, 261
+  orig: 358, 358
+  offset: 52, 64
+  index: -1
+shuihua4_16
+  rotate: false
+  xy: 2, 2001
+  size: 116, 28
+  orig: 358, 358
+  offset: 118, 297
+  index: -1
+tou
+  rotate: true
+  xy: 1665, 743
+  size: 331, 354
+  orig: 331, 354
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: false
+  xy: 695, 1933
+  size: 137, 96
+  orig: 137, 96
+  offset: 0, 0
+  index: -1
+youshou1
+  rotate: false
+  xy: 834, 1933
+  size: 137, 96
+  orig: 137, 96
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: false
+  xy: 308, 1972
+  size: 70, 57
+  orig: 70, 57
+  offset: 0, 0
+  index: -1

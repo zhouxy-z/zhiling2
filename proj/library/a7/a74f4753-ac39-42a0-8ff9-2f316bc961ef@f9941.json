@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "蓝大",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 139,
+      "height": 75
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 139,
+      "height": 75
+    },
+    "rotated": false,
+    "capInsets": [
+      107,
+      0,
+      6,
+      9
+    ],
+    "vertices": {
+      "rawPosition": [
+        -69.5,
+        -37.5,
+        0,
+        69.5,
+        -37.5,
+        0,
+        -69.5,
+        37.5,
+        0,
+        69.5,
+        37.5,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        75,
+        139,
+        75,
+        0,
+        0,
+        139,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -69.5,
+        "y": -37.5,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 69.5,
+        "y": 37.5,
+        "z": 0
+      }
+    },
+    "texture": "a74f4753-ac39-42a0-8ff9-2f316bc961ef@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

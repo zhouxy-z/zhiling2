@@ -1,0 +1,1 @@
+{"version":3,"sources":["file:///D:/plants_client/trunk/proj/assets/scripts/net/proto/PbUtils.ts"],"names":["p","pb"],"mappings":";;;;;;;;;;;;;;;;;;;AAAOA,MAAAA,C;AAAKC,MAAAA,E,iBAAAA,E;;;;;;;AACXA,MAAAA,EAAD,GAAc;AAAA;AAAA,kBAAEA,EAAhB","sourcesContent":["import p, { pb } from \"./proto.js\";\r\n(pb as any) = p.pb;\r\nexport default pb;\r\n"]}

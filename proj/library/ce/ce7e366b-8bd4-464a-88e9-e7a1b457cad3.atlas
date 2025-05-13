@@ -1,0 +1,13 @@
+
+skill_0009_1.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FZ_00000
+  rotate: false
+  xy: 2, 2
+  size: 173, 177
+  orig: 205, 205
+  offset: 15, 14
+  index: -1

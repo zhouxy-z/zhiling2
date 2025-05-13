@@ -1,0 +1,93 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/ps";
+package ps;
+import "base/base.proto";
+import "base/model.battle.proto";
+
+message GetBattleRoomStatusReq {
+  bool request_all_room_summary = 1;
+}
+
+message GetBattleRoomStatusRes {
+  base.Res res = 1;
+  repeated base.BattleRoomSummary all_room_summary = 3; // 当前节点内的所有战斗房间的摘要信息
+}
+
+// 获取指定房间的摘要信息
+message GetBattleRoomSummaryReq {
+  string room_id = 1; 
+}
+
+message GetBattleRoomSummaryRes {
+  base.Res res = 1;
+  base.BattleRoomSummary room_summary = 2;
+}
+
+// 创建房间
+message CreateBattleRoomReq {
+  base.BattleRoomContext context = 1;
+}
+
+message CreateBattleRoomRes {
+  base.Res res = 1;
+  base.BattleRoomSummary room_summary = 2;
+}
+
+// 获取回放信息
+message GetBattleReplayRoomReq {
+  repeated string room_id = 1;
+}
+
+message GetBattleReplayRoomRes {
+  base.Res res = 1;
+  map<string, base.BattleRoomReplaySummary> replay_room_summary = 2;
+}
+
+// 创建回放房间
+message CreateBattleReplayRoomReq {
+  string replay_room_id = 1; // 请求回放的房间ID
+  uint32 begin_round = 2; // 回放起始回合数, 从0开始，传0视为1
+  string view_player_id = 3; // 以指定玩家角度回放
+  string recv_player_id = 4; // 观看回放的玩家ID
+  bool logic_replay = 5; // 逻辑回放
+}
+
+message CreateBattleReplayRoomRes {
+  base.Res res = 1;
+  base.BattleRoomSummary room_summary = 2;
+}
+
+message GetBattleReplayDataReq {
+  string replay_room_id = 1;
+}
+
+message GetBattleReplayDataRes {
+  base.Res res = 1;
+  bytes data = 4;
+}
+
+// 玩家活跃房间状态
+message PlayerBattleRoomPlaying {
+  map<string, int64> rooms = 1; //  该玩家最后N场战斗起始时间 
+}
+
+// 获取玩家是否在房间中
+message GetPlayerBattleRoomPlayingReq {
+  repeated string player_ids = 1;
+}
+
+message GetPlayerBattleRoomPlayingRes {
+  base.Res res = 1;
+  map<string, PlayerBattleRoomPlaying> player_status = 2;
+}
+
+// 尝试退出之前任何房间以解除状态锁定
+message LeaveAllBattleRoomReq {
+  string player_id = 1;
+  repeated string leave_rooms = 2;
+}
+
+message LeaveAllBattleRoomRes {
+  base.Res res = 1;
+  repeated string leave_rooms = 2; // 成功离开的房间
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/model.market.proto";
+
+message EventMarketItemOrderMake {
+  string player_id = 1;
+  base.MarketItemOrder order = 2;
+}
+
+message EventMarketItemOrderTake {
+  string player_id = 1;
+  base.MarketItemOrder order = 2;
+}

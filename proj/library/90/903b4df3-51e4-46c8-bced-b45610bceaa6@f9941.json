@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "trade_banner_0",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1600,
+      "height": 144
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 1600,
+      "height": 144
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "vertices": {
+      "rawPosition": [
+        -800,
+        -72,
+        0,
+        800,
+        -72,
+        0,
+        -800,
+        72,
+        0,
+        800,
+        72,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        144,
+        1600,
+        144,
+        0,
+        0,
+        1600,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -800,
+        "y": -72,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 800,
+        "y": 72,
+        "z": 0
+      }
+    },
+    "texture": "903b4df3-51e4-46c8-bced-b45610bceaa6@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

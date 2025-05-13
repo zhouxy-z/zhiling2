@@ -1,0 +1,19 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/ps";
+package ps;
+import "base/base.proto";
+
+message GuildTestCaseConfigData {
+  uint32 member_max = 1;
+  uint32 vice_leader_role_max = 2;
+  uint32 officer_role_max = 3;
+  int32 accept_leader_min_join_time = 4;
+}
+
+message SetGuildTestCaseOptReq {
+  GuildTestCaseConfigData config = 1;
+}
+
+message SetGuildTestCaseOptRes {
+  base.Res res = 1;
+}

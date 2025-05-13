@@ -1,0 +1,55 @@
+
+ui_time_up.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+h
+  rotate: false
+  xy: 2, 772
+  size: 794, 130
+  orig: 796, 132
+  offset: 1, 1
+  index: -1
+s
+  rotate: true
+  xy: 2, 965
+  size: 52, 120
+  orig: 54, 122
+  offset: 1, 1
+  index: -1
+s0
+  rotate: false
+  xy: 2, 517
+  size: 293, 253
+  orig: 297, 256
+  offset: 1, 2
+  index: -1
+s1
+  rotate: false
+  xy: 663, 904
+  size: 148, 113
+  orig: 334, 119
+  offset: 2, 3
+  index: -1
+s2
+  rotate: false
+  xy: 124, 905
+  size: 328, 112
+  orig: 344, 118
+  offset: 8, 3
+  index: -1
+s3
+  rotate: false
+  xy: 454, 905
+  size: 207, 112
+  orig: 248, 118
+  offset: 7, 3
+  index: -1
+s4
+  rotate: false
+  xy: 813, 904
+  size: 204, 113
+  orig: 334, 118
+  offset: 127, 2
+  index: -1

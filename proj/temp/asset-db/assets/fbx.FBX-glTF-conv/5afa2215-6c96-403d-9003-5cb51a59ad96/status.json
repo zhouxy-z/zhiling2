@@ -1,0 +1,15 @@
+{
+  "version": "2.3.13",
+  "sourceTimeStamp": 1744788554830.727,
+  "outputTimeStamps": {
+    "log.json": 1744788851818.464,
+    "filed_02_00000.png": 1744788851799.459,
+    "out.bin": 1744788851813.4646,
+    "out.gltf": 1744788851817.4668,
+    ".fbm/5D3F1607/ys_fx.fbm/filed_02_00000.png": 1744788851799.459
+  },
+  "options": {
+    "smartMaterialEnabled": true,
+    "matchMeshNames": true
+  }
+}

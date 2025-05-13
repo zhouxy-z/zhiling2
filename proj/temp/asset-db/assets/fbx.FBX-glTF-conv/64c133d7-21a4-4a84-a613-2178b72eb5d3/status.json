@@ -1,0 +1,17 @@
+{
+  "version": "2.3.13",
+  "sourceTimeStamp": 1745410030946.1824,
+  "outputTimeStamps": {
+    "log.json": 1745410041172.2107,
+    "out.bin": 1745410041169.2092,
+    "out.gltf": 1745410041172.2107,
+    "shanzi.png": 1745410041096.1921,
+    "tablett.png": 1745410041097.1926,
+    ".fbm/5C5C15E6/table.fbm/shanzi.png": 1745410041096.1921,
+    ".fbm/5C5C15E6/table.fbm/tablett.png": 1745410041097.1926
+  },
+  "options": {
+    "smartMaterialEnabled": true,
+    "matchMeshNames": true
+  }
+}

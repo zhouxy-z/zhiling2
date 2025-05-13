@@ -1,0 +1,17 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+message BoxProcess {
+  string name = 1;
+  uint32 box_id = 2;
+  uint32 open_count = 3;
+}
+
+message DeckAttrs {
+  string id = 1; // 卡组ID
+  string name = 2; // 卡组名称
+  int32 type = 3; // 卡组类型，只读属性
+  bool is_default = 4; // 是否默认，只读属性
+  int32 size = 5; // 卡牌数量
+}

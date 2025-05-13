@@ -1,0 +1,294 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "icon_cost",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "m2NPc6kqWn3AudxzhYJm9uPJjmk",
+      "spine": "3.8.99",
+      "x": -107,
+      "y": -114,
+      "width": 214,
+      "height": 228,
+      "images": "",
+      "audio": ""
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "icon",
+        "parent": "root"
+      },
+      {
+        "name": "icon2",
+        "parent": "root"
+      },
+      {
+        "name": "ef",
+        "parent": "root"
+      },
+      {
+        "name": "sz",
+        "parent": "root"
+      }
+    ],
+    "slots": [
+      {
+        "name": "image/cost_icon",
+        "bone": "icon",
+        "attachment": "image/cost_icon"
+      },
+      {
+        "name": "image/cost_icon2",
+        "bone": "icon2",
+        "color": "ffffff00",
+        "attachment": "image/cost_icon",
+        "blend": "screen"
+      },
+      {
+        "name": "image/bz_1",
+        "bone": "ef",
+        "color": "ffffff00",
+        "attachment": "image/ef_baozhu_1",
+        "blend": "screen"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "image/bz_1": {
+            "image/ef_baozhu_1": {
+              "width": 214,
+              "height": 228
+            },
+            "image/ef_baozhu_2": {
+              "width": 214,
+              "height": 228
+            },
+            "image/ef_baozhu_3": {
+              "width": 214,
+              "height": 228
+            },
+            "image/ef_baozhu_4": {
+              "width": 214,
+              "height": 228
+            },
+            "image/ef_baozhu_5": {
+              "width": 214,
+              "height": 228
+            }
+          },
+          "image/cost_icon": {
+            "image/cost_icon": {
+              "width": 85,
+              "height": 95
+            }
+          },
+          "image/cost_icon2": {
+            "image/cost_icon": {
+              "width": 85,
+              "height": 95
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "change": {
+        "slots": {
+          "image/bz_1": {
+            "color": [
+              {
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.1,
+                "color": "ffffffff",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.1333,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.4,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "name": "image/ef_baozhu_1"
+              },
+              {
+                "time": 0.1333,
+                "name": "image/ef_baozhu_2"
+              },
+              {
+                "time": 0.2,
+                "name": "image/ef_baozhu_3"
+              },
+              {
+                "time": 0.2667,
+                "name": "image/ef_baozhu_4"
+              },
+              {
+                "time": 0.3333,
+                "name": "image/ef_baozhu_5"
+              }
+            ]
+          },
+          "image/cost_icon2": {
+            "color": [
+              {
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.0667,
+                "color": "ffffffff",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.1667,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.3333,
+                "color": "ffffff00"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "icon": {
+            "scale": [
+              {},
+              {
+                "time": 0.0667,
+                "x": 0.9,
+                "y": 0.9
+              },
+              {
+                "time": 0.2333,
+                "x": 1.3,
+                "y": 1.3
+              },
+              {
+                "time": 0.3,
+                "x": 0.9,
+                "y": 0.9
+              },
+              {
+                "time": 0.3667
+              }
+            ]
+          },
+          "icon2": {
+            "scale": [
+              {},
+              {
+                "time": 0.0667,
+                "x": 0.9,
+                "y": 0.9
+              },
+              {
+                "time": 0.3333,
+                "x": 2.5,
+                "y": 2.5
+              }
+            ]
+          },
+          "ef": {
+            "scale": [
+              {
+                "x": 0.6,
+                "y": 0.6
+              },
+              {
+                "time": 0.4,
+                "x": 1.2,
+                "y": 1.2
+              }
+            ]
+          },
+          "sz": {
+            "scale": [
+              {},
+              {
+                "time": 0.0667,
+                "x": 0.9,
+                "y": 0.9
+              },
+              {
+                "time": 0.1667,
+                "x": 2,
+                "y": 2
+              },
+              {
+                "time": 0.2333
+              }
+            ]
+          }
+        }
+      },
+      "idle": {
+        "slots": {
+          "image/bz_1": {
+            "color": [
+              {
+                "color": "ffffff00"
+              }
+            ]
+          },
+          "image/cost_icon2": {
+            "color": [
+              {
+                "color": "ffffff00"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "icon": {
+            "scale": [
+              {
+                "curve": "stepped"
+              },
+              {
+                "time": 0.1667
+              }
+            ]
+          },
+          "icon2": {
+            "scale": [
+              {}
+            ]
+          },
+          "ef": {
+            "scale": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "textures": [
+    {
+      "__uuid__": "2b8b50c6-c7b6-470f-9cb3-b6c92c2f5663@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    }
+  ],
+  "textureNames": [
+    "icon_cost.png"
+  ],
+  "scale": 1,
+  "_atlasText": "\nicon_cost.png\nsize: 512,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nimage/cost_icon\n  rotate: true\n  xy: 2, 365\n  size: 85, 95\n  orig: 85, 95\n  offset: 0, 0\n  index: -1\nimage/ef_baozhu_1\n  rotate: true\n  xy: 99, 303\n  size: 147, 192\n  orig: 214, 228\n  offset: 38, 20\n  index: -1\nimage/ef_baozhu_2\n  rotate: false\n  xy: 293, 298\n  size: 157, 152\n  orig: 214, 228\n  offset: 33, 44\n  index: -1\nimage/ef_baozhu_3\n  rotate: false\n  xy: 2, 149\n  size: 163, 152\n  orig: 214, 228\n  offset: 29, 40\n  index: -1\nimage/ef_baozhu_5\n  rotate: false\n  xy: 2, 149\n  size: 163, 152\n  orig: 214, 228\n  offset: 29, 40\n  index: -1\nimage/ef_baozhu_4\n  rotate: false\n  xy: 167, 135\n  size: 168, 161\n  orig: 214, 228\n  offset: 26, 31\n  index: -1\n"
+}

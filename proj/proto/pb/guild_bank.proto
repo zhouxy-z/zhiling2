@@ -1,0 +1,97 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+import "base/base.proto";
+import "base/model.guild.bank.proto";
+package pb;
+
+// Request for getting deposit information
+message GuildBankGetDepositInfosReq {
+    string guild_id = 1;
+}
+
+// Response for deposit information
+message GuildBankGetDepositInfosRes {
+    base.Res res = 1;
+    map<int32, base.GuildDepositTotal> totals = 2;
+    repeated base.Deposit list = 3;
+}
+
+// Request for getting deposit totals
+message GuildBankGetDepositTotalsReq {
+    string guild_id = 1;
+}
+
+// Response for deposit totals
+message GuildBankGetDepositTotalsRes {
+    base.Res res = 1;
+    repeated base.GuildDepositTotal list = 2;
+}
+
+// Request for making a deposit
+message GuildBankDepositReq {
+    string guild_id = 1;
+    string donate_id = 2;
+    int32 cost_idx = 3;
+}
+
+// Response for making a deposit
+message GuildBankDepositRes {
+    base.Res res = 1;
+    map<int32, base.GuildDepositTotal> totals = 2;
+    repeated base.Deposit list = 3;
+}
+
+// Request for getting last deposit
+message GuildBankGetLastDepositReq {
+    string guild_id = 1;
+}
+
+// Response for last deposit
+message GuildBankGetLastDepositRes {
+    base.Res res = 1;
+    base.Deposit info = 2;
+}
+
+// Request for getting donate deposits
+message GuildBankGetDonateDepositsReq {
+    string guild_id = 1;
+    string donate_id = 2;
+}
+
+// Response for donate deposits
+message GuildBankGetDonateDepositsRes {
+    base.Res res = 1;
+    int64 total = 2;
+    repeated base.Deposit list = 3;
+}
+
+// Request for getting deposits
+message GuildBankGetDepositsReq {
+    string guild_id = 1;
+    int32 contains_mode = 2;  // 0: self only, 1: whole guild
+    string status = 3;        // Filter by status: empty for no filter, "active" for active deposits, "withdrawn" for withdrawn deposits
+    int32 page = 4;
+    int32 limit = 5;
+}
+
+// Response for getting deposits
+message GuildBankGetDepositsRes {
+    base.Res res = 1; 
+    int64 total = 2;
+    repeated base.Deposit list = 3;
+}
+
+// Request for getting deposit interests
+message GuildBankGetDepositInterestsReq {
+    string guild_id = 1;
+    string deposit_id = 2;
+    int32 page = 3;
+    int32 limit = 4;
+}
+
+// Response for getting deposit interests
+message GuildBankGetDepositInterestsRes {
+    base.Res res = 1; 
+    int64 total = 2;
+    repeated base.InterestRecord list = 3;
+}

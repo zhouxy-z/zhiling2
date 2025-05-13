@@ -1,0 +1,23 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.battle.proto";
+
+message MatchMakingReq {
+  string deck_id = 1;
+}
+
+message MatchMakingRes {
+  base.Res res = 1;
+}
+
+message MatchCancelRes {
+  base.Res res = 1;
+  bool cancelled = 2;
+}
+
+message MatchMakingPush {
+  base.Res result = 1;
+  base.BattleRoomSummary room_summary = 2;
+}

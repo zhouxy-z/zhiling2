@@ -1,0 +1,69 @@
+
+cardrole_0010.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+head
+  rotate: false
+  xy: 2, 649
+  size: 422, 370
+  orig: 424, 372
+  offset: 1, 1
+  index: -1
+maozi1
+  rotate: true
+  xy: 2, 383
+  size: 264, 307
+  orig: 266, 309
+  offset: 1, 1
+  index: -1
+maozi2
+  rotate: true
+  xy: 311, 362
+  size: 142, 65
+  orig: 142, 65
+  offset: 0, 0
+  index: -1
+maozi3
+  rotate: true
+  xy: 311, 506
+  size: 141, 108
+  orig: 141, 108
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: true
+  xy: 798, 647
+  size: 372, 203
+  orig: 385, 217
+  offset: 7, 7
+  index: -1
+shenti
+  rotate: true
+  xy: 798, 398
+  size: 247, 221
+  orig: 249, 223
+  offset: 1, 1
+  index: -1
+youshou
+  rotate: true
+  xy: 426, 772
+  size: 247, 370
+  orig: 247, 370
+  offset: 0, 0
+  index: -1
+youshou1
+  rotate: true
+  xy: 426, 523
+  size: 247, 370
+  orig: 247, 370
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: false
+  xy: 421, 383
+  size: 138, 138
+  orig: 138, 138
+  offset: 0, 0
+  index: -1

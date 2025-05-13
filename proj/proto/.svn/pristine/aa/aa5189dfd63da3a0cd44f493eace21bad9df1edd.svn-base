@@ -1,0 +1,91 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+message PlayerData {
+  string player_id = 1;
+  string player_union_id = 2;
+  bool initialized = 3;
+  int32 level = 4;
+  int64 created_at = 5;
+  int64 last_level_refresh_time = 6;
+  int64 last_reset_time = 7;
+  int64 last_online_time = 8;
+  int64 last_save_time = 9;
+  map<uint64, int64> item_counts = 10; // 对应 map[uint64]int64
+  repeated PlayerDataItemProduction item_productions = 11;
+  map<int32, PlayerDataTask> tasks = 12; // 对应 map[int]*PlayerDataTask
+  PlayerBenefitCard benefit_card = 13;
+  repeated BattleCard battle_cards = 14;
+}
+
+message PlayerDataBase {
+  string player_id = 1;
+  string player_union_id = 2;
+  bool initialized = 3;
+  int32 level = 4;
+  int64 created_at = 5;
+  int64 last_level_refresh_time = 6;
+  int64 last_reset_time = 7;
+  int64 last_online_time = 8;
+  int64 last_save_time = 9;
+}
+
+message PlayerDataTask {
+  int32 id = 1;//TopTask
+  int32 start = 2;//已完成taskId，从未完成为0
+  int32 end = 3;//已领取到的taskId，从未领取为0
+  int32 value = 4;//正在完成任务的taskId的值(第一个taskId或者已完成taskId下一级)
+}
+
+message PlayerDataItemProduction {
+  uint32 id = 1;
+  uint64 item_id = 2;
+  int64 finish_time = 3;
+  uint64 count = 4;
+}
+
+message PlayerBenefitCard {
+  map<int32, int64> cards = 1; // 对应 map[int]int64
+  bool claimed_today = 2;
+  map<int32, uint32> claimed_day = 3; // 对应 map[int]uint32
+}
+
+message PlayerItemRecord {
+  string record_id = 1; // 对应 primitive.ObjectID
+  string player_id = 2;
+  uint64 item_id = 3;
+  int64 count = 4;
+  int64 count_after = 5;
+  int64 count_before = 6;
+  string source = 7;
+  bytes data = 8;
+  int64 time = 9;
+}
+
+message BattleCard {
+  string id = 1;      // 唯一id
+  uint32 card_id = 2;  // 卡牌ID
+  uint32 level = 3;    // 等级，预留
+  uint32 quality = 4;  // 品质
+  uint32 exp = 5;      // 经验值
+  uint32 ownership_type = 6;   // 权属类型，0默认，1绑定
+  uint64 update_id = 7;       // 更新id，小于当前id的修改会被丢弃
+  int64 trade_cd = 8; // 交易CD
+  int64 nft_lock_expires = 9; // nft锁定过期事件
+}
+
+// Thing 结构体对应的 proto 定义
+message Thing {
+  string type = 1; // "item": 道具, "equipment": 装备, "battlecard": 卡牌
+  ThingItem item = 2; // 道具
+  BattleCard card = 3; // 卡牌
+  string source = 4; // 仅对于当前Thing，内层的source会覆盖外层的source值
+  bytes data = 5;   // 仅对于当前Thing，内层的data会覆盖外层的data值
+}
+
+// ThingItem 结构体对应的 proto 定义
+message ThingItem {
+  uint64 id = 1;    // 道具 ID
+  uint64 count = 2; // 道具 数量
+}

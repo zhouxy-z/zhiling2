@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "预创号",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 137,
+      "height": 153
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 137,
+      "height": 153
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "vertices": {
+      "rawPosition": [
+        -68.5,
+        -76.5,
+        0,
+        68.5,
+        -76.5,
+        0,
+        -68.5,
+        76.5,
+        0,
+        68.5,
+        76.5,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        153,
+        137,
+        153,
+        0,
+        0,
+        137,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -68.5,
+        "y": -76.5,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 68.5,
+        "y": 76.5,
+        "z": 0
+      }
+    },
+    "texture": "20a0589b-d994-4f02-a452-6f051eea1243@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

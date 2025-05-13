@@ -1,0 +1,20 @@
+
+skill_0028_1.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/gh1
+  rotate: false
+  xy: 2, 262
+  size: 385, 385
+  orig: 403, 403
+  offset: 9, 9
+  index: -1
+images/grow
+  rotate: false
+  xy: 2, 2
+  size: 258, 258
+  orig: 287, 284
+  offset: 19, 13
+  index: -1

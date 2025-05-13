@@ -1,0 +1,1 @@
+{"version":3,"sources":["file:///D:/plants_client/trunk/proj/assets/scripts/net/proto/BaseUtils.ts"],"names":["p","base"],"mappings":";;;;;;;;;;;;;;;;;;;AAAOA,MAAAA,C;AAAKC,MAAAA,I,iBAAAA,I;;;;;;;AACXA,MAAAA,IAAD,GAAgB;AAAA;AAAA,kBAAEA,IAAlB","sourcesContent":["import p, { base } from \"./proto.js\";\r\n(base as any) = p.base;\r\nexport default base;"]}

@@ -1,0 +1,55 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+import "base/model.player.proto";
+import "base/model.logic.proto";
+
+enum PvpResult {
+  PvpResultTie = 0;
+  PvpResultWin = 1;
+  PvpResultLost = 2;
+}
+
+message PlayerBattleContext {
+  string player_id = 1; // 玩家ID
+  string name = 2; // 玩家名称
+  uint32 level = 3; // 玩家等级
+  repeated BattleCard cards = 4; // 具体卡组数据，如果需要指定任意卡组，deck_id 留空
+  string deck_id = 5; // 卡组ID，会向逻辑服查询该玩家卡组信息，有了此字段 cards 字段可以不传
+  base.DeckAttrs deck_attrs = 6; // 卡组属性
+}
+
+message PlayerRankInfo {
+  string player_id = 1;
+  string nick_name = 2;
+  string avatar_url = 3;
+  int32 rank_level_id = 4; // 段位id
+  int64 rank_points = 5; // 当前胜点
+}
+
+message PlayerPvpRankRecord {
+  int32 version = 1; // 记录版本
+  string player_id = 2; // 战斗房间ID
+  string room_id = 3; // 战斗房间ID
+  int32 season_id = 4; // 赛季ID
+  int32 multiple_limit = 5; // 加倍次数上限
+  PvpResult result = 6; // 战斗结果
+  bool is_leave = 7; //是否中途退出
+  uint32 doubling_times = 8;  //加倍次数
+  int64 timestamp = 9; // 时间
+  int64 point_change = 10; // 玩家胜点变化
+  int64 point_before = 11; // 玩家之前胜点
+  int64 point_after = 12; // 玩家之后胜点
+  map<string, PlayerBattleContext> battle_players = 13; // 对战玩家上下文
+  int32 rank_level_id = 14;
+}
+
+// 玩家排位等级奖励记录
+message PlayerRankLevelReward {
+  string player_id = 1;         // 玩家 ID
+  int32 season_id = 2;          // 赛季ID
+  int32 rank_level_id = 3;      // 排位等级ID
+  repeated base.Thing things = 4; // 奖励物品
+  int64 created_at = 8;         // 创建时间
+}

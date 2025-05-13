@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "信件",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 67,
+      "height": 127
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 67,
+      "height": 127
+    },
+    "rotated": false,
+    "capInsets": [
+      24,
+      38,
+      29,
+      43
+    ],
+    "vertices": {
+      "rawPosition": [
+        -33.5,
+        -63.5,
+        0,
+        33.5,
+        -63.5,
+        0,
+        -33.5,
+        63.5,
+        0,
+        33.5,
+        63.5,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        127,
+        67,
+        127,
+        0,
+        0,
+        67,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -33.5,
+        "y": -63.5,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 33.5,
+        "y": 63.5,
+        "z": 0
+      }
+    },
+    "texture": "d2a5bcdb-9a20-4d84-8f95-52f85177fe5f@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

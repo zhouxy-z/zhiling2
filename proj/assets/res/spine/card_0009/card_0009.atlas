@@ -1,0 +1,48 @@
+
+card_0009.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ds
+  rotate: true
+  xy: 190, 320
+  size: 90, 88
+  orig: 91, 88
+  offset: 1, 0
+  index: -1
+grow
+  rotate: true
+  xy: 10, 687
+  size: 263, 261
+  orig: 263, 261
+  offset: 0, 0
+  index: -1
+grow2
+  rotate: false
+  xy: 10, 430
+  size: 192, 237
+  orig: 307, 282
+  offset: 0, 16
+  index: -1
+h1
+  rotate: false
+  xy: 10, 204
+  size: 170, 206
+  orig: 170, 206
+  offset: 0, 0
+  index: -1
+h2
+  rotate: false
+  xy: 10, 71
+  size: 227, 113
+  orig: 227, 113
+  offset: 0, 0
+  index: -1
+star
+  rotate: false
+  xy: 10, 20
+  size: 31, 31
+  orig: 31, 31
+  offset: 0, 0
+  index: -1

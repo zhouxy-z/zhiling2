@@ -1,0 +1,26 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/ps";
+package ps;
+import "base/base.proto";
+
+message BroadcastReq {
+  string push_route = 1;
+  bytes push_msg = 2;
+}
+
+message BroadcastRes {
+  base.Res res = 1;
+}
+
+message MarqueeMsgSendInfo {
+  uint32 message_id = 1;
+  string content = 2;
+}
+
+message MarqueeMsgSendReq {
+  repeated MarqueeMsgSendInfo infos = 1;
+}
+
+message MarqueeMsgSendRes {
+  base.Res res = 1;
+}

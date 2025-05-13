@@ -1,0 +1,198 @@
+[
+    {
+        "name": "gate.protocol.servertime", "desc": "查询服务器时间(网关服务当前时间戳)",
+        "msg_type_req": "", "msg_type_ret": "pb.ServerTimeRes"
+    },
+    {
+        "name": "user.protocol.getuserinfo", "desc": "查询用户信息",
+        "msg_type_req": "", "msg_type_ret": "pb.GetUserInfoRes"
+    },
+    {
+        "name": "user.protocol.searchuser", "desc": "搜索用户信息",
+        "msg_type_req": "pb.SearchUserReq", "msg_type_ret": "pb.SearchUserRes"
+    },
+    {
+        "name": "user.protocol.modifynickname", "desc": "修改昵称",
+        "msg_type_req": "pb.UserModifyNicknameReq", "msg_type_ret": "pb.UserModifyNicknameRes"
+    },
+    {
+        "name": "user.protocol.bindfriend", "desc": "绑定好友",
+        "msg_type_req": "pb.UserBindFriendReq", "msg_type_ret": "pb.UserBindFriendRes"
+    },
+    {
+        "name": "user.protocol.getfriends", "desc": "查询好友列表（测试用，详细信息）",
+        "msg_type_req": "pb.GetFriendsReq", "msg_type_ret": "pb.GetFriendsRes"
+    },
+    {
+        "name": "user.protocol.getfriendsinfos", "desc": "查询好友列表（正式用，缓存性能高）",
+        "msg_type_req": "pb.GetFriendsInfosReq", "msg_type_ret": "pb.GetFriendsInfosRes"
+    },
+    {
+        "name": "player.protocol.getplayerdata", "desc": "查询玩家数据（这个后面要删除）",
+        "msg_type_req": "pb.GetPlayerDataReq", "msg_type_ret": "pb.GetPlayerDataRes"
+    },
+    {
+        "name": "player.protocol.getplayeritems", "desc": "查询玩家道具数据",
+        "msg_type_req": "pb.GetPlayerDataReq", "msg_type_ret": "pb.GetPlayerItemsRes"
+    },
+    {
+        "name": "player.protocol.getplayertasks", "desc": "查询玩家任务数据",
+        "msg_type_req": "pb.GetPlayerDataReq", "msg_type_ret": "pb.GetPlayerTasksRes"
+    },
+    {
+        "name": "player.protocol.getplayerbattlecards", "desc": "查询玩家卡牌数据",
+        "msg_type_req": "pb.GetPlayerDataReq", "msg_type_ret": "pb.GetPlayerBattleCardsRes"
+    },
+    {
+        "name": "player.protocol.getplayerbenefitcards", "desc": "查询玩家权益卡数据",
+        "msg_type_req": "pb.GetPlayerDataReq", "msg_type_ret": "pb.GetPlayerBenefitCardsRes"
+    },
+    {
+        "name": "player.protocol.completetask", "desc": "完成任务",
+        "msg_type_req": "pb.CompleteTaskReq", "msg_type_ret": "pb.CompleteTaskRes"
+    },
+    {
+        "name": "player.protocol.openbox", "desc": "开盒子",
+        "msg_type_req": "pb.PlayerOpenBoxReq", "msg_type_ret": "pb.PlayerOpenBoxRes"
+    },
+    {
+        "name": "player.protocol.itemproduction", "desc": "道具生产",
+        "msg_type_req": "pb.PlayerItemProductionReq", "msg_type_ret": "pb.PlayerItemProductionRes"
+    },
+    {
+        "name": "player.protocol.itemproductionfinish", "desc": "道具生产完成",
+        "msg_type_req": "pb.PlayerItemProductionFinishReq", "msg_type_ret": "pb.PlayerItemProductionFinishRes"
+    },
+    {
+        "name": "player.protocol.itemsynthesize", "desc": "道具合成",
+        "msg_type_req": "pb.PlayerItemSynthesizeReq", "msg_type_ret": "pb.PlayerItemSynthesizeRes"
+    },
+    {
+        "name": "mail.protocol.getmails", "desc": "查询邮件列表",
+        "msg_type_req": "pb.GetMailsReq", "msg_type_ret": "pb.GetMailsRes"
+    },
+    {
+        "name": "mail.protocol.readmail", "desc": "邮件标记已读",
+        "msg_type_req": "pb.ReadMailReq", "msg_type_ret": "pb.ReadMailRes"
+    },
+    {
+        "name": "mail.protocol.deletemails", "desc": "邮件删除（批量）",
+        "msg_type_req": "pb.DeleteMailsReq", "msg_type_ret": "pb.DeleteMailRes"
+    },
+    {
+        "name": "mail.protocol.claimmailattachment", "desc": "邮件领取附件（单个）",
+        "msg_type_req": "pb.ClaimMailAttachmentReq", "msg_type_ret": "pb.ClaimMailAttachmentRes"
+    },
+    {
+        "name": "mail.protocol.claimmailsattachment", "desc": "邮件领取附件（批量）",
+        "msg_type_req": "pb.ClaimMailsAttachmentReq", "msg_type_ret": "pb.ClaimMailsAttachmentRes"
+    },
+    {
+        "name": "mail.protocol.sendmail", "desc": "个人邮件发送（赠送道具）",
+        "msg_type_req": "pb.SendMailReq", "msg_type_ret": "pb.SendMailRes"
+    },
+    {
+        "name": "logic.protocol.getplayerdecks", "desc": "查询卡组",
+        "msg_type_req": "", "msg_type_ret": "pb.GetPlayerDecksRes"
+    },
+    {
+        "name": "logic.protocol.getdeckcards", "desc": "查询卡组卡牌数据",
+        "msg_type_req": "pb.GetDeckCardsReq", "msg_type_ret": "pb.GetDeckCardsRes"
+    },
+    {
+        "name": "logic.protocol.setdeckcards", "desc": "设置卡组卡牌",
+        "msg_type_req": "pb.SetDeckCardsReq", "msg_type_ret": "pb.SetDeckCardsRes"
+    },
+    {
+        "name": "logic.protocol.setdeckattrs", "desc": "卡组新增/修改（属性）",
+        "msg_type_req": "pb.SetDeckAttrsReq", "msg_type_ret": "pb.SetDeckAttrsRes"
+    },
+    {
+        "name": "logic.protocol.setdeckdefault", "desc": "设置默认卡组",
+        "msg_type_req": "pb.SetDeckDefaultReq", "msg_type_ret": "pb.SetDeckDefaultRes"
+    },
+    {
+        "name": "logic.protocol.deletedeck", "desc": "删除卡组",
+        "msg_type_req": "pb.DelDeckReq", "msg_type_ret": "pb.DelDeckRes"
+    },
+    {
+        "name": "shop.protocol.buyitem", "desc": "商城购买道具",
+        "msg_type_req": "pb.ShopBuyItemReq", "msg_type_ret": "pb.ShopBuyItemRes"
+    },
+    {
+        "name": "shop.protocol.dolucky", "desc": "商城幸运抽奖",
+        "msg_type_req": "pb.ShopDoLuckyReq", "msg_type_ret": "pb.ShopDoLuckyRes"
+    },
+    {
+        "name": "shop.protocol.getindex", "desc": "商城查询索引",
+        "msg_type_req": "pb.ShopGetIndexReq", "msg_type_ret": "pb.ShopGetIndexRes"
+    },
+    {
+        "name": "market.protocol.getmakeritemorders", "desc": "交易行查询挂单（道具）",
+        "msg_type_req": "pb.GetMakerItemOrdersReq", "msg_type_ret": "pb.GetMakerItemOrdersRes"
+    },
+    {
+        "name": "market.protocol.searchitemorders", "desc": "交易行搜索订单（道具）",
+        "msg_type_req": "pb.SearchMarketItemOrdersReq", "msg_type_ret": "pb.SearchMarketItemOrdersRes"
+    },
+    {
+        "name": "market.protocol.makeitemorder", "desc": "交易行上架订单（道具）",
+        "msg_type_req": "pb.MakeItemOrderReq", "msg_type_ret": "pb.MakeItemOrderRes"
+    },
+    {
+        "name": "market.protocol.takeitemorder", "desc": "交易行成交订单（道具）",
+        "msg_type_req": "pb.TakeItemOrderReq", "msg_type_ret": "pb.TakeItemOrderRes"
+    },
+    {
+        "name": "market.protocol.cancelitemorder", "desc": "交易行取消订单（道具）",
+        "msg_type_req": "pb.CancelItemOrderReq", "msg_type_ret": "pb.CancelItemOrderRes"
+    },
+    {
+        "name": "match.protocol.matchmaking", "desc": "匹配发起",
+        "msg_type_req": "pb.MatchMakingReq", "msg_type_ret": "pb.MatchMakingRes"
+    },
+    {
+        "name": "match.protocol.matchcancel", "desc": "匹配取消",
+        "msg_type_req": "", "msg_type_ret": "pb.MatchCancelRes"
+    },
+    {
+        "name": "battle_mgr.protocol.createbattlemgruserroom", "desc": "创建用户自定义房间",
+        "msg_type_req": "pb.CreateBattleMgrUserRoomReq", "msg_type_ret": "pb.CreateBattleMgrUserRoomRes"
+    },
+    {
+        "name": "battle_mgr.protocol.getbattlereplayroom", "desc": "获取回放信息",
+        "msg_type_req": "pb.GetBattleReplayRoomReq", "msg_type_ret": "pb.GetBattleReplayRoomRes"
+    },
+    {
+        "name": "battle_mgr.protocol.getbattlerecentrecords", "desc": "获取玩家最近战斗记录",
+        "msg_type_req": "pb.GetBattleRecentRecordsReq", "msg_type_ret": "pb.GetBattleRecentRecordsRes"
+    },
+    {
+        "name": "battle_mgr.protocol.createbattlereplayroom", "desc": "创建回放房间",
+        "msg_type_req": "pb.CreateBattleReplayRoomReq", "msg_type_ret": "pb.CreateBattleReplayRoomRes"
+    },
+    {
+        "name": "battle.protocol.battleroomping", "desc": "房间保活",
+        "msg_type_req": "pb.BattleRoomPingReq", "msg_type_ret": "pb.BattleRoomPingRes"
+    },
+    {
+        "name": "battle.protocol.battleroomenter", "desc": "加入房间",
+        "msg_type_req": "pb.BattleRoomEnterReq", "msg_type_ret": "pb.BattleRoomEnterRes"
+    },
+    {
+        "name": "battle.protocol.battleroomleave", "desc": "离开房间",
+        "msg_type_req": "pb.BattleRoomLeaveReq", "msg_type_ret": "pb.BattleRoomLeaveRes"
+    },
+    {
+        "name": "battle.protocol.battleroomconfirmopinput", "desc": "战斗房间确认操作输入",
+        "msg_type_req": "pb.BattleRoomConfirmOpInputReq", "msg_type_ret": "pb.BattleRoomConfirmOpInputRes"
+    },
+    {
+        "name": "battle.protocol.battleroomcancelopinput", "desc": "战斗房间取消操作输入",
+        "msg_type_req": "pb.BattleRoomCancelOpInputReq", "msg_type_ret": "pb.BattleRoomCancelOpInputRes"
+    },
+    {
+        "name": "battle.protocol.battleroomroundshowend", "desc": "战斗房间客户端表演结束",
+        "msg_type_req": "pb.BattleRoomRoundShowEndReq", "msg_type_ret": "pb.BattleRoomRoundShowEndRes"
+    }
+]

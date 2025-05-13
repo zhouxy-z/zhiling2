@@ -1,0 +1,24 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/base.proto";
+import "base/model.user.proto";
+
+message UserAuthReq {
+  string central_code = 1;
+  string verification = 2;
+}
+
+message UserAuthRes {
+  base.Res res = 1;
+  string uid = 2;
+}
+
+message GetUserInfoReq {
+  string uid = 1;
+}
+
+message GetUserInfoRes {
+  base.Res res = 1;
+  base.PlayerInfo info = 2;
+}

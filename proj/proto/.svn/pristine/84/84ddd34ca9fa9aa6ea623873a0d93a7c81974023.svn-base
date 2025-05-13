@@ -1,0 +1,167 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.player.proto";
+import "pb/common.proto";
+
+message PlayerLoginPush {
+  Server server = 1;
+  base.PlayerData data = 2;
+}
+
+message GetPlayerDataReq {
+  Server server = 1;
+}
+
+message GetPlayerDataRes {
+  base.Res res = 1;
+  base.PlayerData data = 2;
+}
+
+message GetPlayerItemsRes {
+  base.Res res = 1;
+  map<uint64, int64> item_counts = 10; // 对应 map[uint64]int64
+  repeated base.PlayerDataItemProduction item_productions = 11;
+}
+
+message GetPlayerTasksRes {
+  base.Res res = 1;
+  map<int32, base.PlayerDataTask> tasks = 12; // 对应 map[int]*PlayerDataTask
+}
+
+message GetPlayerBattleCardsRes {
+  base.Res res = 1;
+  repeated base.BattleCard battle_cards = 14;
+}
+
+message GetPlayerBenefitCardsRes {
+  base.Res res = 1;
+  base.PlayerBenefitCard benefit_card = 2;
+}
+
+message GetPlayerEquitiesRes {
+  base.Res res = 1;
+  base.PlayerDataEquity data = 2;
+}
+
+message PlayerDailyRefreshPush {
+  string player_id = 1;   // 玩家ID
+  int64 server_timestamp = 2; // 服务器时间戳
+}
+
+message PlayerItemChangedInfo {
+  string player_id = 1;   // 玩家ID
+  string from_id = 8;
+  uint64 item_id = 2;     // 道具ID
+  int64 count = 3;        // 变化数量
+  int64 count_after = 4;  // 最新数量
+  int64 count_before = 5; // 变更前数量
+  string source = 6;      // 来源标识
+  int64 time = 7;         // 时间戳
+}
+
+// 推送route同名：PlayerItemsChangedPush
+message PlayerItemsChangedPush {
+  repeated PlayerItemChangedInfo list = 1;
+}
+
+message PlayerTasksChangedPush {
+  repeated TaskChangeData list = 1;
+}
+
+message TaskChangeData {
+  base.PlayerDataTask data = 1;
+  TaskChangeType mode = 2;
+}
+
+enum TaskChangeType{
+  TaskUpdate = 0;//更新任务，没有任务数据则添加
+  TaskDel = 1;//删除任务
+}
+
+message CompleteTaskReq {
+  Server server = 1;
+  int32 taskId = 2;
+}
+
+message CompleteTaskRes {
+  base.Res res = 1;
+  base.PlayerDataTask Data = 2;
+}
+
+message PlayerItemProductionReq {
+  Server server = 1;
+  uint32 production_id = 2;
+  uint32 production_count = 3;
+}
+
+message PlayerItemProductionRes {
+  base.Res res = 1;
+  base.PlayerDataItemProduction record = 2;
+}
+
+message PlayerItemProductionFinishReq {
+  Server server = 1;
+  uint32 production_id = 2;
+}
+
+message PlayerItemProductionFinishRes {
+  base.Res res = 1;
+  base.Thing thing = 2;
+}
+
+message PlayerItemSynthesizeReq {
+  Server server = 1;
+  uint32 synthesize_id = 2;
+  uint32 synthesize_count = 3;
+}
+
+message PlayerItemSynthesizeRes {
+  base.Res res = 1;
+  base.Thing thing = 2;
+}
+
+message PlayerBattleCardChangePush {
+  uint32 change = 1; // 1新增，2更新，3删除
+  string player_id = 2;
+  base.BattleCard card = 3;
+}
+
+message PlayerLevelExpChangedPush {
+  string player_id = 1;
+  int32 level_after = 2;
+  int32 level_before = 3;
+  int64 level_exp_after = 4;
+  int64 level_exp_before = 5;
+  int64 level_exp_changed = 6;
+}
+
+message GetPlayerItemRecordsReq {
+  Server server = 1;
+  string from_id = 2; // 来源id筛选
+  string start = 3; // 查询起始id，用作分页
+  uint64 item_id = 4; // 道具ID，可选
+  int32 limit = 5; // 每页数据量，默认10
+  repeated string sources = 6; // source来源筛选
+}
+
+message GetPlayerItemRecordsRes {
+  base.Res res = 1;
+  repeated base.PlayerItemRecord records = 2;
+  int64 total = 3;
+}
+
+message RefreshDailyTaskRes {
+  base.Res res = 1;
+}
+
+message GetRefreshDailyTaskTimesRes {
+  base.Res res = 1;
+  int32 times = 2;
+}
+
+message PlayerBenefitInfoPush {
+  map<int32, int64> benefit_cards = 1; // 权益卡ID：过期时间
+  map<int32, int64> equities = 2; // 权益ID：过期时间
+}

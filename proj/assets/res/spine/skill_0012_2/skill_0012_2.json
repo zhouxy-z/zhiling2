@@ -1,0 +1,91 @@
+{
+"skeleton": {
+	"hash": "RaWwRBc/7r/OfH9IPeZ059/LC4Y",
+	"spine": "3.8.99",
+	"x": -180,
+	"y": -180,
+	"width": 360,
+	"height": 360,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bz", "parent": "root" },
+	{ "name": "gq", "parent": "root" },
+	{ "name": "gy", "parent": "root" }
+],
+"slots": [
+	{ "name": "images/ef_baozhu_1", "bone": "bz", "attachment": "images/ef_baozhu_1" },
+	{ "name": "images/gy", "bone": "gy", "attachment": "images/gy", "blend": "additive" },
+	{ "name": "images/grow", "bone": "gq", "attachment": "images/grow", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"images/ef_baozhu_1": {
+				"images/ef_baozhu_1": { "width": 214, "height": 228 },
+				"images/ef_baozhu_2": { "width": 214, "height": 228 },
+				"images/ef_baozhu_3": { "width": 214, "height": 228 },
+				"images/ef_baozhu_4": { "width": 214, "height": 228 },
+				"images/ef_baozhu_5": { "width": 214, "height": 228 }
+			},
+			"images/grow": {
+				"images/grow": { "x": 0.5, "width": 287, "height": 284 }
+			},
+			"images/gy": {
+				"images/gy": { "width": 360, "height": 360 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"images/ef_baozhu_1": {
+				"color": [
+					{ "time": 0.2667, "color": "ffffffff" },
+					{ "time": 0.4, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "time": 0.0667, "name": "images/ef_baozhu_1" },
+					{ "time": 0.1333, "name": "images/ef_baozhu_2" },
+					{ "time": 0.2, "name": "images/ef_baozhu_3" },
+					{ "time": 0.2667, "name": "images/ef_baozhu_4" },
+					{ "time": 0.3333, "name": "images/ef_baozhu_5" }
+				]
+			},
+			"images/grow": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" },
+					{ "time": 0.5333, "color": "ffffff00" }
+				]
+			},
+			"images/gy": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.0333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.1667, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"bz": {
+				"scale": [
+					{ "x": 0.5, "y": 0.5 },
+					{ "time": 0.3333 }
+				]
+			},
+			"gy": {
+				"scale": [
+					{ "x": 0, "y": 0 },
+					{ "time": 0.3333, "x": 2, "y": 2 }
+				]
+			}
+		}
+	}
+}
+}

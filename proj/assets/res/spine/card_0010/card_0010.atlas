@@ -1,0 +1,125 @@
+
+card_0010.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body1
+  rotate: true
+  xy: 2, 35
+  size: 305, 411
+  orig: 305, 411
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 629, 488
+  size: 200, 150
+  orig: 200, 150
+  offset: 0, 0
+  index: -1
+huzi1
+  rotate: true
+  xy: 415, 234
+  size: 118, 98
+  orig: 118, 98
+  offset: 0, 0
+  index: -1
+huzi2
+  rotate: false
+  xy: 352, 352
+  size: 48, 40
+  orig: 48, 40
+  offset: 0, 0
+  index: -1
+huzi3
+  rotate: false
+  xy: 859, 800
+  size: 49, 38
+  orig: 49, 38
+  offset: 0, 0
+  index: -1
+maozi
+  rotate: false
+  xy: 681, 739
+  size: 176, 99
+  orig: 176, 99
+  offset: 0, 0
+  index: -1
+meimao1
+  rotate: false
+  xy: 681, 678
+  size: 96, 59
+  orig: 96, 59
+  offset: 0, 0
+  index: -1
+meimao2
+  rotate: false
+  xy: 402, 354
+  size: 62, 38
+  orig: 62, 38
+  offset: 0, 0
+  index: -1
+piaodai1
+  rotate: false
+  xy: 529, 201
+  size: 112, 226
+  orig: 112, 231
+  offset: 0, 0
+  index: -1
+piaodao2_1
+  rotate: true
+  xy: 352, 394
+  size: 33, 175
+  orig: 34, 182
+  offset: 1, 0
+  index: -1
+s
+  rotate: true
+  xy: 352, 640
+  size: 268, 327
+  orig: 270, 328
+  offset: 1, 0
+  index: -1
+yan1
+  rotate: false
+  xy: 466, 356
+  size: 61, 36
+  orig: 61, 36
+  offset: 0, 0
+  index: -1
+yan2
+  rotate: false
+  xy: 865, 876
+  size: 39, 32
+  orig: 39, 32
+  offset: 0, 0
+  index: -1
+yanjing_1
+  rotate: false
+  xy: 681, 840
+  size: 182, 68
+  orig: 183, 87
+  offset: 0, 19
+  index: -1
+yanjing_2
+  rotate: true
+  xy: 779, 679
+  size: 58, 95
+  orig: 58, 95
+  offset: 0, 0
+  index: -1
+youshou
+  rotate: false
+  xy: 2, 342
+  size: 348, 566
+  orig: 370, 597
+  offset: 22, 0
+  index: -1
+zuoshou
+  rotate: true
+  xy: 352, 429
+  size: 209, 275
+  orig: 209, 275
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,22 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/model.mail.proto";
+
+message EventMailAttachmentClaim {
+  base.PlayerMailData mail = 1;
+  bool success = 2; // 是否领取成功
+  string failure_info = 3; // 领取失败时，此字段有值，表示失败信息
+}
+
+message EventMailSentForPlayer {
+  base.PlayerMailData mail = 1;
+  bool success = 2; // 是否发送成功
+  string failure_info = 3; // 发送失败时，此字段有值，表示失败信息
+}
+
+message EventMailSentForGlobal {
+  base.PlayerMailData mail = 1;
+  bool success = 2; // 是否发送成功
+  string failure_info = 3; // 发送失败时，此字段有值，表示失败信息
+}

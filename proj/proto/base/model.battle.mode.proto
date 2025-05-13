@@ -1,0 +1,25 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+enum BattleMode {
+  BattleModeNone = 0; // 0占位
+  BattleModeRank = 1; // 排位赛
+  BattleModeStar = 2; // 星元对战
+}
+
+message BattleModeInfo {
+  BattleMode mode = 1;
+  BattleRankInfo rank = 2; // 排位赛信息
+  BattleStarInfo star = 3; // 星元对战
+}
+
+message BattleRankInfo {
+  int32 match_id = 1; // 赛季ID
+  int32 multiple_limit = 2; // 加倍次数上限
+}
+
+message BattleStarInfo {
+  int32 match_id = 1; // 赛季ID
+  int32 multiple_limit = 2; // 加倍次数上限
+}

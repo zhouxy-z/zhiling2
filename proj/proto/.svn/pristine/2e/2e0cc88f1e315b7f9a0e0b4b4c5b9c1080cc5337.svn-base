@@ -1,0 +1,38 @@
+[
+    {
+        "name": "user.protocol.getuserinfo", "desc": "查询用户信息",
+        "msg_type_req": "", "msg_type_ret": "pb.GetUserInfoRes"
+    },
+    {
+        "name": "user.protocol.modifynickname", "desc": "修改昵称",
+        "msg_type_req": "pb.UserModifyNicknameReq", "msg_type_ret": "pb.UserModifyNicknameRes"
+    },
+    {
+        "name": "player.protocol.getplayerdata", "desc": "查询玩家数据",
+        "msg_type_req": "", "msg_type_ret": "pb.GetPlayerDataRes"
+    },
+    {
+        "name": "player.protocol.completetask", "desc": "完成任务",
+        "msg_type_req": "pb.CompleteTaskReq", "msg_type_ret": "pb.CompleteTaskRes"
+    },
+    {
+        "name": "mail.protocol.getmails", "desc": "查询邮件列表",
+        "msg_type_req": "pb.GetMailsReq", "msg_type_ret": "pb.GetMailsRes"
+    },
+    {
+        "name": "mail.protocol.readmail", "desc": "邮件标记已读",
+        "msg_type_req": "pb.ReadMailReq", "msg_type_ret": "pb.ReadMailRes"
+    },
+    {
+        "name": "mail.protocol.claimmailattachment,", "desc": "邮件领取附件（单个）",
+        "msg_type_req": "pb.ClaimMailAttachmentReq", "msg_type_ret": "pb.ClaimMailAttachmentRes"
+    },
+    {
+        "name": "mail.protocol.claimmailsattachment,", "desc": "邮件领取附件（批量）",
+        "msg_type_req": "pb.ClaimMailsAttachmentReq", "msg_type_ret": "pb.ClaimMailsAttachmentRes"
+    },
+    {
+        "name": "mail.protocol.sendthingmail,", "desc": "邮件赠送道具",
+        "msg_type_req": "pb.SendThingMailReq", "msg_type_ret": "pb.SendThingMailRes"
+    }
+]

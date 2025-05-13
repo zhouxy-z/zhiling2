@@ -1,0 +1,13 @@
+
+card_0010_1.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+st
+  rotate: false
+  xy: 2, 2
+  size: 303, 406
+  orig: 320, 434
+  offset: 8, 14
+  index: -1

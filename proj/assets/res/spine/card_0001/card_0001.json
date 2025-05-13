@@ -1,0 +1,52 @@
+{
+"skeleton": {
+	"hash": "QMqGB7vGsz2WPZtBmkEl/tj5HB4",
+	"spine": "3.8.99",
+	"x": -150.98,
+	"y": -206.81,
+	"width": 301.98,
+	"height": 413.82,
+	"images": "./images/",
+	"audio": "F:/端点游戏项目/动效/spine/卡牌新游戏/卡牌动画/card_0001yc"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "body", "parent": "root" }
+],
+"slots": [
+	{ "name": "root", "bone": "root", "attachment": "root" },
+	{ "name": "body", "bone": "body", "attachment": "juese1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"body": {
+				"juese1": { "width": 330, "height": 442 }
+			},
+			"root": {
+				"root": {
+					"type": "clipping",
+					"end": "body",
+					"vertexCount": 12,
+					"vertices": [ -147.84, 207.02, -149.86, 205.76, -150.98, 203.74, -150.98, -203.91, -149.9, -205.76, -148.02, -206.81, 147.87, -206.8, 149.89, -205.63, 150.93, -203.94, 151, 203.77, 149.59, 205.79, 147.94, 207.01 ],
+					"color": "ce3a3aff"
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"bones": {
+			"body": {
+				"translate": [
+					{},
+					{ "time": 1.6667, "y": 3.78 },
+					{ "time": 3.3333 }
+				]
+			}
+		}
+	}
+}
+}

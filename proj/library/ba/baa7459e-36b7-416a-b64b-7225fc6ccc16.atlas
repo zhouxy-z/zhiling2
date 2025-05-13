@@ -1,0 +1,27 @@
+
+skill_0011_1.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/49bef23f3cf746ad6b90cc9cb2ac7c91539b945c9c85-f4YbKv
+  rotate: false
+  xy: 2, 17
+  size: 175, 178
+  orig: 179, 179
+  offset: 4, 1
+  index: -1
+images/ebdb7d6cc674cc61584d883e01a55a7118bcbc57dc75-wF1e4I
+  rotate: false
+  xy: 179, 2
+  size: 154, 193
+  orig: 252, 252
+  offset: 43, 30
+  index: -1
+images/ef703ee4c7b72ccc3491c10bd06b4109586ac4a12646-w8r0dz
+  rotate: false
+  xy: 2, 197
+  size: 178, 179
+  orig: 178, 179
+  offset: 0, 0
+  index: -1

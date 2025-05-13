@@ -1,0 +1,13 @@
+
+filed_0007.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/cd1
+  rotate: false
+  xy: 2, 2
+  size: 151, 170
+  orig: 200, 178
+  offset: 27, 4
+  index: -1

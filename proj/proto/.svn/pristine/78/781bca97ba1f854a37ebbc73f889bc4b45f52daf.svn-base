@@ -1,0 +1,54 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+// GuildDepositTotal represents the total deposit information for a guild
+message GuildDepositTotal {
+    string guild_id = 1;
+    int32 cost_type = 2;  // Currency type for savings deposit
+    double total_amount = 3;
+    double total_record = 4;
+}
+
+// Deposit represents a single deposit record
+message Deposit {
+    string guild_id = 1;          // Guild ID
+    string user_id = 2;          // User ID
+    string donate_id = 3;        // Savings type ID
+    int32 cost_type = 4;        // Currency type for savings deposit
+    double amount = 5;          // Deposit amount
+    int32 duration_days = 6;    // Deposit duration in days
+    double rrony_reward_pct = 7; // Interest rate for friend rewards
+    double interest_total = 8;   // Total interest
+    string status = 9;          // Deposit status (active, withdrawn)
+    int64 expiration_time = 10;  // Expiration time
+    int64 deposit_time = 11;     // Deposit time
+    int64 withdraw_time = 12;    // Withdrawal time
+    string guild_name = 13;      // Guild name
+    string user_name = 14;       // Username
+}
+
+// InterestRecord represents an interest record for a deposit
+message InterestRecord {
+    string deposit_id = 1;
+    double interest = 2;
+    int64 created_at = 3;
+    string status = 4;     // "settled" or "withdrawn"
+    uint32 settle_day = 5; // Used for daily interest settlement
+    InterestInfo info = 6;
+}
+
+// InterestInfo contains detailed information about interest calculation
+message InterestInfo {
+    int32 version = 1;              // Version
+    string donate_id = 2;           // Savings type ID
+    int32 rebate_type = 3;          // Interest type
+    double member_rebate = 4;       // Base interest rate (in basis points)
+    int32 role_id = 5;              // Role ID
+    double role_rebate = 6;         // Role interest bonus, 0 if none
+    int32 guild_type = 7;           // Guild type
+    double guild_type_rebate = 8;   // Guild type interest bonus, 0 if none
+    int32 total_rebate_type = 9;    // Total savings bonus threshold met (greater than or equal to), 0 if none
+    double total_rebate = 10;       // Total savings bonus (in basis points), 0 if none
+    double total_interest_rate = 11; // Total summary
+}

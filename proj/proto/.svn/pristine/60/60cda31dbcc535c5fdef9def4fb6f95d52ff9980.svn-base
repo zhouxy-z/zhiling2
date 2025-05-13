@@ -1,0 +1,19 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.user.proto";
+
+message GetUserInfoRes {
+  base.Res res = 1;
+  base.PlayerInfo info = 2;
+}
+
+message UserModifyNicknameReq {
+  string nick_name = 1;
+}
+
+message UserModifyNicknameRes {
+  base.Res res = 1;
+  base.PlayerInfo info = 2;
+}

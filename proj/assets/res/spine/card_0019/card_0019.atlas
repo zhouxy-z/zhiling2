@@ -1,0 +1,104 @@
+
+card_0019.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bd
+  rotate: false
+  xy: 2, 377
+  size: 459, 641
+  orig: 459, 641
+  offset: 0, 0
+  index: -1
+bh
+  rotate: false
+  xy: 463, 387
+  size: 101, 133
+  orig: 101, 137
+  offset: 0, 4
+  index: -1
+e1
+  rotate: true
+  xy: 286, 23
+  size: 48, 31
+  orig: 50, 31
+  offset: 2, 0
+  index: -1
+e2
+  rotate: true
+  xy: 2, 2
+  size: 26, 32
+  orig: 28, 34
+  offset: 1, 1
+  index: -1
+eff
+  rotate: false
+  xy: 463, 522
+  size: 127, 139
+  orig: 127, 140
+  offset: 0, 0
+  index: -1
+fa1
+  rotate: true
+  xy: 463, 847
+  size: 171, 196
+  orig: 171, 196
+  offset: 0, 0
+  index: -1
+fa2
+  rotate: true
+  xy: 566, 422
+  size: 98, 93
+  orig: 98, 93
+  offset: 0, 0
+  index: -1
+fa3
+  rotate: true
+  xy: 592, 560
+  size: 101, 79
+  orig: 101, 79
+  offset: 0, 0
+  index: -1
+fa4
+  rotate: true
+  xy: 435, 71
+  size: 304, 123
+  orig: 304, 123
+  offset: 0, 0
+  index: -1
+fa5
+  rotate: true
+  xy: 560, 235
+  size: 150, 82
+  orig: 151, 83
+  offset: 1, 1
+  index: -1
+hua
+  rotate: false
+  xy: 221, 5
+  size: 63, 66
+  orig: 63, 66
+  offset: 0, 0
+  index: -1
+ygbh
+  rotate: false
+  xy: 463, 663
+  size: 160, 182
+  orig: 209, 197
+  offset: 0, 0
+  index: -1
+ys
+  rotate: false
+  xy: 221, 73
+  size: 212, 302
+  orig: 212, 302
+  offset: 0, 0
+  index: -1
+zs
+  rotate: true
+  xy: 2, 30
+  size: 345, 217
+  orig: 345, 217
+  offset: 0, 0
+  index: -1

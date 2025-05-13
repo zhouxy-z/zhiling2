@@ -1,0 +1,46 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/ps";
+package ps;
+import "base/base.proto";
+import "base/model.battle.proto";
+
+message GetBattleRoomStatusReq {
+  bool request_all_room_summary = 1;
+}
+
+message GetBattleRoomStatusRes {
+  base.Res res = 1;
+  repeated base.BattleRoomSummary all_room_summary = 3; // 当前节点内的所有战斗房间的摘要信息
+}
+
+// 创建房间
+message CreateBattleRoomReq {
+  base.BattleRoomContext context = 1;
+}
+
+message CreateBattleRoomRes {
+  base.Res res = 1;
+  base.BattleRoomSummary room_summary = 2;
+}
+
+// 获取回放信息
+message GetBattleReplayRoomReq {
+  repeated string room_id = 1;
+}
+
+message GetBattleReplayRoomRes {
+  base.Res res = 1;
+  map<string, base.BattleRoomReplaySummary> replay_room_summary = 2;
+}
+
+// 创建回放房间
+message CreateBattleReplayRoomReq {
+  string replay_room_id = 1; // 请求回放的房间ID
+  uint32 begin_round = 2; // 回放起始回合数, 从0开始，传0视为1
+  string view_player_id = 3; // 以指定玩家角度回放
+}
+
+message CreateBattleReplayRoomRes {
+  base.Res res = 1;
+  base.BattleRoomSummary room_summary = 2;
+}

@@ -1,0 +1,22 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+
+import "base/model.pvp.proto";
+
+message EventPvpRankSettle {
+  string player_id = 1; // 战斗房间ID
+  string room_id = 2; // 战斗房间ID
+  int32 season_id = 3; // 赛季ID
+  int32 multiple_limit = 4; // 加倍次数上限
+  base.PvpResult result = 5; // 战斗结果
+  bool is_leave = 6; //是否中途退出
+  bool with_ai = 7; // 是否AI参与
+  uint32 doubling_times = 8;  //加倍次数
+  int64 timestamp = 9; // 时间
+  int64 point_change = 10; // 玩家胜点变化
+  int64 point_before = 11; // 玩家之前胜点
+  int64 point_after = 12; // 玩家之后胜点
+  int64 player_battle_id = 13; // 玩家自增战斗记录id
+  int32 rank_level_id = 14;//段位id
+}

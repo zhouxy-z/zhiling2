@@ -1,0 +1,13 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/ps";
+package ps;
+import "base/model.mail.proto";
+import "base/base.proto";
+
+message SendMailReq {
+  base.PlayerMailData mail = 1;
+}
+
+message SendMailRes {
+  base.Res res = 1;
+}

@@ -1,0 +1,55 @@
+
+ui_result_lost.png
+size: 984,984
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2a
+  rotate: false
+  xy: 491, 204
+  size: 425, 276
+  orig: 425, 276
+  offset: 0, 0
+  index: -1
+2b
+  rotate: true
+  xy: 8, 8
+  size: 472, 475
+  orig: 488, 491
+  offset: 8, 8
+  index: -1
+2c
+  rotate: false
+  xy: 8, 488
+  size: 483, 488
+  orig: 483, 488
+  offset: 0, 0
+  index: -1
+2d1
+  rotate: true
+  xy: 727, 714
+  size: 262, 104
+  orig: 262, 104
+  offset: 0, 0
+  index: -1
+2d2
+  rotate: true
+  xy: 499, 553
+  size: 423, 220
+  orig: 423, 220
+  offset: 0, 0
+  index: -1
+black_00000
+  rotate: false
+  xy: 885, 164
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+defeat
+  rotate: false
+  xy: 491, 21
+  size: 386, 175
+  orig: 386, 175
+  offset: 0, 0
+  index: -1

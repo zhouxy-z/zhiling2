@@ -1,0 +1,17 @@
+{
+  "version": "2.3.13",
+  "sourceTimeStamp": 1745370302785.4858,
+  "outputTimeStamps": {
+    "cost.png": 1745370393683.7935,
+    "dizuo.png": 1745370393684.792,
+    "log.json": 1745370393743.8047,
+    "out.gltf": 1745370393743.8047,
+    "out.bin": 1745370393739.8047,
+    ".fbm/46B81597/cost.fbm/cost.png": 1745370393683.7935,
+    ".fbm/46B81597/cost.fbm/dizuo.png": 1745370393684.792
+  },
+  "options": {
+    "smartMaterialEnabled": true,
+    "matchMeshNames": true
+  }
+}

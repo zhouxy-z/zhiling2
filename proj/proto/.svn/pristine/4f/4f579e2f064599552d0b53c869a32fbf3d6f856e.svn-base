@@ -1,0 +1,30 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/model.user.proto";
+
+message EventPlayerCreate {
+  base.PlayerInfo player_info = 1;
+}
+
+message EventPlayerOnline {
+  string uid = 1;
+  string ip = 2;
+  string connectTime = 3;
+}
+
+message EventPlayerOffline {
+  string uid = 1;
+  string ip = 2;
+  string connectTime = 3;
+}
+
+message EventPlayerInviterBind {
+  string uid = 1;
+  string inviter_id = 2;
+}
+
+message EventPlayerInviterUnBind {
+  string uid = 1;
+  string before_inviter_id = 2;
+}

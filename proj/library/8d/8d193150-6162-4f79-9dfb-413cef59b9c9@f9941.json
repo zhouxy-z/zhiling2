@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "花纹",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 252,
+      "height": 23
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 252,
+      "height": 23
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "vertices": {
+      "rawPosition": [
+        -126,
+        -11.5,
+        0,
+        126,
+        -11.5,
+        0,
+        -126,
+        11.5,
+        0,
+        126,
+        11.5,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        23,
+        252,
+        23,
+        0,
+        0,
+        252,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -126,
+        "y": -11.5,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 126,
+        "y": 11.5,
+        "z": 0
+      }
+    },
+    "texture": "8d193150-6162-4f79-9dfb-413cef59b9c9@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

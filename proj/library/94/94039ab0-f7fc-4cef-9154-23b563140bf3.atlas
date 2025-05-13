@@ -1,0 +1,90 @@
+
+ui_jb.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Circle_015
+  rotate: true
+  xy: 233, 525
+  size: 215, 212
+  orig: 215, 215
+  offset: 0, 2
+  index: -1
+Circle_021
+  rotate: true
+  xy: 10, 52
+  size: 461, 458
+  orig: 512, 512
+  offset: 26, 24
+  index: -1
+K1
+  rotate: false
+  xy: 403, 792
+  size: 90, 90
+  orig: 128, 128
+  offset: 19, 19
+  index: -1
+K2
+  rotate: false
+  xy: 455, 602
+  size: 80, 80
+  orig: 128, 128
+  offset: 25, 24
+  index: -1
+K3
+  rotate: true
+  xy: 455, 692
+  size: 90, 89
+  orig: 128, 128
+  offset: 19, 18
+  index: -1
+K4
+  rotate: true
+  xy: 503, 792
+  size: 90, 89
+  orig: 128, 128
+  offset: 20, 18
+  index: -1
+black_00000
+  rotate: false
+  xy: 10, 10
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+d1
+  rotate: false
+  xy: 507, 902
+  size: 86, 86
+  orig: 128, 128
+  offset: 21, 21
+  index: -1
+glow
+  rotate: false
+  xy: 403, 892
+  size: 94, 96
+  orig: 100, 100
+  offset: 3, 2
+  index: -1
+grow010_00000
+  rotate: true
+  xy: 233, 750
+  size: 238, 160
+  orig: 240, 160
+  offset: 2, 0
+  index: -1
+s1
+  rotate: true
+  xy: 142, 596
+  size: 392, 81
+  orig: 512, 256
+  offset: 47, 94
+  index: -1
+x1
+  rotate: false
+  xy: 10, 523
+  size: 122, 465
+  orig: 256, 512
+  offset: 67, 0
+  index: -1

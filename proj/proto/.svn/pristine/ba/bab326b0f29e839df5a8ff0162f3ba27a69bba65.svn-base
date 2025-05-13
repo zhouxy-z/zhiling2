@@ -1,0 +1,158 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.market.proto";
+
+message MakeItemOrderReq {
+  string order_type = 1; // 订单类型 sell卖单/buy买单
+  uint64 item_id = 2; // 道具 ID
+  uint64 item_group = 3; // 组数
+  uint64  currency = 4; // 计价道具ID
+  uint64 price = 5; // 单价，传单价就不能传总价
+  uint64 totalPrice= 6; // 总价，传总价就不能传单价
+}
+
+message MakeItemOrderRes{
+  base.Res res = 1;
+}
+
+message TakeItemOrderReq {
+  string order_id = 1; // 交易单唯一 ID
+  uint64 take_group = 2; // 交易组数
+}
+
+message TakeItemOrderRes{
+  base.Res res = 1;
+}
+
+message CancelItemOrderReq {
+  string order_id = 1; // 交易单唯一 ID
+}
+
+message CancelItemOrderRes{
+  base.Res res = 1;
+}
+
+
+message GetMakerItemOrdersReq {
+  string player_id = 1; // 用户id
+  string order_type = 2; // 订单类型 sell卖单/buy买单
+  string start = 3; // 起始ID（用于替代offset，增强查询性能）
+  string status = 4; // 订单状态
+  int32 limit = 5; // 每页数据量
+  int32  item_type = 6; // 道具类型筛选
+  uint64 item_id = 7; // 道具ID筛选
+}
+
+message GetMakerItemOrdersRes{
+  base.Res res = 1;
+  int64 total = 2; // 数据总量
+  repeated base.MarketItemOrder orders = 3; // 道具订单列表
+}
+
+message SearchMarketItemOrdersReq {
+  string order_type = 1; // 订单类型 sell卖单/buy买单
+  string start = 2; // 起始ID（用于替代offset，增强查询性能）
+  string sort = 3; // 排序 1：price.asc/price.desc 单价升降序 2：total_price.asc/total_price.desc 总价升降序 3：quantity_remaining.asc/quantity_remaining.desc 剩余数量升降序
+  int32 limit = 4; // 每页数据量
+  int32  item_type = 5; // 道具类型筛选（可选）
+  uint64 item_id = 6; // 道具ID筛选（可选）
+}
+
+message SearchMarketItemOrdersRes{
+  base.Res res = 1;
+  int64 total = 2; // 数据总量
+  repeated base.MarketItemOrder orders = 3; // 道具订单列表
+}
+
+message MarketItemOrderMakePush {
+  string player_id = 1;
+  base.MarketItemOrder order = 2;
+}
+
+message MarketItemOrderTakePush {
+  string player_id = 1;
+  base.MarketItemOrder order = 2;
+  base.MarketItemTakeOrder take_order = 3;
+}
+
+message MarketItemOrderCancelledPush {
+  string player_id = 1;
+  base.MarketItemOrder order = 2;
+}
+
+message MakeCardOrderReq {
+  string order_type = 1; // 订单类型 sell卖单/buy买单
+  uint64 card_union_id = 2; // 持有卡牌唯一 ID
+  uint64  currency = 4; // 计价道具ID
+  uint64 price = 5; // 价格
+}
+
+message MakeCardOrderRes{
+  base.Res res = 1;
+}
+
+message TakeCardOrderReq {
+  string order_id = 1; // 交易单唯一 ID
+}
+
+message TakeCardOrderRes{
+  base.Res res = 1;
+}
+
+message CancelCardOrderReq {
+  string order_id = 1; // 交易单唯一 ID
+}
+
+message CancelCardOrderRes{
+  base.Res res = 1;
+}
+
+message GetCardOrdersReq {
+  string player_id = 1; // 用户id
+  int32 player_dig = 2; // 0查询挂单, 1查询吃单
+  string order_type = 3; // 订单类型 sell卖单/buy买单
+  string start = 4; // 起始ID（用于替代offset，增强查询性能）
+  string status = 5; // 订单状态
+  int32 limit = 6; // 每页数据量
+}
+
+message GetCardOrdersRes{
+  base.Res res = 1;
+  int64 total = 2; // 数据总量
+  repeated base.MarketCardOrder orders = 3; // 道具订单列表
+}
+
+message SearchMarketCardOrdersReq {
+  string order_type = 1; // 订单类型 sell卖单/buy买单
+  string start = 2; // 起始ID（用于替代offset，增强查询性能）
+  string sort = 3; // 排序1：price:asc/price:desc 单价升降序 排序2：card_rarity:asc/card_rarity:desc 稀有度升降序 排序3：card.quality:asc/card.quality:desc 品质升降序
+  int32 limit = 4; // 每页数据量
+  int32 group = 5; // 分组筛选（可选）
+  int32 card_rarity = 6; // 卡牌稀有度筛选（可选）
+  uint32  card_id = 7; // 道具类型筛选（可选）
+  uint32 class_id = 8; // 道具ID筛选（可选）
+  uint32 quality = 9; // 卡牌品质筛选（可选）
+}
+
+message SearchMarketCardOrdersRes{
+  base.Res res = 1;
+  int64 total = 2; // 数据总量
+  repeated base.MarketCardOrder orders = 3; // 道具订单列表
+}
+
+message MarketCardOrderMakePush {
+  string player_id = 1;
+  base.MarketCardOrder order = 2;
+}
+
+message MarketCardOrderTakePush {
+  string player_id = 1;
+  base.MarketCardOrder order = 2;
+}
+
+message MarketCardOrderCancelledPush {
+  string player_id = 1;
+  base.MarketCardOrder order = 2;
+}

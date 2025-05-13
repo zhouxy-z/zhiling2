@@ -1,0 +1,11 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+message PlayerRankInfo {
+  string player_id = 1;
+  string nick_name = 2;
+  string avatar_url = 3;
+  int32 rank_level_id = 4; // 段位id
+  int64 rank_points = 5; // 当前胜点
+}

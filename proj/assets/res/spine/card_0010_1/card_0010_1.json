@@ -1,0 +1,53 @@
+{
+"skeleton": {
+	"hash": "UBV5eV6CVeCpoV22OwqdJo97hUU",
+	"spine": "3.8.99",
+	"x": -160,
+	"y": -217,
+	"width": 320,
+	"height": 434,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "body2", "parent": "root", "x": 0.46, "y": 0.09 }
+],
+"slots": [
+	{ "name": "root", "bone": "root", "attachment": "root" },
+	{ "name": "st", "bone": "body2", "attachment": "st" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"root": {
+				"root": {
+					"type": "clipping",
+					"end": "root",
+					"vertexCount": 12,
+					"vertices": [ -143.75, 203.97, -145.04, 203.07, -146.01, 201.66, -146.02, -199.52, -144.89, -200.94, -143.29, -201.97, 144.48, -202.06, 146.63, -200.94, 148.04, -198.96, 147.94, 200.69, 147.05, 202.78, 145.38, 204.1 ],
+					"color": "ce3a3aff"
+				}
+			},
+			"st": {
+				"st": { "width": 320, "height": 434 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {
+		"bones": {
+			"body2": {
+				"translate": [
+					{ "curve": 0.25, "c3": 0.75 },
+					{ "time": 3.3333, "y": 8.98, "curve": 0.25, "c3": 0.75 },
+					{ "time": 6.6667 }
+				]
+			}
+		}
+	},
+	"stop": {}
+}
+}

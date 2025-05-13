@@ -1,0 +1,21 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/ps";
+package ps;
+import "base/model.battle.proto";
+
+// 房间结算事件
+message EventBattleSettlement {
+  base.BattleRoomContext room_context = 1;
+  base.BattleRoomSettlement settlement = 2;
+  map<string, base.BattleTaskRecord> task_record = 3;
+}
+
+// 战斗房间创建事件
+message EventBattleCreate {
+  base.BattleRoomSummary room_summary = 1;
+}
+
+// 战斗房间销毁事件
+message EventBattleDestroy {
+  string room_id = 1;
+}

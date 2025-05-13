@@ -1,0 +1,1 @@
+{"version":3,"sources":["file:///D:/plants_client/trunk/proj/assets/scripts/define/PanelFetch.ts"],"names":["PanelFetch","BagPanel","OpenBoxPanel"],"mappings":";;;;;;;;;;;;;;4BAAaA,U,GAAa;AACtBC,QAAAA,QAAQ,EAAE,UADY;AAEtBC,QAAAA,YAAY,EAAE;AAFQ,O","sourcesContent":["export const PanelFetch = {\r\n    BagPanel: \"BagPanel\",\r\n    OpenBoxPanel: \"OpenBoxPanel\"\r\n}"]}

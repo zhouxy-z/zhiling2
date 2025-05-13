@@ -1,0 +1,1161 @@
+{
+  "uuid": {
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\default-sprite-renderer-material.mtl": [
+      "6ef1defe-7997-477a-9b35-c18859ff8066"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\depth-test-spine.mtl": [
+      "c27215d8-6835-4b68-bfbb-bdeac6100c04"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\material.mtl": [
+      "c8f66d17-351a-48da-a12c-0212d28575c4"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ef1_001_01\\ef1_001_01.json": [
+      "fb829678-7b73-4ca1-a350-6b30d6511ab0@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\K_test\\K_test.json": [
+      "ca18980f-a02c-4802-80a3-d3dcb1184b3b@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\role_z22_B\\role_z22_B.json": [
+      "937bf89d-ddf0-4bee-b8f2-03e6d18e5342@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\particle\\smoke\\cases\\particle\\materials\\texture-animation-002.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\card.mtl": [
+      "a3cd009f-0ab0-420d-9278-b9fdab939bbc"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0001\\cardbg_0001.json": [
+      "f0b6adc5-7846-4b31-94b9-3eb8392b47d0@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0002\\cardbg_0002.json": [
+      "b4db687e-eec9-4066-9304-3c0c7ba4cb62@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0003\\cardbg_0003.json": [
+      "43013d17-042f-4b93-9121-d48bd65398f3@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0004\\cardbg_0004.json": [
+      "e489f0d0-57db-4aca-af1a-813e3f0426e7@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0005\\cardbg_0005.json": [
+      "208e497e-beb5-4078-8773-3049f1daa374@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0006\\cardbg_0006.json": [
+      "1cb5414c-9b86-4bda-8404-46c93dd0ee9f@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0001\\cardrole_0001.json": [
+      "10a5e15d-de8e-40d8-be19-0972fcc8e554@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0001\\card_0001.json": [
+      "a0ddfd51-fb6c-4284-8479-3e9ddb4dc9e3@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0002\\card_0002.json": [
+      "bb9a5ea0-3be6-4f59-9e78-9c60f722ff88@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0003\\card_0003.json": [
+      "c355f013-25e5-4af2-9872-4be0036a7011@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0004\\card_0004.json": [
+      "38d8cc2f-7237-4ce8-ae3d-06cc3dcfcceb@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0005\\card_0005.json": [
+      "2c68d0f0-3046-44e4-b103-c8679f7fa059@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0006\\card_0006.json": [
+      "4fa0f55a-35b7-4ddc-b3ef-fa37c02b860d@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0007\\card_0007.json": [
+      "3d8085d9-e72d-469f-98f3-96c3853e6d5e@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0008\\card_0008.json": [
+      "7cb9b895-b458-43f8-9fd0-9e666e6c4e51@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0009\\card_0009.json": [
+      "5ee5729a-b6c5-4868-a8a5-94002874779a@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0010\\card_0010.json": [
+      "d0b96570-554f-4f38-84ad-d841221f82b3@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0011\\card_0011.json": [
+      "97bdafae-88b4-49e7-9646-a12a3d4cac4e@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0012\\card_0012.json": [
+      "af2edfc0-4c5e-4bf0-bc9a-f56caaf34cd7@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0013\\card_0013.json": [
+      "97f5a3bc-3458-4f35-bade-c06f3a4803a7@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0014\\card_0014.json": [
+      "8c7752f6-f5fe-4641-aa74-efba030140b1@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0015\\card_0015.json": [
+      "4c7945b9-0888-4260-b8e0-871c1b8e0390@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0016\\card_0016.json": [
+      "c8bf1391-e37b-4a59-bb12-e6816493a637@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\icon_cost\\icon_cost.json": [
+      "2b8b50c6-c7b6-470f-9cb3-b6c92c2f5663@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\icon_power\\icon_power.json": [
+      "c42d1b54-553e-4a2a-843a-1d1936f93795@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_an_jshh\\ui_an_jshh.json": [
+      "bd76f3b0-17a1-4814-bf5b-ed8bd658a8d3@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_an_qxjshh\\ui_an_qxjshh.json": [
+      "7053abe0-e24d-492b-96c5-cf65ce3a2b98@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_jb\\ui_jb.json": [
+      "30ffa926-ae9c-41bc-a420-600c285747cb@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_jbbs\\ui_jbbs.json": [
+      "35998ff7-a287-4013-bc1a-dcf2dbce89ac@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_nlq\\ui_nlq.json": [
+      "1d0819eb-e477-439b-8ed1-ee507914de30@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_result_lost\\ui_result_lost.json": [
+      "bc9dd151-2d19-4e84-bfe9-b2c7e01ff60f@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_result_run\\ui_result_run.json": [
+      "91252dbf-05bf-44f4-b0af-6f40c3f30f7d@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_result_win\\ui_result_win.json": [
+      "93f40169-1212-4b88-84af-1104eafe9dd6@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_roundtips\\ui_roundtips.json": [
+      "043083df-6fa8-4041-8145-519db2a27363@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_txkg\\ui_txkg.json": [
+      "6fd8eba5-81be-4fee-bd90-d386029864ed@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0003\\cardrole_0003.json": [
+      "5b1bed40-7041-49d1-9270-ec0057934044@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0002\\cardrole_0002.json": [
+      "342e1846-c905-45a8-8655-7331a8584df6@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0004\\cardrole_0004.json": [
+      "34c12dce-3891-4367-a2fb-e7e62651a56c@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0005\\cardrole_0005.json": [
+      "f8594f21-ae71-42fe-b9b3-76011be25e92@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0006\\cardrole_0006.json": [
+      "d30025d3-78e6-40e8-a54c-23777f54a774@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0007\\cardrole_0007.json": [
+      "32c5ece9-3796-4a24-afa7-6c794a94d756@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0008\\cardrole_0008.json": [
+      "ad6e7ee2-9a58-43f2-a81f-2b21b670ec93@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0009\\cardrole_0009.json": [
+      "81a6fcfb-a332-4655-bacc-6807aaf299da@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0010\\cardrole_0010.json": [
+      "e0c7e371-e364-4988-9a5d-25c0cebdcac1@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0011\\cardrole_0011.json": [
+      "6633baa2-0565-428b-a1c4-f3bb0ac11552@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0012\\cardrole_0012.json": [
+      "1354418c-ef1a-45d0-b363-58cac663005e@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0013\\cardrole_0013.json": [
+      "81732a47-881f-40e3-bee2-52b168cffcc9@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0014\\cardrole_0014.json": [
+      "f0a9260b-ceb1-4d23-8525-cf261c183c73@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0015\\cardrole_0015.json": [
+      "19623dae-d8e6-40b2-9ff4-0031c5831644@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0016\\cardrole_0016.json": [
+      "2988a8a1-48af-4568-8306-29fa88e0d163@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_gamestart\\ui_gamestart.json": [
+      "e32b0367-dc54-4eee-ba91-a7fce918a1af@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_009_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_009_02.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_012_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_012_02.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_012_03.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_012_04.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_012_05.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_012_06.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_012_07.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_012_08.mtl": [
+      "17debcc3-0a6b-4b8a-b00b-dc58b885581e"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_012_09.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\lhq_128170.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\material-001.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\testbullet_material.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\trail4.mtl": [
+      "17debcc3-0a6b-4b8a-b00b-dc58b885581e"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0009_1\\skill_0009_1.json": [
+      "a6f56ceb-cc49-4907-b4f7-22cca49fe001@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0009_2\\skill_0009_2.json": [
+      "468d7e3f-193f-4fe1-b5cf-be7caee1af6d@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_012_01_tex_main.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_012_02_Particle_main.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_012_02_trail.mtl": [
+      "17debcc3-0a6b-4b8a-b00b-dc58b885581e"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_012_03_tex_main.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_grow_add_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_partice_add_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_fp.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_ph_tex_1.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_ph_tex_2.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_ph_tex_3.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_010_tex_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_010_tex_02.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_ph_tex_4.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\par003.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0009_3\\skill_0009_3.json": [
+      "de0280ae-d98e-423a-acef-e972079c24c8@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_014_tex_1.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_014_tex_2.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_014_tex_3.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0008_1\\skill_0008_1.json": [
+      "f8bfc665-f258-47fc-9d01-bea2fa0c4b5b@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0008_2\\skill_0008_2.json": [
+      "e857573f-804c-4a20-b3f0-76ef7b64b5cf@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0015_1\\skill_0015_1.json": [
+      "3820516f-2bed-4f33-9512-cc50ad59c9b9@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_kskz\\ui_kskz.json": [
+      "758bd5d1-fef9-46d8-a7d9-2e4ea8c7ad9c@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_jddz\\ui_jddz.json": [
+      "dea52aa7-de7b-4bff-91e6-b08a5579fd5e@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sjpw\\ui_sjpw.json": [
+      "73b0d5c2-9ba4-4f00-8b65-ed89a81d9f28@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sjtxz\\ui_sjtxz.json": [
+      "decde4bb-fc20-4f39-9780-06d2e33f0b02@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_zjmbj\\ui_zjmbj.json": [
+      "e756e776-7e6b-46cb-b2ab-e951e3cbd037@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_007_tex_1.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_013_02_trail.mtl": [
+      "17debcc3-0a6b-4b8a-b00b-dc58b885581e"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_013_tex_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\materials\\Fx_K_013_tex_02.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\default-sprite-renderer-material.mtl": [
+      "6ef1defe-7997-477a-9b35-c18859ff8066"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\card.mtl": [
+      "a3cd009f-0ab0-420d-9278-b9fdab939bbc"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\depth-test-spine.mtl": [
+      "c27215d8-6835-4b68-bfbb-bdeac6100c04"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_007_tex_1.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_009_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_009_02.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_010_tex_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_012_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_010_tex_02.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_012_01_tex_main.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_012_02_Particle_main.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_012_02_trail.mtl": [
+      "17debcc3-0a6b-4b8a-b00b-dc58b885581e"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_012_03_tex_main.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_013_02_trail.mtl": [
+      "17debcc3-0a6b-4b8a-b00b-dc58b885581e"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_013_tex_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_013_tex_02.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_014_tex_1.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_014_tex_2.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_014_tex_3.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_fp.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_grow_add_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_partice_add_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_ph_tex_1.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_ph_tex_3.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_ph_tex_2.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_ph_tex_4.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\lhq_128170.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\material.mtl": [
+      "c8f66d17-351a-48da-a12c-0212d28575c4"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\material-001.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\par003.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\testbullet_material.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\trail4.mtl": [
+      "17debcc3-0a6b-4b8a-b00b-dc58b885581e"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_lq_tex_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_K010_02_trail.mtl": [
+      "17debcc3-0a6b-4b8a-b00b-dc58b885581e"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_grow_blend_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_ld_tex_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_result_draw\\ui_result_draw.json": [
+      "6042b87d-9c2e-4c38-891e-3b7b9409c7c1@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0010_1\\card_0010_1.json": [
+      "838cf32b-1420-4dbf-b7f7-42761389c133@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0019\\card_0019.json": [
+      "7f838125-26db-4991-b7db-b3bb2a6bae46@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0025\\card_0025.json": [
+      "f86fd0b1-9c67-48f9-9ad2-af3c60f6202e@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0028\\cardrole_0028.json": [
+      "84b972e6-4d7b-474c-b47f-4512ceb6be83@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0010_1\\cardrole_0010_1.json": [
+      "1f437aac-71ec-4b1e-9ff1-3ab1d7d9e615@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0006\\card_0005.json": [
+      "d7f6f2e6-16ea-4092-a43e-e313549a8332@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0026\\card_0026.json": [
+      "5f4e23cd-7e09-44ff-b29e-7a3177f4d010@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0028\\card_0028.json": [
+      "d92e7dd7-1ec7-4428-bb33-aec19dc4469b@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\icon_battlepower\\icon_battlepower.json": [
+      "cfd32917-7aed-475b-bfba-170966173ed0@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_an_djgl\\ui_an_djgl.json": [
+      "3635da9d-380a-4f7d-a9c6-92bdad0719a0@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0019\\cardrole_0019.json": [
+      "6819ab26-3242-4b62-baf3-f918590cf452@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0023\\cardrole_0023.json": [
+      "8c213838-4847-4051-ba79-14337c112818@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0023_1\\cardrole_0023_1.json": [
+      "01622f6e-6761-485a-86dd-3e613e062948@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0023\\card_0023.json": [
+      "3876406d-0402-4305-8c39-53b410af71d0@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0029\\card_0029.json": [
+      "f125c26e-67b3-4361-8768-4f21ac70f02e@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0035\\card_0035.json": [
+      "4f7c9608-f2a3-46ab-807d-8da59a854a48@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0038\\card_0038.json": [
+      "8519af9c-3049-4359-8b3a-f900d17c8763@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_k_bk\\ui_k_bk.json": [
+      "8eecf511-22b8-4d85-a003-35cea87ef631@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_k_ksj\\ui_k_ksj.json": [
+      "731ea2ee-9707-4bb5-bc1f-cffe404ae3b5@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_k_sj\\ui_k_sj.json": [
+      "bc54b728-3613-4662-9a1e-fbb4dd5eb8d8@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0026\\cardrole_0026.json": [
+      "7af34bba-a2b8-4254-94f2-2bd813c91045@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0025\\cardrole_0025.json": [
+      "9a410047-4dd2-4803-bdbe-5c3c60eddb87@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0029\\cardrole_0029.json": [
+      "ffc3e1a1-b9b5-415b-bc38-38c1fe2c63f6@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0035\\cardrole_0035.json": [
+      "6f35aa8c-6ab9-4c7b-8c8e-e94d06b89b02@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0038\\cardrole_0038.json": [
+      "618519e8-f17c-42a7-aebf-e17194946ae0@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0000\\filed_0000.json": [
+      "892a5c9f-095c-4847-a4f9-dc45d531f4c3@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0001\\filed_0001.json": [
+      "5c7a73b7-f5c2-4b93-94b9-cf998347e48a@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0002\\filed_0002.json": [
+      "59485829-0b07-4cc2-8e13-f4a2e336c62a@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0003\\filed_0003.json": [
+      "f69f94df-f726-4e86-b68e-0e8d45d921a2@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0004\\filed_0004.json": [
+      "0d5b1e76-6fbf-4b32-a0cf-e28333d63edb@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0005\\filed_0005.json": [
+      "8b7b5d2b-ad5e-4ca6-8a0f-f62d9a0962b6@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0006\\filed_0006.json": [
+      "61634fbb-15c6-4c3b-89a3-af5f4ee0a53c@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0007\\filed_0007.json": [
+      "30b3a2fb-c844-4b01-aedf-5b34bc5a74fe@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0008\\filed_0008.json": [
+      "8d236acf-69ee-43ee-bcaf-04f06524b4a2@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0009\\filed_0009.json": [
+      "975f05b0-b3a3-4dd2-bf55-bbb77d251da2@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0010\\filed_0010.json": [
+      "32293a45-f03a-4bc0-85c1-dc86860abf24@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0011\\filed_0011.json": [
+      "4c52b953-8620-47f1-8a27-ef0463e3f609@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0012\\filed_0012.json": [
+      "6ce9c60c-3058-4007-a6fc-67fe20b132f8@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0013\\filed_0013.json": [
+      "d040e5c2-9580-456f-a55c-d3d3c5cb7a98@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0014\\filed_0014.json": [
+      "d1b0583c-8190-40e7-8eff-bf6c4196ad55@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0015\\filed_0015.json": [
+      "f9f5db66-d668-4457-b61e-27976539a563@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0016\\filed_0016.json": [
+      "48643b68-9cef-4751-a80c-877749eaf01c@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0019\\filed_0019.json": [
+      "00a8afaf-f2c5-4e7c-8f22-35d36892f88e@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_vs_02\\ui_vs_02.json": [
+      "5eeec9e5-dade-4838-9d44-088a8c0f743d@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_vs_01\\ui_vs_01.json": [
+      "a18e21f0-eb0b-4981-b5ce-bc5e8e4ec0d2@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_grow_win_tex_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_grow_win_tex_02.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_grow_win_tex_03.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_K_028_tex_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_grow_add_02.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0023_1\\card_0023_1.json": [
+      "3cb9338e-b1d0-4ea0-a5d9-123242fc9bdd@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0021\\filed_0021.json": [
+      "826ed90f-454b-451d-b616-f319c51c0dbe@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0022\\filed_0022.json": [
+      "68b282f5-0584-4576-a5c4-d217ecb32ec0@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0023\\filed_0023.json": [
+      "0cc898b3-959c-4700-8476-928be9be8c23@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0024\\filed_0024.json": [
+      "705c4bfb-06a0-47f8-9216-af1795726cce@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0010_1\\skill_0010_1.json": [
+      "338280df-a3a5-498d-a441-1cca6cfdccc1@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sc_jllq\\ui_sc_jllq.json": [
+      "675cba25-5dde-49fb-82ae-2197fad281b6@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sc_klq\\ui_sc_klq.json": [
+      "55acbdc9-d8e2-4839-aa1d-5aea9bd9bc79@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sc_sjjy\\ui_sc_sjjy.json": [
+      "003f7cdf-d9d9-4b26-b976-56de0507ab0f@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0028_1\\skill_0028_1.json": [
+      "ae9e6f94-81de-4cf8-9e59-bf51fad86626@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardback_0001\\cardback_0001.json": [
+      "b70ace26-b191-4959-9d59-bb271470722c@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sc_bxkq\\ui_sc_bxkq.json": [
+      "9e74fcf5-5899-494b-b0f7-9c33370c1b6a@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0012_1\\skill_0012_1.json": [
+      "febe6d42-8b13-41b5-90b8-0ec45505b3f2@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_time_up\\ui_time_up.json": [
+      "1c6e799d-4cd5-4cd0-808b-796fd725bc85@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_012_10_tex_1.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_012_tex_1.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0012_2\\skill_0012_2.json": [
+      "34713d29-1f8c-49af-8d07-da087c85e059@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0011_1\\skill_0011_1.json": [
+      "f40bb995-cfc8-4b2a-96ba-442d17ebad85@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_K_016_tex_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_K_07_tex_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_K_07_tex_04.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_K_07_tex_05.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_K_025_tex_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_K_025_tex_02.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0005_02\\skill_0005_02.json": [
+      "c4d53fec-823c-4740-a76f-2219efdafb06@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0007_1\\skill_0007_1.json": [
+      "a98b4482-8bff-426f-9e0a-0b92bc86d13a@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\cost_light.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\cost_penshe.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\cost_shandian.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0029_1\\skill_0029_1.json": [
+      "e0b831cd-7c54-4823-96b7-c9d3012e4bdd@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_029_tex_1.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_K_026_tex_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_K_026_tex_02.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_K_026_tex_03.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_029_tex_2.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sckz\\ui_sckz.json": [
+      "c9fc7e62-4a27-49fb-bfa4-20713708fc95@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_38_txe_1.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0038_1\\skill_0038_1.json": [
+      "58659f63-8cb2-4b20-a8c2-6704076cd4ff@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0038_2\\skill_0038_2.json": [
+      "1418f7de-b427-472f-b6cf-774923906500@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0039_3\\skill_0038_3.json": [
+      "b4e58abf-486a-4bbd-8560-e861eacb5281@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0007\\cardbg_0007.json": [
+      "c5e86696-9713-4b36-b68b-9f2012b3d773@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_k_sy\\ui_k_sy.json": [
+      "1d787d4a-0ef0-4796-b5a5-ec081b849a4f@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_expbonus1\\ui_expbonus1.json": [
+      "c92f2ead-828b-46f4-b558-1289e985d57f@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_expbonus2\\ui_expbonus2.json": [
+      "defd5411-2f00-43dd-92eb-75872b5248a5@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_gxhd_01\\ui_gxhd_01.json": [
+      "79d88336-d767-44a5-988e-6a2cfa5fcb78@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_gxhd_02\\ui_gxhd_02.json": [
+      "0b9c2db0-1ed9-4d56-8281-b541aa47923a@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_tb_sg_01\\ui_tb_sg_01.json": [
+      "1040314c-b448-4867-ac45-a980016fe429@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_gxhd_01\\ui_gxhd_01\\ui_gxhd_01.json": [
+      "62b37873-287e-4c64-806d-02c00d7ab0aa@6c48a"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_K_020_tex_01.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\EFF_K_020_tex_02.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_037_tex.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\resources\\materials\\Fx_K_037_tex_02.mtl": [
+      "d1346436-ac96-4271-b863-1f4fdead95b0"
+    ]
+  },
+  "path": {
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0001\\cardbg_0001.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0001\\cardbg_0001.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardback_0001\\cardback_0001.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardback_0001\\cardback_0001.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0002\\cardbg_0002.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0002\\cardbg_0002.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0003\\cardbg_0003.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0003\\cardbg_0003.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0004\\cardbg_0004.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0004\\cardbg_0004.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0005\\cardbg_0005.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0005\\cardbg_0005.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0006\\cardbg_0006.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0006\\cardbg_0006.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0007\\cardbg_0007.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardbg_0007\\cardbg_0007.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0001\\cardrole_0001.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0001\\cardrole_0001.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0002\\cardrole_0002.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0002\\cardrole_0002.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0003\\cardrole_0003.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0003\\cardrole_0003.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0004\\cardrole_0004.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0004\\cardrole_0004.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0005\\cardrole_0005.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0005\\cardrole_0005.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0006\\cardrole_0006.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0006\\cardrole_0006.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0007\\cardrole_0007.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0007\\cardrole_0007.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0008\\cardrole_0008.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0008\\cardrole_0008.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0009\\cardrole_0009.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0009\\cardrole_0009.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0010\\cardrole_0010.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0010\\cardrole_0010.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0010_1\\cardrole_0010_1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0010_1\\cardrole_0010_1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0011\\cardrole_0011.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0011\\cardrole_0011.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0012\\cardrole_0012.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0012\\cardrole_0012.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0013\\cardrole_0013.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0013\\cardrole_0013.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0014\\cardrole_0014.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0014\\cardrole_0014.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0015\\cardrole_0015.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0015\\cardrole_0015.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0016\\cardrole_0016.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0016\\cardrole_0016.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0019\\cardrole_0019.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0019\\cardrole_0019.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0023\\cardrole_0023.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0023\\cardrole_0023.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0023_1\\cardrole_0023_1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0023_1\\cardrole_0023_1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0025\\cardrole_0025.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0025\\cardrole_0025.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0026\\cardrole_0026.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0026\\cardrole_0026.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0028\\cardrole_0028.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0028\\cardrole_0028.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0029\\cardrole_0029.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0029\\cardrole_0029.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0035\\cardrole_0035.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0035\\cardrole_0035.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0038\\cardrole_0038.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\cardrole_0038\\cardrole_0038.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0001\\card_0001.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0001\\card_0001.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0002\\card_0002.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0002\\card_0002.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0003\\card_0003.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0003\\card_0003.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0004\\card_0004.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0004\\card_0004.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0005\\card_0005.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0005\\card_0005.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0006\\card_0006.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0006\\card_0006.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0007\\card_0007.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0007\\card_0007.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0008\\card_0008.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0008\\card_0008.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0009\\card_0009.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0009\\card_0009.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0010\\card_0010.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0010\\card_0010.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0010_1\\card_0010_1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0010_1\\card_0010_1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0011\\card_0011.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0011\\card_0011.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0012\\card_0012.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0012\\card_0012.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0013\\card_0013.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0013\\card_0013.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0014\\card_0014.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0014\\card_0014.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0015\\card_0015.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0015\\card_0015.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0016\\card_0016.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0016\\card_0016.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0019\\card_0019.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0019\\card_0019.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0023\\card_0023.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0023\\card_0023.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0023_1\\card_0023_1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0023_1\\card_0023_1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0025\\card_0025.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0025\\card_0025.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0026\\card_0026.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0026\\card_0026.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0028\\card_0028.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0028\\card_0028.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0029\\card_0029.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0029\\card_0029.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0035\\card_0035.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0035\\card_0035.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0038\\card_0038.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\card_0038\\card_0038.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ef1_001_01\\ef1_001_01.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ef1_001_01\\ef1_001_01.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0000\\filed_0000.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0000\\filed_0000.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0001\\filed_0001.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0001\\filed_0001.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0002\\filed_0002.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0002\\filed_0002.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0003\\filed_0003.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0003\\filed_0003.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0004\\filed_0004.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0004\\filed_0004.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0005\\filed_0005.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0005\\filed_0005.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0006\\filed_0006.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0006\\filed_0006.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0007\\filed_0007.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0007\\filed_0007.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0008\\filed_0008.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0008\\filed_0008.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0009\\filed_0009.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0009\\filed_0009.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0010\\filed_0010.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0010\\filed_0010.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0011\\filed_0011.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0011\\filed_0011.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0012\\filed_0012.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0012\\filed_0012.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0013\\filed_0013.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0013\\filed_0013.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0014\\filed_0014.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0014\\filed_0014.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0015\\filed_0015.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0015\\filed_0015.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0016\\filed_0016.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0016\\filed_0016.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0019\\filed_0019.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0019\\filed_0019.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0021\\filed_0021.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0021\\filed_0021.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0022\\filed_0022.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0022\\filed_0022.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0023\\filed_0023.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0023\\filed_0023.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0024\\filed_0024.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\filed_0024\\filed_0024.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\icon_cost\\icon_cost.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\icon_cost\\icon_cost.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\icon_battlepower\\icon_battlepower.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\icon_battlepower\\icon_battlepower.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\K_test\\K_test.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\K_test\\K_test.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\icon_power\\icon_power.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\icon_power\\icon_power.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\role_z22_B\\role_z22_B.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\role_z22_B\\role_z22_B.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0005_02\\skill_0005_02.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0005_02\\skill_0005_02.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0007_1\\skill_0007_1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0007_1\\skill_0007_1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0008_1\\skill_0008_1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0008_1\\skill_0008_1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0008_2\\skill_0008_2.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0008_2\\skill_0008_2.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0009_1\\skill_0009_1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0009_1\\skill_0009_1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0009_2\\skill_0009_2.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0009_2\\skill_0009_2.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0009_3\\skill_0009_3.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0009_3\\skill_0009_3.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0010_1\\skill_0010_1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0010_1\\skill_0010_1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0011_1\\skill_0011_1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0011_1\\skill_0011_1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0012_1\\skill_0012_1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0012_1\\skill_0012_1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0012_2\\skill_0012_2.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0012_2\\skill_0012_2.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0015_1\\skill_0015_1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0015_1\\skill_0015_1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0028_1\\skill_0028_1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0028_1\\skill_0028_1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0029_1\\skill_0029_1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0029_1\\skill_0029_1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0038_1\\skill_0038_1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0038_1\\skill_0038_1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0038_2\\skill_0038_2.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0038_2\\skill_0038_2.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0039_3\\skill_0038_3.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\skill_0039_3\\skill_0038_3.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_an_djgl\\ui_an_djgl.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_an_djgl\\ui_an_djgl.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_an_jshh\\ui_an_jshh.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_an_jshh\\ui_an_jshh.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_an_qxjshh\\ui_an_qxjshh.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_an_qxjshh\\ui_an_qxjshh.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_expbonus1\\ui_expbonus1.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_expbonus1\\ui_expbonus1.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_expbonus2\\ui_expbonus2.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_expbonus2\\ui_expbonus2.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_gamestart\\ui_gamestart.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_gamestart\\ui_gamestart.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_gxhd_01\\ui_gxhd_01.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_gxhd_01\\ui_gxhd_01.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_gxhd_02\\ui_gxhd_02.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_gxhd_02\\ui_gxhd_02.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_jb\\ui_jb.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_jb\\ui_jb.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_jbbs\\ui_jbbs.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_jbbs\\ui_jbbs.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_jddz\\ui_jddz.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_jddz\\ui_jddz.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_kskz\\ui_kskz.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_kskz\\ui_kskz.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_k_bk\\ui_k_bk.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_k_bk\\ui_k_bk.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_k_ksj\\ui_k_ksj.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_k_ksj\\ui_k_ksj.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_k_sj\\ui_k_sj.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_k_sj\\ui_k_sj.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_k_sy\\ui_k_sy.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_k_sy\\ui_k_sy.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_nlq\\ui_nlq.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_nlq\\ui_nlq.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_result_draw\\ui_result_draw.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_result_draw\\ui_result_draw.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_result_lost\\ui_result_lost.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_result_lost\\ui_result_lost.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_result_run\\ui_result_run.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_result_run\\ui_result_run.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_result_win\\ui_result_win.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_result_win\\ui_result_win.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_roundtips\\ui_roundtips.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_roundtips\\ui_roundtips.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sckz\\ui_sckz.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sckz\\ui_sckz.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sc_bxkq\\ui_sc_bxkq.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sc_bxkq\\ui_sc_bxkq.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sc_jllq\\ui_sc_jllq.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sc_jllq\\ui_sc_jllq.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sc_klq\\ui_sc_klq.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sc_klq\\ui_sc_klq.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sjpw\\ui_sjpw.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sjpw\\ui_sjpw.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sjtxz\\ui_sjtxz.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sjtxz\\ui_sjtxz.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_tb_sg_01\\ui_tb_sg_01.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_tb_sg_01\\ui_tb_sg_01.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_time_up\\ui_time_up.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_time_up\\ui_time_up.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_txkg\\ui_txkg.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_txkg\\ui_txkg.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_vs_01\\ui_vs_01.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_vs_01\\ui_vs_01.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_vs_02\\ui_vs_02.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_vs_02\\ui_vs_02.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_zjmbj\\ui_zjmbj.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_zjmbj\\ui_zjmbj.atlas"
+    ],
+    "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sc_sjjy\\ui_sc_sjjy.json": [
+      "D:\\plants_client\\trunk\\proj\\assets\\res\\spine\\ui_sc_sjjy\\ui_sc_sjjy.atlas"
+    ]
+  }
+}

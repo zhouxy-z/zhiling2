@@ -1,0 +1,39 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+import "base/model.battle.proto";
+
+enum BattleRoomOpOutputType {
+  NewRound = 0; // 新回合
+  CardDeckFrontToHandTail = 1; // 卡牌由卡组最前到手牌末尾
+  WaitPlayerInputAction = 2; // 等待客户端玩家操作
+  CardDataChange = 3;//卡牌数据变化
+}
+
+message BattleRoomOpOutput {
+  string owner_player_id = 1;
+  string recv_player_id = 2;
+  BattleRoomOpOutputType op_type = 3;
+  BattleRoomOpOutput_NewRound new_round = 4;
+  BattleRoomOpOutput_CardDeckTopToHand card_deck_top_to_hand = 5;
+  BattleRoomOpOutput_WaitPlayerInputAcion  wait_player_input_acion = 6;
+  BattleRoomOpOutput_CardDataChange card_data_change = 7;
+}
+
+message BattleRoomOpOutput_NewRound {
+  uint32 new_round = 1;
+  base.BattleRoomGamePlayData gamePlayData = 2; // 整个场内数据
+}
+
+message BattleRoomOpOutput_CardDeckTopToHand {
+  repeated base.BattleRoomCardData cards = 1;
+}
+
+message BattleRoomOpOutput_WaitPlayerInputAcion {
+  uint64 timeout_time = 1; // 超时时间
+}
+
+message BattleRoomOpOutput_CardDataChange {
+  string from_inst_id = 1;
+  base.BattleRoomCardData card = 2;
+}

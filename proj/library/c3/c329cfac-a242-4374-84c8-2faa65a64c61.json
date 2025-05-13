@@ -1,0 +1,125 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "skill_0009_1",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "sV7JO9lQ21qYMojVnIm5liRgcG8",
+      "spine": "3.8.99",
+      "x": -128,
+      "y": -128,
+      "width": 256,
+      "height": 256,
+      "images": "./images/",
+      "audio": ""
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "FZ_00000",
+        "parent": "root"
+      }
+    ],
+    "slots": [
+      {
+        "name": "FZ_00000",
+        "bone": "FZ_00000",
+        "attachment": "FZ_00000"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "FZ_00000": {
+            "FZ_00000": {
+              "width": 256,
+              "height": 256
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "animation": {
+        "slots": {
+          "FZ_00000": {
+            "color": [
+              {
+                "time": 4.8333,
+                "color": "ffffffff"
+              },
+              {
+                "time": 5.3333,
+                "color": "ffffff00"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "FZ_00000": {
+            "rotate": [
+              {},
+              {
+                "time": 0.6667,
+                "angle": 90
+              },
+              {
+                "time": 1.3333,
+                "angle": 180
+              },
+              {
+                "time": 2,
+                "angle": -90
+              },
+              {
+                "time": 2.6667
+              },
+              {
+                "time": 3.3333,
+                "angle": 90
+              },
+              {
+                "time": 4,
+                "angle": 180
+              },
+              {
+                "time": 4.6667,
+                "angle": -90
+              },
+              {
+                "time": 5.3333
+              }
+            ],
+            "scale": [
+              {
+                "x": 0,
+                "y": 0,
+                "curve": 0.25,
+                "c3": 0.75
+              },
+              {
+                "time": 0.2667
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "textures": [
+    {
+      "__uuid__": "a6f56ceb-cc49-4907-b4f7-22cca49fe001@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    }
+  ],
+  "textureNames": [
+    "skill_0009_1.png"
+  ],
+  "scale": 1,
+  "_atlasText": "\nskill_0009_1.png\nsize: 256,256\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nFZ_00000\n  rotate: false\n  xy: 2, 2\n  size: 173, 177\n  orig: 205, 205\n  offset: 15, 14\n  index: -1\n"
+}

@@ -1,0 +1,126 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/model.player.proto";
+
+message EventPlayerDataInit {
+  string player_id = 1;
+  base.PlayerData player_data = 2;
+  int64 timestamp = 3;
+}
+
+message EventPlayerItemChange {
+  string player_id = 1;
+  base.PlayerItemRecord record = 2;
+  string item_name = 3;
+  double item_value = 4;
+}
+
+message EventPlayerBattleCardAdd {
+  string player_id = 1;
+  string source = 2;
+  bytes data = 3;
+  base.BattleCard card = 4;
+  int64  timestamp = 5;
+}
+
+message EventPlayerBattleCardConsume {
+  string player_id = 1;
+  string source = 2;
+  bytes data = 3;
+  base.BattleCard card = 4;
+  int64  timestamp = 5;
+}
+
+message EventPlayerBattleCardUpdate {
+  string player_id = 1;
+  string source = 2;
+  bytes data = 3;
+  base.BattleCard card = 4;
+  base.BattleCard card_update = 5;
+  int64  timestamp = 6;
+}
+
+message EventPlayerBenefitCardAdd {
+  string player_id = 1;
+  int32 benefit_card_id = 2;
+  int64 benefit_card_duration = 3;
+  int64 benefit_card_expires = 4;
+  string benefit_card_expires_show = 5;
+  int64  timestamp = 6;
+  string source = 7;
+  bytes data = 8;
+}
+
+message EventPlayerBenefitCardRemove {
+  string player_id = 1;
+  int32 benefit_card_id = 2;
+  int64 benefit_card_duration = 3;
+  int64 benefit_card_expires_old = 4;
+  int64 benefit_card_expires_new = 5;
+  int64  timestamp = 6;
+  string source = 7;
+  bytes data = 8;
+  string benefit_card_expires_old_show = 9;
+  string benefit_card_expires_new_show = 10;
+}
+
+message EventPlayerBenefitCardReplace {
+  string player_id = 1;
+  int32 benefit_card_id = 2;
+  int32 benefit_card_id_replace = 3;
+  int64 benefit_card_expires = 4;
+  int64  timestamp = 5;
+  string source = 6;
+  bytes data = 7;
+  string benefit_card_expires_show = 8;
+}
+
+message EventPlayerLevelExpChanged {
+  string player_id = 1;
+  string source = 2;
+  bytes data = 3;
+  int32 level_after = 4;
+  int32 level_before = 5;
+  int64 level_exp_after = 6;
+  int64 level_exp_before = 7;
+  int64 level_exp_changed = 8;
+}
+
+message EventPlayerTaskComplete {
+  string player_id = 1;
+  int32 task_id = 2;
+  string task_name = 3;
+  string task_desc = 4;
+}
+
+message EventPlayerMarkStatusUpdate {
+  string player_id = 1;
+  map<string, bool> mark_status_set = 2;
+}
+
+message EventPlayerDailyRefresh {
+  string player_id = 1;
+  int64 refresh_timestamp = 2;
+}
+
+message EventPlayerBenefitDailyClaim {
+  string player_id = 1;
+  int32 benefit_card_id = 2;
+  int64 benefit_card_expires = 3;
+  int64 claim_timestamp = 4;
+  string benefit_card_expires_time = 5;
+  string claim_time = 6;
+}
+
+message EventPlayerItemProduction {
+  string player_id = 1;
+  int64 last_product_timestamp = 2;
+  int64 curr_product_timestamp = 3;
+  int64 product_round = 4;
+  uint64 production_count = 5;
+  uint64 product_round_count = 6;
+  string production_id = 7;
+  string last_product_time = 8;
+  string curr_product_time = 9;
+}

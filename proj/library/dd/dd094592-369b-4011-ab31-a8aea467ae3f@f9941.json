@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "木桩",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 694,
+      "height": 305
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 694,
+      "height": 305
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "vertices": {
+      "rawPosition": [
+        -347,
+        -152.5,
+        0,
+        347,
+        -152.5,
+        0,
+        -347,
+        152.5,
+        0,
+        347,
+        152.5,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        305,
+        694,
+        305,
+        0,
+        0,
+        694,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -347,
+        "y": -152.5,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 347,
+        "y": 152.5,
+        "z": 0
+      }
+    },
+    "texture": "dd094592-369b-4011-ab31-a8aea467ae3f@6c48a",
+    "packable": false,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

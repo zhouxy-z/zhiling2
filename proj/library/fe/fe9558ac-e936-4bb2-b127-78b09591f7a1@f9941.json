@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "属性详情标题 底",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 134,
+      "height": 48
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 134,
+      "height": 48
+    },
+    "rotated": false,
+    "capInsets": [
+      60,
+      0,
+      60,
+      0
+    ],
+    "vertices": {
+      "rawPosition": [
+        -67,
+        -24,
+        0,
+        67,
+        -24,
+        0,
+        -67,
+        24,
+        0,
+        67,
+        24,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        48,
+        134,
+        48,
+        0,
+        0,
+        134,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -67,
+        "y": -24,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 67,
+        "y": 24,
+        "z": 0
+      }
+    },
+    "texture": "fe9558ac-e936-4bb2-b127-78b09591f7a1@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

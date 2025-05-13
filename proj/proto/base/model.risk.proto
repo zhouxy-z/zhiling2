@@ -1,0 +1,15 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+enum RiskAction {
+  Allow = 0;
+  RequireVerification = 1;
+  Block = 2;
+}
+
+enum RiskLevel {
+  Low = 0;
+  Medium = 1;
+  High = 2;
+}

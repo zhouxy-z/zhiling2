@@ -1,0 +1,103 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "filed_0014",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "MytYHDfQL7ovKmvdUsvlbwQHXHY",
+      "spine": "3.8.99",
+      "x": -99.9,
+      "y": -64.2,
+      "width": 199.8,
+      "height": 177.6,
+      "images": "",
+      "audio": ""
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "cd",
+        "parent": "root",
+        "scaleX": 0.6,
+        "scaleY": 0.6
+      }
+    ],
+    "slots": [
+      {
+        "name": "images/cd1",
+        "bone": "cd",
+        "attachment": "images/cd1"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "images/cd1": {
+            "images/cd1": {
+              "y": 41,
+              "width": 333,
+              "height": 296
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "idle": {
+        "bones": {
+          "cd": {
+            "scale": [
+              {
+                "curve": "stepped"
+              },
+              {
+                "time": 0.3333
+              }
+            ]
+          }
+        }
+      },
+      "show": {
+        "bones": {
+          "cd": {
+            "scale": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "time": 0.3333,
+                "x": 1.167,
+                "y": 1.167
+              },
+              {
+                "time": 0.4333,
+                "x": 0.933,
+                "y": 0.933
+              },
+              {
+                "time": 0.5
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "textures": [
+    {
+      "__uuid__": "d1b0583c-8190-40e7-8eff-bf6c4196ad55@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    }
+  ],
+  "textureNames": [
+    "filed_0014.png"
+  ],
+  "scale": 1,
+  "_atlasText": "\nfiled_0014.png\nsize: 256,256\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nimages/cd1\n  rotate: false\n  xy: 2, 7\n  size: 175, 170\n  orig: 200, 178\n  offset: 7, 4\n  index: -1\n"
+}

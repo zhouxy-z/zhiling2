@@ -1,0 +1,28 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+import "base/model.player.proto";
+
+message PlayerMailData {
+  string id = 1;//ObjectID
+  string player_id = 2;  // The ID of the player to whom this mail belongs.
+  string sender_player_id = 3;
+  string sender_player_name = 4;
+  int64 time = 5; // Timestamp when the mail was sent or received.
+  bool is_read = 6; // Whether the mail has been read.
+  bool is_deleted = 7; // Whether the mail has been marked as deleted.
+  bool is_attachment_claimed = 8; // Whether the mail has attachments that can be obtained.
+  bool has_attachments = 9;
+  string title = 10; // The title of the mail.
+  string content = 11; // The content of the mail.
+  string source = 12;
+  string data = 13;
+  repeated Thing attachments = 14;
+}
+
+message GlobalMailData {
+  string id = 1;//ObjectID
+  int64 global_mail_id = 2;
+  PlayerMailData mail = 3;
+  int64 create_time = 4;
+}

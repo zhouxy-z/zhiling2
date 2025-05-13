@@ -1,0 +1,48 @@
+
+ui_result_win.png
+size: 984,984
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1a
+  rotate: false
+  xy: 491, 204
+  size: 425, 276
+  orig: 425, 276
+  offset: 0, 0
+  index: -1
+1b
+  rotate: true
+  xy: 8, 8
+  size: 472, 475
+  orig: 488, 491
+  offset: 8, 8
+  index: -1
+1c
+  rotate: false
+  xy: 8, 488
+  size: 483, 488
+  orig: 483, 488
+  offset: 0, 0
+  index: -1
+1d
+  rotate: true
+  xy: 499, 685
+  size: 291, 234
+  orig: 292, 234
+  offset: 0, 0
+  index: -1
+black_00000
+  rotate: false
+  xy: 887, 164
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+victory
+  rotate: false
+  xy: 491, 21
+  size: 388, 175
+  orig: 388, 175
+  offset: 0, 0
+  index: -1

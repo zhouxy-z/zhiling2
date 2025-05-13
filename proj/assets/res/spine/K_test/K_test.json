@@ -1,0 +1,208 @@
+{
+"skeleton": {
+	"hash": "sM6yEp5p5FqJ5vSt1DCdYu56O8g",
+	"spine": "3.8.99",
+	"x": -349.32,
+	"y": -485,
+	"width": 700.32,
+	"height": 970,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "card", "parent": "root" },
+	{ "name": "ctrl_6", "parent": "card", "x": 363 },
+	{ "name": "MoveCtrl", "parent": "card", "color": "abe323ff" },
+	{ "name": "背景1", "parent": "card", "color": "abe323ff" },
+	{ "name": "A", "parent": "card" },
+	{ "name": "A1", "parent": "A", "length": 600, "rotation": 55 },
+	{ "name": "A1b", "parent": "A1", "length": 600, "rotation": -110, "x": 600 },
+	{ "name": "A2", "parent": "A", "length": 600, "rotation": -55 },
+	{ "name": "A1b2", "parent": "A2", "length": 600, "rotation": 110, "x": 600 },
+	{ "name": "IK01", "parent": "A", "x": 1039, "color": "ff3f00ff" },
+	{ "name": "A3", "parent": "A", "length": 600, "rotation": 125 },
+	{ "name": "A3B", "parent": "A3", "length": 600, "rotation": 110, "x": 600 },
+	{ "name": "IK02", "parent": "A", "x": -1039, "color": "ff3f00ff" },
+	{ "name": "A4", "parent": "A", "length": 600, "rotation": -125 },
+	{ "name": "A4b", "parent": "A4", "length": 600, "rotation": -110, "x": 600 },
+	{ "name": "card2", "parent": "card", "x": -345, "y": 480 },
+	{ "name": "card3", "parent": "card", "x": 345.09, "y": 480 },
+	{ "name": "card4", "parent": "card", "x": -345, "y": -480 },
+	{ "name": "card5", "parent": "card", "x": 345, "y": -480 },
+	{ "name": "4", "parent": "A3", "rotation": 136.05, "x": 600, "transform": "noRotationOrReflection", "color": "abe323ff" },
+	{ "name": "1", "parent": "A1", "rotation": 43.97, "x": 600, "transform": "noRotationOrReflection", "color": "abe323ff" },
+	{ "name": "3", "parent": "A4", "rotation": -136.05, "x": 600, "transform": "noRotationOrReflection", "color": "abe323ff" },
+	{ "name": "2", "parent": "A2", "rotation": -43.97, "x": 600, "transform": "noRotationOrReflection", "color": "abe323ff" }
+],
+"slots": [
+	{ "name": "bgmask", "bone": "ctrl_6", "attachment": "bgmask" },
+	{ "name": "背景", "bone": "card", "attachment": "背景" },
+	{ "name": "边框", "bone": "ctrl_6", "attachment": "边框" }
+],
+"ik": [
+	{
+		"name": "IK01",
+		"order": 1,
+		"bones": [ "A1", "A1b" ],
+		"target": "IK01",
+		"bendPositive": false
+	},
+	{
+		"name": "IK02",
+		"order": 2,
+		"bones": [ "A2", "A1b2" ],
+		"target": "IK01"
+	},
+	{
+		"name": "IK03",
+		"order": 4,
+		"bones": [ "A4", "A4b" ],
+		"target": "IK02",
+		"bendPositive": false
+	},
+	{
+		"name": "IK04",
+		"order": 5,
+		"bones": [ "A3", "A3B" ],
+		"target": "IK02"
+	}
+],
+"transform": [
+	{
+		"name": "1",
+		"order": 8,
+		"bones": [ "card3" ],
+		"target": "1",
+		"rotation": -43.97,
+		"x": -18.39,
+		"y": 105.87,
+		"rotateMix": 0,
+		"translateMix": 0.5,
+		"scaleMix": 0,
+		"shearMix": 0
+	},
+	{
+		"name": "2",
+		"order": 9,
+		"bones": [ "card5" ],
+		"target": "2",
+		"rotation": 43.97,
+		"x": -18.45,
+		"y": -105.93,
+		"rotateMix": 0,
+		"translateMix": 0.5,
+		"scaleMix": 0,
+		"shearMix": 0
+	},
+	{
+		"name": "3",
+		"order": 11,
+		"bones": [ "card4" ],
+		"target": "3",
+		"rotation": 136.05,
+		"x": -18.49,
+		"y": 106.16,
+		"rotateMix": 0,
+		"translateMix": 0.5,
+		"scaleMix": 0,
+		"shearMix": 0
+	},
+	{
+		"name": "4",
+		"order": 10,
+		"bones": [ "card2" ],
+		"target": "4",
+		"rotation": -136.05,
+		"x": -18.49,
+		"y": -106.16,
+		"shearY": 360,
+		"rotateMix": 0,
+		"translateMix": 0.5,
+		"scaleMix": 0,
+		"shearMix": 0
+	},
+	{
+		"name": "MoveCrrl",
+		"order": 7,
+		"bones": [ "背景1" ],
+		"target": "MoveCtrl",
+		"rotateMix": 0,
+		"scaleMix": 0,
+		"shearMix": 0
+	},
+	{
+		"name": "MoveCrrl_1",
+		"order": 3,
+		"bones": [ "IK02" ],
+		"target": "MoveCtrl",
+		"x": -688.94,
+		"rotateMix": 0,
+		"translateMix": 0.5,
+		"scaleMix": 0,
+		"shearMix": 0
+	},
+	{
+		"name": "MoveCrrl_2",
+		"bones": [ "IK01" ],
+		"target": "MoveCtrl",
+		"x": 688.29,
+		"rotateMix": 0,
+		"translateMix": 0.5,
+		"scaleMix": 0,
+		"shearMix": 0
+	},
+	{
+		"name": "ctrl_6",
+		"order": 6,
+		"bones": [ "ctrl_6" ],
+		"target": "MoveCtrl",
+		"rotateMix": 0,
+		"scaleMix": 0,
+		"shearMix": 0
+	}
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bgmask": {
+				"bgmask": {
+					"type": "clipping",
+					"end": "背景",
+					"vertexCount": 4,
+					"vertices": [ 1, 16, 23.75, -25.69, 1, 1, 17, -22.79, -25.37, 1, 1, 19, -22.36, 23.35, 1, 1, 18, 24.98, 24.73, 1 ],
+					"color": "ce3a3aff"
+				}
+			},
+			"背景": {
+				"背景": {
+					"type": "mesh",
+					"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0, 0.52885, 0.70179 ],
+					"triangles": [ 4, 2, 3, 1, 2, 4, 4, 3, 0, 1, 4, 0 ],
+					"vertices": [ 2, 4, 406, -543, 0.5, 19, 61, -63, 0.5, 2, 4, -394, -543, 0.5, 18, -49, -63, 0.5, 2, 4, -394, 534, 0.5, 16, -49, 54, 0.5, 2, 4, 406, 534, 0.5, 17, 60.91, 54, 0.5, 5, 4, 29.08, -221.83, 0.6561, 16, 374.08, -701.83, 0.0729, 17, -316.01, -701.83, 0.081, 19, -315.92, 258.17, 0.09, 18, 374.08, 258.17, 0.1 ],
+					"hull": 4,
+					"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+					"width": 800,
+					"height": 1077
+				}
+			},
+			"边框": {
+				"边框": {
+					"type": "mesh",
+					"uvs": [ 1, 0.05156, 1, 0.95022, 0.93042, 1, 0.06981, 1, 0, 0.9495, 0, 0.04951, 0.06922, 0, 0.92925, 0 ],
+					"triangles": [ 2, 3, 1, 3, 4, 0, 5, 6, 0, 1, 3, 0, 0, 6, 7, 0, 4, 5 ],
+					"vertices": [ 1, 17, 5.91, -45.02, 1, 1, 19, 6, 43.29, 1, 1, 19, -42.71, -5, 1, 1, 18, 44.54, -4.77, 1, 1, 18, -4.32, 44.21, 1, 1, 16, -4.32, -43.25, 1, 1, 16, 44.13, 4.77, 1, 1, 17, -43.61, 5, 1 ],
+					"hull": 8,
+					"edges": [ 4, 6, 2, 0, 12, 14, 8, 10, 10, 12, 14, 0, 2, 4, 6, 8 ],
+					"width": 700,
+					"height": 970
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {}
+}
+}

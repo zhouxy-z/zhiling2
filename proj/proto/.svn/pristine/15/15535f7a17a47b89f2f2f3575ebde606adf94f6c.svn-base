@@ -1,0 +1,9 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+
+message RiskCtrlParams {
+  string authorization = 1;
+  string rc_token = 2;
+  int32 client_os = 3;
+}

@@ -1,0 +1,149 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "skill_0010_1",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "DbilTqsbNws7qBVZJ7yGi7gFyA8",
+      "spine": "3.8.99",
+      "x": -171.98,
+      "y": -217,
+      "width": 341.86,
+      "height": 461.51,
+      "images": "",
+      "audio": ""
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "card",
+        "parent": "root"
+      }
+    ],
+    "slots": [
+      {
+        "name": "image/bg_1",
+        "bone": "card",
+        "attachment": "image/bg_1"
+      },
+      {
+        "name": "image/nameframe_1",
+        "bone": "card",
+        "attachment": "image/nameframe_1"
+      },
+      {
+        "name": "image/st",
+        "bone": "card",
+        "attachment": "image/st"
+      },
+      {
+        "name": "image/战力",
+        "bone": "card",
+        "attachment": "image/战力"
+      },
+      {
+        "name": "image/能量",
+        "bone": "card",
+        "attachment": "image/能量"
+      },
+      {
+        "name": "card",
+        "bone": "card",
+        "attachment": "image/石块1"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "card": {
+            "image/石块1": {
+              "y": -176.97,
+              "scaleX": 0.9,
+              "scaleY": 0.9,
+              "width": 118,
+              "height": 61
+            }
+          },
+          "image/bg_1": {
+            "image/bg_1": {
+              "width": 320,
+              "height": 434
+            }
+          },
+          "image/nameframe_1": {
+            "image/nameframe_1": {
+              "x": 1.18,
+              "y": -87.99,
+              "width": 322,
+              "height": 255
+            }
+          },
+          "image/st": {
+            "image/st": {
+              "width": 320,
+              "height": 434
+            }
+          },
+          "image/战力": {
+            "image/战力": {
+              "x": 126.88,
+              "y": 191.01,
+              "width": 86,
+              "height": 107
+            }
+          },
+          "image/能量": {
+            "image/能量": {
+              "x": -129.48,
+              "y": 185.96,
+              "width": 85,
+              "height": 95
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "animation": {
+        "bones": {
+          "card": {
+            "rotate": [
+              {},
+              {
+                "time": 0.8,
+                "angle": -30
+              }
+            ],
+            "scale": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              },
+              {
+                "time": 0.8,
+                "x": 2,
+                "y": 2
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "textures": [
+    {
+      "__uuid__": "338280df-a3a5-498d-a441-1cca6cfdccc1@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    }
+  ],
+  "textureNames": [
+    "skill_0010_1.png"
+  ],
+  "scale": 1,
+  "_atlasText": "\nskill_0010_1.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nimage/bg_1\n  rotate: false\n  xy: 2, 307\n  size: 310, 422\n  orig: 320, 434\n  offset: 6, 7\n  index: -1\nimage/nameframe_1\n  rotate: false\n  xy: 314, 496\n  size: 310, 233\n  orig: 322, 255\n  offset: 6, 5\n  index: -1\nimage/st\n  rotate: true\n  xy: 2, 2\n  size: 303, 406\n  orig: 320, 434\n  offset: 8, 14\n  index: -1\nimage/战力\n  rotate: true\n  xy: 314, 408\n  size: 86, 107\n  orig: 86, 107\n  offset: 0, 0\n  index: -1\nimage/石块1\n  rotate: false\n  xy: 423, 437\n  size: 114, 57\n  orig: 118, 61\n  offset: 2, 2\n  index: -1\nimage/能量\n  rotate: false\n  xy: 410, 311\n  size: 85, 95\n  orig: 85, 95\n  offset: 0, 0\n  index: -1\n"
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+import "base/model.battle.op.output.proto";
+import "base/model.battle.op.input.proto";
+
+// 存储结构
+message BattleRoomOpStore {
+  uint32 index = 1;
+  repeated BattleRoomOpInput input = 2;
+  repeated BattleRoomOpOutput output = 3;
+}

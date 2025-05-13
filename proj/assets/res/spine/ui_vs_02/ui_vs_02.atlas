@@ -1,0 +1,76 @@
+
+ui_vs_02.png
+size: 764,764
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jy_00000
+  rotate: false
+  xy: 575, 490
+  size: 166, 263
+  orig: 360, 360
+  offset: 102, 49
+  index: -1
+jy_00001
+  rotate: false
+  xy: 556, 238
+  size: 177, 244
+  orig: 360, 360
+  offset: 96, 59
+  index: -1
+jy_00002
+  rotate: false
+  xy: 8, 514
+  size: 310, 239
+  orig: 360, 360
+  offset: 28, 62
+  index: -1
+jy_00003
+  rotate: true
+  xy: 469, 23
+  size: 207, 164
+  orig: 360, 360
+  offset: 81, 98
+  index: -1
+jy_00004
+  rotate: false
+  xy: 8, 267
+  size: 218, 239
+  orig: 360, 360
+  offset: 80, 55
+  index: -1
+jy_00005
+  rotate: true
+  xy: 246, 34
+  size: 225, 215
+  orig: 360, 360
+  offset: 73, 73
+  index: -1
+jy_00006
+  rotate: true
+  xy: 326, 267
+  size: 247, 222
+  orig: 360, 360
+  offset: 61, 69
+  index: -1
+jy_00007
+  rotate: true
+  xy: 326, 522
+  size: 231, 241
+  orig: 360, 360
+  offset: 69, 60
+  index: -1
+jy_00008
+  rotate: true
+  xy: 8, 27
+  size: 232, 230
+  orig: 360, 360
+  offset: 66, 66
+  index: -1
+wh
+  rotate: true
+  xy: 641, 137
+  size: 93, 112
+  orig: 93, 112
+  offset: 0, 0
+  index: -1

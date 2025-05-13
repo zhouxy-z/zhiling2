@@ -1,0 +1,301 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "ui_vs_02",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "r2zlpb0Tyukf+iurld3RbbqJgq4",
+      "spine": "3.8.99",
+      "x": -360,
+      "y": -360,
+      "width": 720,
+      "height": 720,
+      "images": "./images/",
+      "audio": "E:/游戏集结项目文件/特效/UI动效/对战/对战动效Spine/ui_vs正在寻找对手/制作文件"
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "wh",
+        "parent": "root"
+      },
+      {
+        "name": "jy1",
+        "parent": "root",
+        "scaleX": 2,
+        "scaleY": 2
+      }
+    ],
+    "slots": [
+      {
+        "name": "jy1",
+        "bone": "jy1",
+        "attachment": "jy_00000"
+      },
+      {
+        "name": "wh",
+        "bone": "wh",
+        "attachment": "wh"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "jy1": {
+            "jy_00000": {
+              "width": 360,
+              "height": 360
+            },
+            "jy_00001": {
+              "x": 0.18,
+              "y": 0.18,
+              "width": 360,
+              "height": 360
+            },
+            "jy_00002": {
+              "x": 0.18,
+              "y": 0.18,
+              "width": 360,
+              "height": 360
+            },
+            "jy_00003": {
+              "x": 0.18,
+              "y": 0.18,
+              "width": 360,
+              "height": 360
+            },
+            "jy_00004": {
+              "x": 0.18,
+              "y": 0.18,
+              "width": 360,
+              "height": 360
+            },
+            "jy_00005": {
+              "x": 0.18,
+              "y": 0.18,
+              "width": 360,
+              "height": 360
+            },
+            "jy_00006": {
+              "x": 0.18,
+              "y": 0.18,
+              "width": 360,
+              "height": 360
+            },
+            "jy_00007": {
+              "x": 0.18,
+              "y": 0.18,
+              "width": 360,
+              "height": 360
+            },
+            "jy_00008": {
+              "x": 0.18,
+              "y": 0.18,
+              "width": 360,
+              "height": 360
+            }
+          },
+          "wh": {
+            "wh": {
+              "type": "mesh",
+              "uvs": [
+                1,
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0
+              ],
+              "triangles": [
+                1,
+                2,
+                3,
+                1,
+                3,
+                0
+              ],
+              "vertices": [
+                53.96,
+                -54.76,
+                -39.04,
+                -54.76,
+                -39.04,
+                57.24,
+                53.96,
+                57.24
+              ],
+              "hull": 4,
+              "edges": [
+                0,
+                2,
+                2,
+                4,
+                4,
+                6,
+                0,
+                6
+              ],
+              "width": 93,
+              "height": 112
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "loop": {
+        "slots": {
+          "jy1": {
+            "attachment": [
+              {
+                "name": "jy_00001"
+              },
+              {
+                "time": 0.1667,
+                "name": "jy_00002"
+              },
+              {
+                "time": 0.3,
+                "name": "jy_00003"
+              },
+              {
+                "time": 0.4667,
+                "name": "jy_00004"
+              },
+              {
+                "time": 0.6,
+                "name": "jy_00005"
+              },
+              {
+                "time": 0.7667,
+                "name": "jy_00006"
+              },
+              {
+                "time": 0.9,
+                "name": "jy_00007"
+              },
+              {
+                "time": 1.0667,
+                "name": "jy_00008"
+              },
+              {
+                "time": 1.2667,
+                "name": "jy_00000"
+              },
+              {
+                "time": 1.4,
+                "name": "jy_00001"
+              },
+              {
+                "time": 1.5667,
+                "name": "jy_00002"
+              },
+              {
+                "time": 1.7,
+                "name": "jy_00003"
+              },
+              {
+                "time": 1.8667,
+                "name": "jy_00004"
+              },
+              {
+                "time": 2,
+                "name": "jy_00005"
+              },
+              {
+                "time": 2.1667,
+                "name": "jy_00006"
+              },
+              {
+                "time": 2.3,
+                "name": "jy_00007"
+              },
+              {
+                "time": 2.4667,
+                "name": "jy_00008"
+              },
+              {
+                "time": 2.6667,
+                "name": "jy_00000"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "wh": {
+            "scale": [
+              {
+                "curve": 0.25,
+                "c3": 0.75
+              },
+              {
+                "time": 0.3333,
+                "x": 1.2,
+                "y": 1.2,
+                "curve": 0.25,
+                "c3": 0.75
+              },
+              {
+                "time": 0.6667,
+                "curve": 0.25,
+                "c3": 0.75
+              },
+              {
+                "time": 1,
+                "x": 1.2,
+                "y": 1.2,
+                "curve": 0.25,
+                "c3": 0.75
+              },
+              {
+                "time": 1.3333,
+                "curve": 0.25,
+                "c3": 0.75
+              },
+              {
+                "time": 1.6667,
+                "x": 1.2,
+                "y": 1.2,
+                "curve": 0.25,
+                "c3": 0.75
+              },
+              {
+                "time": 2,
+                "curve": 0.25,
+                "c3": 0.75
+              },
+              {
+                "time": 2.3333,
+                "x": 1.2,
+                "y": 1.2,
+                "curve": 0.25,
+                "c3": 0.75
+              },
+              {
+                "time": 2.6667
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "textures": [
+    {
+      "__uuid__": "5eeec9e5-dade-4838-9d44-088a8c0f743d@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    }
+  ],
+  "textureNames": [
+    "ui_vs_02.png"
+  ],
+  "scale": 1,
+  "_atlasText": "\nui_vs_02.png\nsize: 764,764\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\njy_00000\n  rotate: false\n  xy: 575, 490\n  size: 166, 263\n  orig: 360, 360\n  offset: 102, 49\n  index: -1\njy_00001\n  rotate: false\n  xy: 556, 238\n  size: 177, 244\n  orig: 360, 360\n  offset: 96, 59\n  index: -1\njy_00002\n  rotate: false\n  xy: 8, 514\n  size: 310, 239\n  orig: 360, 360\n  offset: 28, 62\n  index: -1\njy_00003\n  rotate: true\n  xy: 469, 23\n  size: 207, 164\n  orig: 360, 360\n  offset: 81, 98\n  index: -1\njy_00004\n  rotate: false\n  xy: 8, 267\n  size: 218, 239\n  orig: 360, 360\n  offset: 80, 55\n  index: -1\njy_00005\n  rotate: true\n  xy: 246, 34\n  size: 225, 215\n  orig: 360, 360\n  offset: 73, 73\n  index: -1\njy_00006\n  rotate: true\n  xy: 326, 267\n  size: 247, 222\n  orig: 360, 360\n  offset: 61, 69\n  index: -1\njy_00007\n  rotate: true\n  xy: 326, 522\n  size: 231, 241\n  orig: 360, 360\n  offset: 69, 60\n  index: -1\njy_00008\n  rotate: true\n  xy: 8, 27\n  size: 232, 230\n  orig: 360, 360\n  offset: 66, 66\n  index: -1\nwh\n  rotate: true\n  xy: 641, 137\n  size: 93, 112\n  orig: 93, 112\n  offset: 0, 0\n  index: -1\n"
+}

@@ -1,0 +1,209 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "skill_0012_2",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "RaWwRBc/7r/OfH9IPeZ059/LC4Y",
+      "spine": "3.8.99",
+      "x": -180,
+      "y": -180,
+      "width": 360,
+      "height": 360,
+      "images": "",
+      "audio": ""
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "bz",
+        "parent": "root"
+      },
+      {
+        "name": "gq",
+        "parent": "root"
+      },
+      {
+        "name": "gy",
+        "parent": "root"
+      }
+    ],
+    "slots": [
+      {
+        "name": "images/ef_baozhu_1",
+        "bone": "bz",
+        "attachment": "images/ef_baozhu_1"
+      },
+      {
+        "name": "images/gy",
+        "bone": "gy",
+        "attachment": "images/gy",
+        "blend": "additive"
+      },
+      {
+        "name": "images/grow",
+        "bone": "gq",
+        "attachment": "images/grow",
+        "blend": "additive"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "images/ef_baozhu_1": {
+            "images/ef_baozhu_1": {
+              "width": 214,
+              "height": 228
+            },
+            "images/ef_baozhu_2": {
+              "width": 214,
+              "height": 228
+            },
+            "images/ef_baozhu_3": {
+              "width": 214,
+              "height": 228
+            },
+            "images/ef_baozhu_4": {
+              "width": 214,
+              "height": 228
+            },
+            "images/ef_baozhu_5": {
+              "width": 214,
+              "height": 228
+            }
+          },
+          "images/grow": {
+            "images/grow": {
+              "x": 0.5,
+              "width": 287,
+              "height": 284
+            }
+          },
+          "images/gy": {
+            "images/gy": {
+              "width": 360,
+              "height": 360
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "animation": {
+        "slots": {
+          "images/ef_baozhu_1": {
+            "color": [
+              {
+                "time": 0.2667,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.4,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0.0667,
+                "name": "images/ef_baozhu_1"
+              },
+              {
+                "time": 0.1333,
+                "name": "images/ef_baozhu_2"
+              },
+              {
+                "time": 0.2,
+                "name": "images/ef_baozhu_3"
+              },
+              {
+                "time": 0.2667,
+                "name": "images/ef_baozhu_4"
+              },
+              {
+                "time": 0.3333,
+                "name": "images/ef_baozhu_5"
+              }
+            ]
+          },
+          "images/grow": {
+            "color": [
+              {
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.1,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.5333,
+                "color": "ffffff00"
+              }
+            ]
+          },
+          "images/gy": {
+            "color": [
+              {
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.0333,
+                "color": "ffffffff",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.1667,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.3333,
+                "color": "ffffff00"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "bz": {
+            "scale": [
+              {
+                "x": 0.5,
+                "y": 0.5
+              },
+              {
+                "time": 0.3333
+              }
+            ]
+          },
+          "gy": {
+            "scale": [
+              {
+                "x": 0,
+                "y": 0
+              },
+              {
+                "time": 0.3333,
+                "x": 2,
+                "y": 2
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "textures": [
+    {
+      "__uuid__": "34713d29-1f8c-49af-8d07-da087c85e059@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    }
+  ],
+  "textureNames": [
+    "skill_0012_2.png"
+  ],
+  "scale": 1,
+  "_atlasText": "\nskill_0012_2.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nimages/ef_baozhu_1\n  rotate: true\n  xy: 262, 77\n  size: 147, 192\n  orig: 214, 228\n  offset: 38, 20\n  index: -1\nimages/ef_baozhu_2\n  rotate: false\n  xy: 395, 400\n  size: 157, 152\n  orig: 214, 228\n  offset: 33, 44\n  index: -1\nimages/ef_baozhu_3\n  rotate: true\n  xy: 262, 226\n  size: 163, 152\n  orig: 214, 228\n  offset: 29, 40\n  index: -1\nimages/ef_baozhu_5\n  rotate: true\n  xy: 262, 226\n  size: 163, 152\n  orig: 214, 228\n  offset: 29, 40\n  index: -1\nimages/ef_baozhu_4\n  rotate: false\n  xy: 225, 391\n  size: 168, 161\n  orig: 214, 228\n  offset: 26, 31\n  index: -1\nimages/grow\n  rotate: false\n  xy: 2, 16\n  size: 258, 258\n  orig: 287, 284\n  offset: 19, 13\n  index: -1\nimages/gy\n  rotate: false\n  xy: 2, 276\n  size: 221, 276\n  orig: 360, 360\n  offset: 61, 43\n  index: -1\n"
+}

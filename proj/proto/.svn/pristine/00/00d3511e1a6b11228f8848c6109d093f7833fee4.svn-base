@@ -1,0 +1,340 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+import "base/model.battle.proto";
+
+enum BattleRoomOpOutputType {
+  Out_NewRound = 0; // 新回合
+  Out_CardDeckFrontToHandTail = 1; // 卡牌由卡组最前到手牌末尾
+  Out_WaitPlayerInput = 2; // 等待客户端玩家操作
+  Out_WaitPlayerShow = 3; // 等待客户端表现完毕00
+  Out_Settlement = 4; // 结算
+  Out_CardDataChange = 5; //卡牌数据变化
+  Out_DelToHand = 6;//删除到手牌
+  Out_CopyCard = 7;//复制卡牌
+  Out_HandToTerrain = 8; // 从手牌上场
+  Out_HandToDrop = 9;//手牌到弃牌
+  Out_HandToDel = 10;//手牌到删除
+  Out_TerrainToDel = 11;//场上卡牌到删除
+  Out_DropToHand = 12;//弃牌到手牌
+  Out_TerrainToTerrain = 13;//场上间移动
+  Out_DeckToDel = 14;//卡组到删除
+  Out_DeckToDrop = 15;//卡组到弃牌
+  Out_PlayerPower = 16;//玩家分数变动
+  Out_RoundData = 17;//回合初始能量与回合初始抽卡数量
+  Out_HandCardMax = 18;//手牌上限调整
+  Out_TerrainData = 19;//房间区域数据
+  Out_CardTerrainState = 20;//卡牌在区域的状态变换
+  Out_PlayerEnergy = 21;//玩家能量变动
+  Out_AddCardToDeck = 22;//往卡组添加卡牌
+  Out_AddCardToHand = 23;//往手牌添加卡牌
+  Out_AddCardToTerrain = 24;//往场上区域添加卡牌
+  Out_TerrainToDrop = 25;//场上到丢弃
+  Out_Peek = 26;//窥视
+  Out_RoomDestroy = 27;//房间被异常销毁
+  Out_Protect = 28;//卡牌保护
+  Out_LockZone = 29;//区域锁定
+  Out_HandToDeck = 30;//手牌到牌堆
+  Out_AddCard = 31;//从场上数据选择来源卡牌数据
+  Out_Nullify = 32;//无效持续状态
+  Out_EffectSkill = 33;//释放技能预通知 作用目标失败结果原因
+}
+
+message BattleRoomOpOutput {
+  // 数据头
+  string owner_player_id = 1; // 发送此操作玩家ID，可能为空字符串，意味着是系统
+  string recv_player_id = 2;
+  BattleRoomOpOutputType op_type = 3;
+  string touch_inst_id = 4;//触发动作的实例id
+
+  // 消息具体参数
+
+  // 流程推送
+  BattleRoomOpOutput_NewRound new_round = 10;
+  BattleRoomOpOutput_WaitPlayerInput wait_player_input = 11;
+  BattleRoomOpOutput_WaitPlayerShow wait_player_show = 12;
+  BattleRoomOpOutput_Settlement settlement = 13;
+
+  // 具体操作
+  BattleRoomOpOutput_CardDeckTopToHandTail card_deck_top_to_hand_tail = 20;
+  BattleRoomOpOutput_CardDataChange card_data_change = 21;
+  BattleRoomOpOutput_CopyCard copy_card = 22;
+  BattleRoomOpOutput_HandToTerrain hand_to_terrain = 23;
+  BattleRoomOpOutput_HandToDrop hand_to_drop = 24;
+  BattleRoomOpOutput_HandToDel hand_to_del = 25;
+  BattleRoomOpOutput_TerrainToDel terrain_to_del = 26;
+  BattleRoomOpOutput_DropToHand drop_to_hand = 27;
+  BattleRoomOpOutput_TerrainToTerrain terrain_to_terrain = 28;
+  BattleRoomOpOutput_DeckToDel deck_to_del = 29;
+  BattleRoomOpOutput_DeckToDrop deck_to_drop = 30;
+  BattleRoomOpOutput_HandCardMax hand_card_max = 31;
+  BattleRoomOpOutput_CardTerrainState card_terrain_state = 32;
+  BattleRoomOpOutput_PlayerPower player_power = 33;//玩家计算的分数
+  BattleRoomOpOutput_PlayerEnergy player_energy = 34;//玩家剩余能量
+  BattleRoomOpOutput_RoundData round_data = 35;//回合初始能量与回合初始抽卡数量
+  BattleRoomOpOutput_TerrainData terrain_data = 36;//房间区域数据
+  BattleRoomOpOutput_AddCardToDeck add_card_to_deck = 37;
+  BattleRoomOpOutput_AddCardToHand add_card_to_hand = 38;
+  BattleRoomOpOutput_AddCardToTerrain add_card_to_terrain = 39;
+  BattleRoomOpOutput_TerrainToDrop  terrain_to_drop = 40;
+  BattleRoomOpOutput_DelToHand del_to_hand = 41;
+  BattleRoomOpOutput_Peek peek = 42;
+  BattleRoomOpOutput_RoomDestroy room_destroy = 43;
+  BattleRoomOpOutput_Protect protect = 44;
+  BattleRoomOpOutput_LockZone lock_zone = 45;
+  BattleRoomOpOutput_HandToDeck hand_to_deck = 46;
+  BattleRoomOpOutput_AddCard add_card = 47;
+  BattleRoomOpOutput_Nullify  nullify = 48;
+  BattleRoomOpOutput_EffectSkill effect_skill = 49;
+}
+
+message BattleRoomOpOutput_AddCard {
+  string from_inst_id = 1;
+  uint32 from_skill_id = 2;
+  string source_player_id = 3;//来源playerId,一般为对方玩家
+  string source_inst_id = 4;//来源实例id
+  base.BattleRoomCardData card = 5;
+  bool is_move = 6;//是否是从来源方移动过来的卡牌,如果是移动的卡牌，实例id不变，否则新增实例id
+}
+
+message BattleRoomOpOutput_HandCardMax {
+  string from_inst_id = 1;
+  uint32 from_skill_id = 2;
+  string to_player_id = 3;
+  int32 hand_card_max = 4;
+}
+
+enum EffectSkillResult {
+  Success = 0;
+  ZoneCountLimit = 1;//作用目标增加卡牌后数量达到上限
+  MaxLimit = 2;//到达上限
+  StateLimit = 3;//持续状态限制
+  StatusErr = 4;//状态错误
+  TargetErr = 5;//目标错误
+}
+
+message BattleRoomOpOutput_EffectSkill {
+  string inst_id = 1;//生效实例id
+  uint32 skill_id = 2;//生效技能id
+  repeated  int32 count = 3;//计数器
+  repeated EffectTarget targets = 4;//作用目标
+  EffectSkillResult result = 5;//触发结果 0-成功(默认触发成功时不返回，只返回对应op) 1-区域已满...
+}
+
+message EffectTarget {
+  string inst_id = 1;//如果为空则为区域对象
+  string player_id = 2;
+  int32 area = 3;
+  base.BattleRoomCardLocation location = 4;
+}
+
+message BattleRoomOpOutput_Nullify{
+  string from_inst_id = 1;
+  uint32 from_skill_id = 2;
+  string to_inst_id = 3;//被无效的实例id
+  uint32 to_skill_id = 4;//被无效的技能id
+  string to_player_id = 5;//被作用的玩家
+}
+
+message BattleRoomOpOutput_HandToDeck {
+  string from_inst_id = 1;
+  uint32 from_skill_id = 2;
+  base.BattleRoomCardData card = 3;
+}
+
+message  BattleRoomOpOutput_LockZone{
+  string from_inst_id = 1;
+  uint32 from_skill_id = 2;
+  string to_player_id = 3;
+  int32 to_area = 4;
+  repeated base.BattleRoomPersistentState state = 5;//附加状态
+  uint32 max_round = 6;//最大持续回合为0则不限制
+}
+
+message  BattleRoomOpOutput_Protect{
+  string from_inst_id = 1;
+  uint32 from_skill_id = 2;
+  string to_inst_id = 3;//被保护的卡牌实例
+  repeated base.BattleRoomPersistentState state = 4;//附加状态
+  uint32 max_round = 5;//最大持续回合为0则不限制
+}
+
+message  BattleRoomOpOutput_Peek{
+  string from_inst_id = 1;
+  uint32 from_skill_id = 2;
+  map<string, BattleRoomTerrainData>  terrain_data = 3;//地形数据
+  map<string, BattleRoomCardData> hand_cards = 4;//手牌数据
+  map<string, BattleRoomCardData> deck_cards = 5;//卡组数据
+}
+
+message  BattleRoomOpOutput_TerrainToDrop{
+  string from_inst_id = 1;
+  base.BattleRoomCardData card = 2;
+  string from_terrain_inst_id = 3;
+  uint32 from_skill_id = 4;
+}
+
+message  BattleRoomOpOutput_AddCardToDeck{
+  string from_inst_id = 1;//  效果来源于，为空则为系统操作
+  BattleRoomCardData card = 2;//卡牌
+  uint32 from_skill_id = 3;
+  string from_player_id = 4;
+  base.BattleRoomCardLocation from_location = 5;
+}
+
+message  BattleRoomOpOutput_AddCardToHand {
+  string from_inst_id = 1;//  效果来源于，为空则为系统操作
+  BattleRoomCardData card = 2;//卡牌
+  uint32 from_skill_id = 3;
+  string from_player_id = 4;
+  base.BattleRoomCardLocation from_location = 5;
+}
+
+message  BattleRoomOpOutput_AddCardToTerrain {
+  string from_inst_id = 1;//  效果来源于，为空则为系统操作
+  BattleRoomCardData card = 2;//卡牌
+  string terrain_inst_id = 3;//目标区域
+  uint32 from_skill_id = 4;
+  string from_player_id = 5;
+  base.BattleRoomCardLocation from_location = 6;
+}
+
+message  BattleRoomOpOutput_TerrainData {
+  BattleRoomTerrainData terrain_data = 1;//房间区域数据
+}
+
+message  BattleRoomOpOutput_PlayerPower {
+  map<string, BattleRoomOpOutput_TerrainPower> terrain_power = 2;//玩家区域基础分数
+}
+
+message  BattleRoomOpOutput_PlayerEnergy {
+  string player_id = 1;
+  repeated BattleRoomAttrValue energy = 2;//玩家剩余能量
+  string from_inst_id = 3;
+  uint32 from_skill_id = 4;
+}
+
+message BattleRoomOpOutput_CardTerrainState {
+  string inst_id = 1;
+  BattleRoomCardData card = 2;
+}
+
+message BattleRoomOpOutput_RoundData {
+  repeated BattleRoomAttrValue round_energy = 1; // 每回合能量
+  repeated BattleRoomAttrValue round_card_draw = 2; // 每回合抽卡数量
+  string from_inst_id = 3;
+  uint32 from_skill_id = 4;
+}
+
+message BattleRoomOpOutput_TerrainPower {
+  repeated BattleRoomAttrValue base_power = 1;//玩家三个区域基础战力
+  repeated BattleRoomAttrValue card_mul = 2;//玩家在每个地形上卡牌战力总和应该乘以的乘积
+}
+
+message BattleRoomOpOutput_NewRound {
+  uint32 new_round = 1;
+  base.BattleRoomGamePlayData gamePlayData = 2; // 整个场内数据
+}
+
+message BattleRoomOpOutput_CardDeckTopToHandTail {
+  repeated base.BattleRoomCardData cards = 1;
+  string from_inst_id = 2;
+  uint32 from_skill_id = 3;
+}
+
+message BattleRoomOpOutput_WaitPlayerInput {
+  int64 timeout = 1; // 超时时间
+}
+
+message BattleRoomOpOutput_Show {
+
+}
+
+message BattleRoomOpOutput_Settlement {
+  string winner_player_id = 1;
+  string leave_player_id = 2;
+  bool tie = 3;//是否平局
+}
+
+message BattleRoomOpOutput_WaitPlayerShow {
+  int64 timeout = 1; // 超时时间
+}
+
+message BattleRoomOpOutput_CardDataChange {
+  string from_inst_id = 1;
+  base.BattleRoomCardData card = 2;
+  uint32 from_skill_id = 3;
+}
+
+message BattleRoomOpOutput_CopyCard{
+  string from_inst_id = 1;
+  string copy_inst_id = 2;//被拷贝的实例id
+  base.BattleRoomCardData card = 3;
+  uint32 from_skill_id = 4;
+}
+
+message BattleRoomOpOutput_HandToTerrain {
+  base.BattleRoomCardData card = 1;
+  string to_terrain_inst_id = 2;
+  string to_terrain_player_id = 3;
+  bool success = 4;//是否移动成功
+}
+
+message BattleRoomOpOutput_DelToHand {
+  string from_inst_id = 1;
+  base.BattleRoomCardData card = 2;
+  uint32 from_skill_id = 3;
+}
+
+message BattleRoomOpOutput_HandToDrop {
+  string from_inst_id = 1;
+  base.BattleRoomCardData card = 2;
+  uint32 from_skill_id = 3;
+}
+
+message BattleRoomOpOutput_HandToDel {
+  string from_inst_id = 1;
+  base.BattleRoomCardData card = 2;
+  uint32 from_skill_id = 3;
+}
+
+message BattleRoomOpOutput_TerrainToDel {
+  string from_inst_id = 1;
+  base.BattleRoomCardData card = 2;
+  string from_terrain_inst_id = 3;
+  uint32 from_skill_id = 4;
+}
+
+message BattleRoomOpOutput_DropToHand {
+  string from_inst_id = 1;
+  base.BattleRoomCardData card = 2;
+  uint32 from_skill_id = 3;
+}
+
+message BattleRoomOpOutput_TerrainToTerrain {
+  string from_inst_id = 1;
+  base.BattleRoomCardData card = 2;
+  string from_terrain_inst_id = 3;
+  string from_terrain_player_id = 4;
+  string to_terrain_inst_id = 5;
+  string to_terrain_player_id = 6;
+  bool success = 7;//是否移动成功
+  bool manual = 8;//是否手动
+  uint32 from_skill_id = 9;
+}
+
+message BattleRoomOpOutput_DeckToDel {
+  string from_inst_id = 1;
+  base.BattleRoomCardData card = 2;
+  uint32 from_skill_id = 3;
+}
+
+message BattleRoomOpOutput_DeckToDrop {
+  string from_inst_id = 1;
+  base.BattleRoomCardData card = 2;
+  uint32 from_skill_id = 3;
+}
+
+message BattleRoomOpOutput_RoomDestroy {
+  string reason = 1;
+}

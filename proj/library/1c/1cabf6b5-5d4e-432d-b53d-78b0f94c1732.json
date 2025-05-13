@@ -1,0 +1,248 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "skill_0008_2",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "xFjfEktKJWGVASebRDd2eq0tfSU",
+      "spine": "3.8.99",
+      "x": -270,
+      "y": -270,
+      "width": 540,
+      "height": 540,
+      "images": "",
+      "audio": ""
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "bf",
+        "parent": "root"
+      }
+    ],
+    "slots": [
+      {
+        "name": "image/jg_1",
+        "bone": "bf",
+        "attachment": "image/jg_1"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "image/jg_1": {
+            "image/jg_1": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_2": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_3": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_4": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_5": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_6": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_7": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_8": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_9": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_10": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_11": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_12": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_13": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_14": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_15": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_16": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_17": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_18": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_19": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_20": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_21": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_22": {
+              "width": 540,
+              "height": 540
+            },
+            "image/jg_23": {
+              "width": 540,
+              "height": 540
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "animation": {
+        "slots": {
+          "image/jg_1": {
+            "attachment": [
+              {
+                "name": "image/jg_1"
+              },
+              {
+                "time": 0.0333,
+                "name": "image/jg_2"
+              },
+              {
+                "time": 0.0667,
+                "name": "image/jg_3"
+              },
+              {
+                "time": 0.1,
+                "name": "image/jg_4"
+              },
+              {
+                "time": 0.1333,
+                "name": "image/jg_5"
+              },
+              {
+                "time": 0.1667,
+                "name": "image/jg_6"
+              },
+              {
+                "time": 0.2,
+                "name": "image/jg_7"
+              },
+              {
+                "time": 0.2333,
+                "name": "image/jg_8"
+              },
+              {
+                "time": 0.2667,
+                "name": "image/jg_9"
+              },
+              {
+                "time": 0.3,
+                "name": "image/jg_10"
+              },
+              {
+                "time": 0.3333,
+                "name": "image/jg_11"
+              },
+              {
+                "time": 0.3667,
+                "name": "image/jg_12"
+              },
+              {
+                "time": 0.4,
+                "name": "image/jg_13"
+              },
+              {
+                "time": 0.4333,
+                "name": "image/jg_14"
+              },
+              {
+                "time": 0.4667,
+                "name": "image/jg_15"
+              },
+              {
+                "time": 0.5,
+                "name": "image/jg_16"
+              },
+              {
+                "time": 0.5333,
+                "name": "image/jg_17"
+              },
+              {
+                "time": 0.5667,
+                "name": "image/jg_18"
+              },
+              {
+                "time": 0.6,
+                "name": "image/jg_19"
+              },
+              {
+                "time": 0.6333,
+                "name": "image/jg_20"
+              },
+              {
+                "time": 0.6667,
+                "name": "image/jg_21"
+              },
+              {
+                "time": 0.7,
+                "name": "image/jg_22"
+              },
+              {
+                "time": 0.7333,
+                "name": "image/jg_23"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "textures": [
+    {
+      "__uuid__": "e857573f-804c-4a20-b3f0-76ef7b64b5cf@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    }
+  ],
+  "textureNames": [
+    "skill_0008_2.png"
+  ],
+  "scale": 1,
+  "_atlasText": "\nskill_0008_2.png\nsize: 2048,2048\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nimage/jg_1\n  rotate: true\n  xy: 700, 643\n  size: 336, 322\n  orig: 540, 540\n  offset: 84, 110\n  index: -1\nimage/jg_10\n  rotate: false\n  xy: 2, 932\n  size: 366, 367\n  orig: 540, 540\n  offset: 86, 79\n  index: -1\nimage/jg_11\n  rotate: false\n  xy: 2, 563\n  size: 366, 367\n  orig: 540, 540\n  offset: 86, 79\n  index: -1\nimage/jg_12\n  rotate: false\n  xy: 2, 199\n  size: 362, 362\n  orig: 540, 540\n  offset: 88, 82\n  index: -1\nimage/jg_13\n  rotate: false\n  xy: 366, 203\n  size: 358, 358\n  orig: 540, 540\n  offset: 90, 84\n  index: -1\nimage/jg_14\n  rotate: false\n  xy: 370, 1682\n  size: 355, 355\n  orig: 540, 540\n  offset: 91, 85\n  index: -1\nimage/jg_15\n  rotate: false\n  xy: 370, 1330\n  size: 350, 350\n  orig: 540, 540\n  offset: 93, 88\n  index: -1\nimage/jg_16\n  rotate: false\n  xy: 370, 981\n  size: 340, 347\n  orig: 540, 540\n  offset: 99, 92\n  index: -1\nimage/jg_17\n  rotate: false\n  xy: 370, 640\n  size: 328, 339\n  orig: 540, 540\n  offset: 105, 99\n  index: -1\nimage/jg_18\n  rotate: false\n  xy: 712, 1004\n  size: 302, 324\n  orig: 540, 540\n  offset: 126, 116\n  index: -1\nimage/jg_19\n  rotate: false\n  xy: 1016, 1055\n  size: 300, 311\n  orig: 540, 540\n  offset: 127, 131\n  index: -1\nimage/jg_2\n  rotate: true\n  xy: 722, 1368\n  size: 312, 301\n  orig: 540, 540\n  offset: 97, 118\n  index: -1\nimage/jg_20\n  rotate: false\n  xy: 727, 1734\n  size: 296, 303\n  orig: 540, 540\n  offset: 128, 139\n  index: -1\nimage/jg_21\n  rotate: true\n  xy: 1025, 1442\n  size: 295, 291\n  orig: 540, 540\n  offset: 129, 149\n  index: -1\nimage/jg_22\n  rotate: false\n  xy: 726, 91\n  size: 246, 275\n  orig: 540, 540\n  offset: 174, 168\n  index: -1\nimage/jg_23\n  rotate: true\n  xy: 2, 2\n  size: 195, 191\n  orig: 540, 540\n  offset: 203, 222\n  index: -1\nimage/jg_3\n  rotate: false\n  xy: 726, 368\n  size: 273, 273\n  orig: 540, 540\n  offset: 116, 131\n  index: -1\nimage/jg_4\n  rotate: false\n  xy: 974, 130\n  size: 227, 236\n  orig: 540, 540\n  offset: 139, 150\n  index: -1\nimage/jg_5\n  rotate: false\n  xy: 195, 5\n  size: 182, 192\n  orig: 540, 540\n  offset: 164, 171\n  index: -1\nimage/jg_6\n  rotate: false\n  xy: 1001, 411\n  size: 230, 230\n  orig: 540, 540\n  offset: 154, 148\n  index: -1\nimage/jg_7\n  rotate: false\n  xy: 1025, 1739\n  size: 298, 298\n  orig: 540, 540\n  offset: 120, 114\n  index: -1\nimage/jg_8\n  rotate: false\n  xy: 2, 1670\n  size: 366, 367\n  orig: 540, 540\n  offset: 86, 79\n  index: -1\nimage/jg_9\n  rotate: false\n  xy: 2, 1301\n  size: 366, 367\n  orig: 540, 540\n  offset: 86, 79\n  index: -1\n"
+}

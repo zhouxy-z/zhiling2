@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BJ",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1600,
+      "height": 720
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 1600,
+      "height": 720
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "vertices": {
+      "rawPosition": [
+        -800,
+        -360,
+        0,
+        800,
+        -360,
+        0,
+        -800,
+        360,
+        0,
+        800,
+        360,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        720,
+        1600,
+        720,
+        0,
+        0,
+        1600,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -800,
+        "y": -360,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 800,
+        "y": 360,
+        "z": 0
+      }
+    },
+    "texture": "cb6c63fa-682c-40b8-be0c-0884376f7ddf@6c48a",
+    "packable": false,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

@@ -1,0 +1,172 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "pb/common.proto";
+import "base/model.battle.op.output.proto";
+import "base/model.battle.op.input.proto";
+import "base/model.battle.proto";
+
+// 进入房间
+message BattleRoomEnterReq {
+  Server server = 1;
+  string room_id = 2;
+}
+
+message BattleRoomEnterRes {
+  base.Res res = 1;
+  string room_id = 2;
+}
+
+// 离开房间
+message BattleRoomLeaveReq {
+  Server server = 1;
+  string room_id = 2;
+}
+
+message BattleRoomLeaveRes {
+  base.Res res = 1;
+  string room_id = 2;
+}
+
+// 保活房间服务，如果玩家长时间和房间服务未通讯则视为掉线
+message BattleRoomPingReq {
+  Server server = 1;
+  string room_id = 2;
+}
+
+message BattleRoomPingRes {
+  base.Res res = 1;
+  string room_id = 2;
+}
+
+// 推送房间的操作
+message BattleRoomOpOutputPush {
+  string room_id = 1;
+  repeated base.BattleRoomOpOutput outputs = 2;
+  uint32 index = 3; // 推送序号，用来调试用
+  string index_str = 4; // 推送序号，用来调试用
+}
+
+// 推送房间双方的确认操作
+message BattleRoomConfirmOpInputPush {
+  string room_id = 1;
+  map<string, bool> is_confirm = 2; // 双方玩家的确认状态
+}
+
+// 向房间发送操作指令
+message BattleRoomConfirmOpInputReq {
+  Server server = 1;
+  string room_id = 2;
+  repeated base.BattleRoomOpInput inputs = 3;
+}
+
+message BattleRoomConfirmOpInputRes {
+  base.Res res = 1;
+  string room_id = 2;
+}
+
+// 向房间发送取消操作指令
+message BattleRoomCancelOpInputReq {
+  Server server = 1;
+  string room_id = 2;
+}
+
+message BattleRoomCancelOpInputRes {
+  base.Res res = 1;
+  string room_id = 2;
+}
+
+// 客户端通知服务器回合演出完成
+message BattleRoomRoundShowEndReq {
+  Server server = 1;
+  string room_id = 2;
+}
+
+message BattleRoomRoundShowEndRes {
+  base.Res res = 1;
+  string room_id = 2;
+}
+
+// 进回放入房间
+message BattleRoomReplayEnterReq {
+  Server server = 1;
+  string room_id = 2;
+}
+
+message BattleRoomReplayEnterRes {
+  base.Res res = 1;
+  string room_id = 2;
+}
+
+// 离开回放房间
+message BattleRoomReplayLeaveReq {
+  Server server = 1;
+  string room_id = 2;
+}
+
+message BattleRoomReplayLeaveRes {
+  base.Res res = 1;
+  string room_id = 2;
+}
+
+// 获取自己最近战斗记录
+message GetBattleRecentRecordsReq {
+  uint32 count = 1;
+}
+
+message GetBattleRecentRecordsRes {
+  base.Res res = 1;
+  repeated base.BattleRecordData records = 2;
+}
+
+// 加倍
+message BattleRoomDoubleReq {
+  Server server = 1;
+  string room_id = 2;
+}
+
+message BattleRoomDoubleRes {
+  base.Res res = 1;
+  string room_id = 2;
+}
+
+// 推送双方玩家的非战斗数据
+message BattleRoomPlayersPush {
+  string room_id = 1;
+  map<string, base.BattleRoomPlayerDataNotGamePlay> players = 2; // 双方玩家的非战斗数据
+}
+
+// 发送房间内表情
+message BattleRoomExpressionReq {
+  Server server = 1;
+  string room_id = 2;
+  uint32 expression_id = 3;
+}
+
+message BattleRoomExpressionRes {
+  base.Res res = 1;
+  string room_id = 2;
+}
+
+// 推送房间内表情
+message BattleRoomExpressionPush {
+  string room_id = 1;
+  string player_id = 2;
+  uint32 expression_id = 3;
+}
+
+// 向房间请求一些主动推送 (测试用例用)
+message BattleRoomPushTestReq {
+  uint32 push_count = 1;
+  uint32 push_bytes_count = 2;
+}
+
+message BattleRoomPushTestRes {
+  base.Res res = 1;
+}
+
+message battleRoomTestPush {
+  uint32 index = 1;
+  string data = 2;
+}

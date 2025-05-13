@@ -1,0 +1,28 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.battle.proto";
+
+message MatchmakingReq {
+  base.BattleRoomPlayerContext player = 1;
+  int32 level = 2;
+  int32 match_type = 3;
+}
+
+message MatchmakingRes {
+  base.Res res = 1;
+}
+
+message CancelMatchmakingReq {
+  string player_id = 1;
+}
+
+message CancelMatchmakingRes {
+  base.Res res = 1;
+}
+
+message MatchmakingPush {
+  bool success = 1;
+  base.BattleRoomPlayerContext player = 2;
+}

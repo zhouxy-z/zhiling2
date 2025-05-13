@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "p_skill_bg_5",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 213,
+      "height": 197
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 213,
+      "height": 197
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "vertices": {
+      "rawPosition": [
+        -106.5,
+        -98.5,
+        0,
+        106.5,
+        -98.5,
+        0,
+        -106.5,
+        98.5,
+        0,
+        106.5,
+        98.5,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        197,
+        213,
+        197,
+        0,
+        0,
+        213,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -106.5,
+        "y": -98.5,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 106.5,
+        "y": 98.5,
+        "z": 0
+      }
+    },
+    "texture": "d3cb75d5-7750-44fd-aa08-748fb105960b@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

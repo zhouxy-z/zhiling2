@@ -1,0 +1,58 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.market.proto";
+
+message MakeItemOrderReq {
+  string order_type = 1; // 订单类型 sell卖单/buy买单
+  uint64 item_id = 2; // 道具 ID
+  uint64 item_group = 3; // 组数
+  uint64  currency = 4; // 计价道具ID
+  uint64 price = 5; // 单价，传单价就不能传总价
+  uint64 totalPrice= 6; // 总价，传总价就不能传单价
+}
+
+message MakeItemOrderRes{
+  base.Res res = 1;
+}
+
+message TakeItemOrderReq {
+  string order_id = 1; // 交易单唯一 ID
+  uint64 take_group = 2; // 交易组数
+}
+
+message TakeItemOrderRes{
+  base.Res res = 1;
+}
+
+message GetMakerItemOrdersReq {
+  string player_id = 1; // 用户id
+  string order_type = 2; // 订单类型 sell卖单/buy买单
+  string start = 3; // 起始ID（用于替代offset，增强查询性能）
+  string status = 4; // 订单状态
+  int32 limit = 5; // 每页数据量
+  int32  item_type = 6; // 道具类型筛选
+  uint64 item_id = 7; // 道具ID筛选
+}
+
+message GetMakerItemOrdersRes{
+  base.Res res = 1;
+  int64 total = 2; // 数据总量
+  repeated base.MarketItemOrder orders = 3; // 道具订单列表
+}
+
+message SearchMarketItemOrdersReq {
+  string order_type = 1; // 订单类型 sell卖单/buy买单
+  string start = 2; // 起始ID（用于替代offset，增强查询性能）
+  string sort = 3; // 排序 1：price.asc/price.desc 单价升降序 2：total_price.asc/total_price.desc 总价升降序 3：quantity.asc/quantity.desc 数量升降序
+  int32 limit = 4; // 每页数据量
+  int32  item_type = 5; // 道具类型筛选（可选）
+  uint64 item_id = 6; // 道具ID筛选（可选）
+}
+
+message SearchMarketItemOrdersRes{
+  base.Res res = 1;
+  int64 total = 2; // 数据总量
+  repeated base.MarketItemOrder orders = 3; // 道具订单列表
+}

@@ -1,0 +1,35 @@
+[
+    {
+        "name": "PlayerLoginPush", "msg_type": "pb.PlayerLoginPush", "desc": "登录玩家数据推送"
+    },
+    {
+        "name": "PlayerItemChangedPush", "msg_type": "pb.PlayerItemChangedPush", "desc": "道具数量变更推送"
+    },
+    {
+        "name": "PlayerItemsChangedPush", "msg_type": "pb.PlayerItemsChangedPush", "desc": "道具数量变更推送"
+    },
+    {
+        "name": "PlayerTasksChangedPush", "msg_type": "pb.PlayerTasksChangedPush", "desc": "任务变更推送"
+    },
+    {
+        "name": "PlayerBattleCardChangePush", "msg_type": "pb.PlayerBattleCardChangePush", "desc": "玩家卡牌变更推送"
+    },
+    {
+        "name": "NewMailPush", "msg_type": "pb.NewMailPush", "desc": "有新邮件提醒推送"
+    },
+    {
+        "name": "MarqueeMsgsPush", "msg_type": "pb.MarqueeMsgsPush", "desc": "跑马灯消息推送"
+    },
+    {
+        "name": "MarketItemOrderMakePush", "msg_type": "pb.MarketItemOrderMakePush", "desc": "交易行挂单（道具）消息推送"
+    },
+    {
+        "name": "MarketItemOrderTakePush", "msg_type": "pb.MarketItemOrderTakePush", "desc": "交易行吃单（道具）消息推送"
+    },
+    {
+        "name": "MarketItemOrderCancelledPush", "msg_type": "pb.MarketItemOrderCancelledPush", "desc": "交易行取消挂单（道具）消息推送"
+    },
+    {
+        "name": "BattleRoomOpOutputPush", "msg_type": "pb.BattleRoomOpOutputPush", "desc": "战斗房间操作输出推送"
+    }
+]

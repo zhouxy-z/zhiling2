@@ -1,0 +1,30 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+import "base/model.player.proto";
+
+message BattleRoomPlayerContext {
+  string player_id = 1;
+  string name = 2;
+  uint32 level = 3;
+  repeated BattleCard cards = 4;
+}
+
+message BattleRoomContext {
+  string room_id = 1;
+  uint32 level_id = 2;
+  repeated BattleRoomPlayerContext players = 3;
+}
+
+message BattleRoomSummary {
+  string room_id = 1;
+  string node_id = 2;
+  uint64 create_time = 3;
+  repeated string player_ids = 4;
+}
+
+// 战斗状态
+message BattleRoomState {
+  BattleRoomContext root_init_context = 1;
+  
+}

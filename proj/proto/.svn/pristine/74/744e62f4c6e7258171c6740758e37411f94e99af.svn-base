@@ -1,0 +1,59 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+import "base/model.player.proto";
+
+message Reward {
+  int32 reward_index = 1;
+  int64 reward_type = 2;
+  uint64 reward_id = 3;
+  uint64 reward_num = 4;
+}
+
+message ProcessBoxReward {
+  string player_id = 1;
+  uint32 box_id = 2;
+  uint32 open_count = 3;
+  repeated Reward rewards = 4;
+}
+
+message DeckAttrs {
+  string id = 1; // 卡组ID
+  string name = 2; // 卡组名称
+  int32 type = 3; // 卡组类型，只读属性
+  bool is_default = 4; // 是否默认，只读属性
+  int32 size = 5; // 卡牌数量
+  uint64 avatar_id = 6; // 头像
+  uint64 card_back_id = 7; // 卡背id
+  int64 temp_expires_at = 8; // 临时卡组过期时间，大于0表示临时卡组
+}
+
+message DeckFullInfo {
+  DeckAttrs attrs = 1;
+  map<string, base.BattleCard> cards = 2;
+}
+
+// 玩家等级奖励缓存结构
+message PlayerLevelRewardCache {
+  string player_id = 1;         // 玩家 ID
+  int32 level = 2;              // 玩家等级
+  uint32 reward_pool_id = 3;    // 奖池 ID
+  uint32 pool_reward_id = 4;    // 奖池奖励 ID
+  int32 reward_type = 5;        // 奖励类型
+  uint64 reward_id = 6;         // 奖励 ID
+  int64 reward_num = 7;         // 奖励数量
+  int64 created_at = 8;         // 创建时间
+}
+
+message AvatarInfo {
+  uint64 avatar_id = 1;
+  int64 created_at = 2;
+  bool like = 3;
+}
+
+message CardBackInfo {
+  uint64 card_back_id = 1;
+  int64 created_at = 2;
+  bool like = 3;
+}

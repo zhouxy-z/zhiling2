@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "前往",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 46,
+      "height": 38
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 46,
+      "height": 38
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "vertices": {
+      "rawPosition": [
+        -23,
+        -19,
+        0,
+        23,
+        -19,
+        0,
+        -23,
+        19,
+        0,
+        23,
+        19,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        38,
+        46,
+        38,
+        0,
+        0,
+        46,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -23,
+        "y": -19,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 23,
+        "y": 19,
+        "z": 0
+      }
+    },
+    "texture": "5f248662-4051-44a9-9f31-0d74d0359d5b@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

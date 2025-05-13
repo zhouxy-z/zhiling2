@@ -1,0 +1,20 @@
+
+skill_0007_1.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/gh1
+  rotate: true
+  xy: 646, 645
+  size: 535, 534
+  orig: 642, 638
+  offset: 52, 59
+  index: -1
+images/gh2
+  rotate: false
+  xy: 2, 542
+  size: 642, 638
+  orig: 642, 638
+  offset: 0, 0
+  index: -1

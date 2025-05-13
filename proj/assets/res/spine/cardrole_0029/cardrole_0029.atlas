@@ -1,0 +1,118 @@
+
+cardrole_0029.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 2, 215
+  size: 190, 151
+  orig: 190, 151
+  offset: 0, 0
+  index: -1
+fuwen
+  rotate: true
+  xy: 2, 24
+  size: 189, 181
+  orig: 207, 207
+  offset: 9, 10
+  index: -1
+grow
+  rotate: false
+  xy: 155, 224
+  size: 181, 181
+  orig: 201, 199
+  offset: 13, 9
+  index: -1
+shadow
+  rotate: true
+  xy: 171, 761
+  size: 261, 142
+  orig: 270, 152
+  offset: 5, 5
+  index: -1
+shou1
+  rotate: false
+  xy: 259, 92
+  size: 104, 130
+  orig: 104, 130
+  offset: 0, 0
+  index: -1
+shou1_1
+  rotate: true
+  xy: 273, 528
+  size: 80, 74
+  orig: 81, 76
+  offset: 0, 1
+  index: -1
+shou2
+  rotate: false
+  xy: 326, 5
+  size: 49, 85
+  orig: 50, 85
+  offset: 1, 0
+  index: -1
+shou3
+  rotate: false
+  xy: 273, 610
+  size: 69, 95
+  orig: 69, 95
+  offset: 0, 0
+  index: -1
+shou4
+  rotate: false
+  xy: 2, 693
+  size: 167, 329
+  orig: 167, 329
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 2, 407
+  size: 284, 269
+  orig: 284, 269
+  offset: 0, 0
+  index: -1
+wenzi1
+  rotate: false
+  xy: 238, 3
+  size: 36, 78
+  orig: 39, 81
+  offset: 2, 2
+  index: -1
+wenzi2
+  rotate: false
+  xy: 276, 4
+  size: 48, 86
+  orig: 51, 89
+  offset: 1, 2
+  index: -1
+wenzi3
+  rotate: true
+  xy: 171, 704
+  size: 55, 69
+  orig: 57, 72
+  offset: 1, 2
+  index: -1
+wenzi4
+  rotate: false
+  xy: 185, 2
+  size: 51, 79
+  orig: 53, 81
+  offset: 1, 2
+  index: -1
+wenzi5
+  rotate: true
+  xy: 242, 707
+  size: 52, 49
+  orig: 55, 51
+  offset: 1, 1
+  index: -1
+zhuzi
+  rotate: true
+  xy: 185, 83
+  size: 139, 72
+  orig: 139, 73
+  offset: 0, 1
+  index: -1

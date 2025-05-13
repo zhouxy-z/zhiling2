@@ -1,0 +1,74 @@
+[
+    {
+        "name": "PlayerLoginPush", "msg_type": "pb.PlayerLoginPush", "desc": "登录玩家数据推送"
+    },
+    {
+        "name": "PlayerItemsChangedPush", "msg_type": "pb.PlayerItemsChangedPush", "desc": "道具数量变更推送"
+    },
+    {
+        "name": "PlayerTasksChangedPush", "msg_type": "pb.PlayerTasksChangedPush", "desc": "任务变更推送"
+    },
+    {
+        "name": "PlayerBattleCardChangePush", "msg_type": "pb.PlayerBattleCardChangePush", "desc": "玩家卡牌变更推送"
+    },
+    {
+        "name": "PlayerLevelExpChangedPush", "msg_type": "pb.PlayerLevelExpChangedPush", "desc": "玩家收藏经验变更推送"
+    },
+    {
+        "name": "NewMailPush", "msg_type": "pb.NewMailPush", "desc": "有新邮件提醒推送"
+    },
+    {
+        "name": "RiskLevelPush", "msg_type": "pb.RiskLevelPush", "desc": "玩家风控等级推送"
+    },
+    {
+        "name": "MarqueeMsgsPush", "msg_type": "pb.MarqueeMsgsPush", "desc": "跑马灯消息推送"
+    },
+    {
+        "name": "MarketItemOrderMakePush", "msg_type": "pb.MarketItemOrderMakePush", "desc": "交易行挂单（道具）消息推送"
+    },
+    {
+        "name": "MarketItemOrderTakePush", "msg_type": "pb.MarketItemOrderTakePush", "desc": "交易行吃单（道具）消息推送"
+    },
+    {
+        "name": "MarketItemOrderCancelledPush", "msg_type": "pb.MarketItemOrderCancelledPush", "desc": "交易行取消挂单（道具）消息推送"
+    },
+    {
+        "name": "MarketCardOrderMakePush", "msg_type": "pb.MarketCardOrderMakePush", "desc": "交易行挂单（卡牌）消息推送"
+    },
+    {
+        "name": "MarketCardOrderTakePush", "msg_type": "pb.MarketCardOrderTakePush", "desc": "交易行吃单（卡牌）消息推送"
+    },
+    {
+        "name": "MarketCardOrderCancelledPush", "msg_type": "pb.MarketCardOrderCancelledPush", "desc": "交易行取消挂单（卡牌）消息推送"
+    },
+    {
+        "name": "PlayerDefaultDeckPush", "msg_type": "pb.PlayerDefaultDeckPush", "desc": "玩家默认卡组消息推送"
+    },
+    {
+        "name": "PlayerDailyTaskRefreshTimesChangePush", "msg_type": "pb.PlayerDailyTaskRefreshTimesChangePush", "desc": "玩家每日任务刷新次数变更消息推送"
+    },
+    {
+        "name": "MatchMakingPush", "msg_type": "pb.MatchMakingPush", "desc": "匹配结果消息推送"
+    },
+    {
+        "name": "PlayerPvpInfoPush", "msg_type": "pb.PlayerPvpInfoPush", "desc": "玩家登录时PVP消息推送"
+    },
+    {
+        "name": "PlayerPvpRankBattleSettlePush", "msg_type": "pb.PlayerPvpRankBattleSettlePush", "desc": "PVP排位赛战斗结算消息推送"
+    },
+    {
+        "name": "PvpRankSeasonChangedPush", "msg_type": "pb.PvpRankSeasonChangedPush", "desc": "PVP排位赛季切换消息推送"
+    },
+    {
+        "name": "BattleRoomOpOutputPush", "msg_type": "pb.BattleRoomOpOutputPush", "desc": "战斗房间操作输出推送"
+    },
+    {
+        "name": "BattleRoomConfirmOpInputPush", "msg_type": "pb.BattleRoomConfirmOpInputPush", "desc": "战斗房间确认状态推送"
+    },
+    {
+        "name": "BattleRoomPlayersPush", "msg_type": "pb.BattleRoomPlayersPush", "desc": "房间内推送玩家非游戏信息"
+    },
+    {
+        "name": "BattleRoomExpressionPush", "msg_type": "pb.BattleRoomExpressionPush", "desc": "房间内推送玩家发送的表情"
+    }
+]

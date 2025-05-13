@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "frameshadow_1",
+    "atlas": "",
+    "rect": {
+      "x": 5,
+      "y": 5,
+      "width": 30,
+      "height": 30
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 40,
+      "height": 40
+    },
+    "rotated": false,
+    "capInsets": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "vertices": {
+      "rawPosition": [
+        -15,
+        -15,
+        0,
+        15,
+        -15,
+        0,
+        -15,
+        15,
+        0,
+        15,
+        15,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        5,
+        35,
+        35,
+        35,
+        5,
+        5,
+        35,
+        5
+      ],
+      "nuv": [
+        0.125,
+        0.125,
+        0.875,
+        0.125,
+        0.125,
+        0.875,
+        0.875,
+        0.875
+      ],
+      "minPos": {
+        "x": -15,
+        "y": -15,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 15,
+        "y": 15,
+        "z": 0
+      }
+    },
+    "texture": "c8efebf7-b5fb-4635-aa8a-ee71ecb1605d@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

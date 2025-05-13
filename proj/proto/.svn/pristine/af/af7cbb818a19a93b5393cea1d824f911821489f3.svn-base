@@ -1,0 +1,95 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+import "base/model.player.proto";
+
+message DoubleMap {
+  map<string, double> values = 1;
+}
+
+// 字典的主键是卡牌ID，
+message BattleRoomAttrValue {
+  int32 final_value = 1; // final_value = ((base *  (1 + base_add_mul)) + add_0) *  (1 + add_mul_0))
+  map<string, DoubleMap> base = 2;
+  map<string, DoubleMap> base_add_mul = 3;
+  map<string, DoubleMap> add0 = 4;
+  map<string, DoubleMap> add_mul0 = 5;
+}
+
+message BattleRoomPlayerContext {
+  string player_id = 1;
+  string name = 2;
+  uint32 level = 3;
+  repeated BattleCard cards = 4;
+}
+
+message BattleRoomContext {
+  string room_id = 1;
+  uint32 level_id = 2;
+  repeated BattleRoomPlayerContext players = 3;
+}
+
+// 房间数据摘要
+message BattleRoomSummary {
+  string room_id = 1;
+  string server_id = 2;
+  uint64 create_time = 3;
+  repeated string player_ids = 4;
+}
+
+// 游戏状态
+message BattleRoomGamePlayData {
+  map<string, BattleRoomPlayerData> players = 1;
+  map<uint32, BattleRoomTerrainData> environments = 2;
+  uint32 alloc_id = 3;
+  uint32 round = 4; // 当前回合
+}
+
+// 卡片实例状态
+message BattleRoomCardData {
+  string id = 1; // 卡片系统实例ID
+  string inst_id = 2; // 战斗内部实例ID
+  uint32 order_id = 3; // 当前卡牌在所在位置的顺序
+  int32 card_type = 4;
+  int32 quality = 5;
+  BattleRoomAttrValue power = 6; // 卡牌战力
+  BattleRoomAttrValue cost = 7; // 卡牌消耗
+
+  repeated BattleRoomSkillData skills = 8; // 技能列表
+}
+
+message BattleRoomSkillData {
+  uint32 skill_id = 1; // 读表
+
+  map<string, string> targets = 2; // 已施加技能影响的目标
+}
+
+// 玩家实例状态
+message BattleRoomPlayerData {
+  string player_id = 1;
+  string name = 2;
+  uint32 level = 3;
+  bool is_ai = 4; // AI 托管
+
+  map<string, BattleRoomCardData> deck_cards = 5; // 卡组卡牌
+  map<string, BattleRoomCardData> hand_cards = 6; // 手牌
+  map<string, BattleRoomCardData> drop_cards = 7; // 丢弃卡牌
+  map<string, BattleRoomCardData> del_cards = 8; // 删除卡牌
+
+  repeated BattleRoomAttrValue round_energy = 9; // 每回合能量
+}
+
+// 玩家在环境的状态
+message BattleRoomTerrainPlayerData {
+  string player_id = 1;
+  BattleRoomAttrValue power_total = 2; // 玩家在该环境的总战力
+  repeated BattleRoomSkillData skills = 3; // 效果列表
+  map<uint32, BattleRoomCardData> placed_cards = 4; // 已放置的卡牌
+}
+
+// 环境
+message BattleRoomTerrainData {
+  string inst_id = 1;
+  int32 environment_type = 3;
+  map<string, BattleRoomTerrainPlayerData> players = 4;
+}

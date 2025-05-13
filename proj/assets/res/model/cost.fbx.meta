@@ -1,0 +1,309 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "951e202e-c4ac-462e-b0cc-f083447a61ab",
+  "files": [
+    "__original-animation-0.cconb",
+    "__original-animation-1.cconb"
+  ],
+  "subMetas": {
+    "2f6d1": {
+      "importer": "gltf-mesh",
+      "uuid": "951e202e-c4ac-462e-b0cc-f083447a61ab@2f6d1",
+      "displayName": "",
+      "id": "2f6d1",
+      "name": "Cube.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 1320
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1f532": {
+      "importer": "gltf-mesh",
+      "uuid": "951e202e-c4ac-462e-b0cc-f083447a61ab@1f532",
+      "displayName": "",
+      "id": "1f532",
+      "name": "柱体.001.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 136
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4501c": {
+      "importer": "gltf-animation",
+      "uuid": "951e202e-c4ac-462e-b0cc-f083447a61ab@4501c",
+      "displayName": "",
+      "id": "4501c",
+      "name": "Cube|Cube动作.001.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 16.66666603088379
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "6fa1f": {
+      "importer": "gltf-animation",
+      "uuid": "951e202e-c4ac-462e-b0cc-f083447a61ab@6fa1f",
+      "displayName": "",
+      "id": "6fa1f",
+      "name": "柱体.001|Cube动作.001.animation",
+      "userData": {
+        "gltfIndex": 1,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 16.66666603088379
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "5e49e": {
+      "importer": "gltf-embeded-image",
+      "uuid": "951e202e-c4ac-462e-b0cc-f083447a61ab@5e49e",
+      "displayName": "",
+      "id": "5e49e",
+      "name": "base_color_texture-0.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "ef396": {
+      "importer": "gltf-embeded-image",
+      "uuid": "951e202e-c4ac-462e-b0cc-f083447a61ab@ef396",
+      "displayName": "",
+      "id": "ef396",
+      "name": "base_color_texture-1.image",
+      "userData": {
+        "gltfIndex": 1,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "0a1ef": {
+      "importer": "texture",
+      "uuid": "951e202e-c4ac-462e-b0cc-f083447a61ab@0a1ef",
+      "displayName": "",
+      "id": "0a1ef",
+      "name": "base_color_texture-0.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "951e202e-c4ac-462e-b0cc-f083447a61ab@5e49e"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "05da8": {
+      "importer": "texture",
+      "uuid": "951e202e-c4ac-462e-b0cc-f083447a61ab@05da8",
+      "displayName": "",
+      "id": "05da8",
+      "name": "base_color_texture-1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "951e202e-c4ac-462e-b0cc-f083447a61ab@ef396"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b4e6b": {
+      "importer": "gltf-material",
+      "uuid": "951e202e-c4ac-462e-b0cc-f083447a61ab@b4e6b",
+      "displayName": "",
+      "id": "b4e6b",
+      "name": "Material.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "22e2a": {
+      "importer": "gltf-material",
+      "uuid": "951e202e-c4ac-462e-b0cc-f083447a61ab@22e2a",
+      "displayName": "",
+      "id": "22e2a",
+      "name": "材质.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5ae59": {
+      "importer": "gltf-scene",
+      "uuid": "951e202e-c4ac-462e-b0cc-f083447a61ab@5ae59",
+      "displayName": "",
+      "id": "5ae59",
+      "name": "cost.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "base_color_texture",
+        "uri": "951e202e-c4ac-462e-b0cc-f083447a61ab@5e49e"
+      },
+      {
+        "name": "base_color_texture",
+        "uri": "951e202e-c4ac-462e-b0cc-f083447a61ab@ef396"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Cube|Cube动作.001",
+        "duration": 16.66666603088379,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Cube|Cube动作.001",
+            "from": 0,
+            "to": 16.66666603088379,
+            "wrapMode": 2,
+            "previousId": "4501c"
+          }
+        ]
+      },
+      {
+        "name": "柱体.001|Cube动作.001",
+        "duration": 16.66666603088379,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "柱体.001|Cube动作.001",
+            "from": 0,
+            "to": 16.66666603088379,
+            "wrapMode": 2,
+            "previousId": "6fa1f"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "951e202e-c4ac-462e-b0cc-f083447a61ab@2f6d1",
+        "951e202e-c4ac-462e-b0cc-f083447a61ab@1f532"
+      ],
+      "skeletons": [],
+      "textures": [
+        "951e202e-c4ac-462e-b0cc-f083447a61ab@0a1ef",
+        "951e202e-c4ac-462e-b0cc-f083447a61ab@05da8"
+      ],
+      "materials": [
+        "951e202e-c4ac-462e-b0cc-f083447a61ab@b4e6b",
+        "951e202e-c4ac-462e-b0cc-f083447a61ab@22e2a"
+      ],
+      "scenes": [
+        "951e202e-c4ac-462e-b0cc-f083447a61ab@5ae59"
+      ]
+    }
+  }
+}

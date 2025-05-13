@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "通用弹窗底",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 74,
+      "height": 120
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 74,
+      "height": 120
+    },
+    "rotated": false,
+    "capInsets": [
+      25,
+      78,
+      24,
+      27
+    ],
+    "vertices": {
+      "rawPosition": [
+        -37,
+        -60,
+        0,
+        37,
+        -60,
+        0,
+        -37,
+        60,
+        0,
+        37,
+        60,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        120,
+        74,
+        120,
+        0,
+        0,
+        74,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -37,
+        "y": -60,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 37,
+        "y": 60,
+        "z": 0
+      }
+    },
+    "texture": "9a0e5973-4372-4126-ac8b-45d0ab87a043@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

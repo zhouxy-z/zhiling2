@@ -1,0 +1,32 @@
+{
+"skeleton": {
+	"hash": "gLIyLcaZmTfLdsUQhOmhX3TD/Wo",
+	"spine": "3.8.99",
+	"x": -185,
+	"y": -241,
+	"width": 370,
+	"height": 482,
+	"images": "./image/",
+	"audio": "F:/端点游戏项目/动效/spine/卡牌新游戏/卡牌动画/frame_0001卡框1"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "MoveCtrl", "parent": "root" }
+],
+"slots": [
+	{ "name": "bg_1", "bone": "root", "attachment": "bg_5" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"bg_1": {
+				"bg_5": { "width": 320, "height": 434 }
+			}
+		}
+	}
+],
+"animations": {
+	"idle": {}
+}
+}

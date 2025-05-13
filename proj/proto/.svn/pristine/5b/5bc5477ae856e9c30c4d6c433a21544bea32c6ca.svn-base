@@ -1,0 +1,14 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.battle.proto";
+
+message CreateBattleMgrUserRoomReq {
+  base.BattleRoomContext context = 1;
+}
+
+message CreateBattleMgrUserRoomRes {
+  base.Res res = 1;
+  base.BattleRoomSummary room_summary = 2;
+}

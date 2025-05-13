@@ -1,0 +1,48 @@
+
+cardrole_0009.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bxs
+  rotate: false
+  xy: 2, 923
+  size: 281, 99
+  orig: 281, 99
+  offset: 0, 0
+  index: -1
+bxx
+  rotate: false
+  xy: 285, 801
+  size: 270, 221
+  orig: 270, 221
+  offset: 0, 0
+  index: -1
+guang1
+  rotate: false
+  xy: 557, 823
+  size: 249, 199
+  orig: 272, 206
+  offset: 11, 2
+  index: -1
+guang2
+  rotate: false
+  xy: 808, 866
+  size: 182, 156
+  orig: 202, 173
+  offset: 5, 13
+  index: -1
+shadow
+  rotate: false
+  xy: 2, 779
+  size: 261, 142
+  orig: 270, 152
+  offset: 5, 5
+  index: -1
+xingxing1
+  rotate: true
+  xy: 992, 990
+  size: 32, 30
+  orig: 32, 30
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,15 @@
+{
+  "version": "2.3.13",
+  "sourceTimeStamp": 1745410030944.1838,
+  "outputTimeStamps": {
+    "filed_0.png": 1745410041095.192,
+    "log.json": 1745410041109.1956,
+    "out.bin": 1745410041107.195,
+    "out.gltf": 1745410041109.1956,
+    ".fbm/5C3515E2/filed.fbm/filed_0.png": 1745410041095.192
+  },
+  "options": {
+    "smartMaterialEnabled": true,
+    "matchMeshNames": true
+  }
+}

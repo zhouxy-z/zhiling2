@@ -1,0 +1,35 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/base.proto";
+import "base/model.player.proto";
+import "base/model.logic.proto";
+
+message GetDeckAttrsReq {
+  string player_id = 1;
+  string deck_id = 2;
+}
+
+message GetDeckAttrsRes {
+  base.Res res = 1;
+  base.DeckAttrs attrs = 2; // 如果deck id为空，表示新增，否则表示修改
+}
+
+message GetDeckCardsReq {
+  string player_id = 1;
+  string deck_id = 2;
+}
+
+message GetDeckCardsRes {
+  base.Res res = 1;
+  map<string, base.BattleCard> cards = 2;
+}
+
+message GetDeckCardsBatchReq {
+ repeated GetDeckCardsReq reqs = 1;
+}
+
+message GetDeckCardsBatchRes {
+  base.Res res = 1;
+  map<string, base.BattleCards> deck_cards = 2;
+}

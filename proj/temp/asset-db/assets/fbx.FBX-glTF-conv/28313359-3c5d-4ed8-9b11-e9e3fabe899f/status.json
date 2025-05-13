@@ -1,0 +1,15 @@
+{
+  "version": "2.3.13",
+  "sourceTimeStamp": 1740400326614.6526,
+  "outputTimeStamps": {
+    "log.json": 1741140364801.2415,
+    "out.bin": 1741140364798.2412,
+    "骰子贴图.png": 1741140364789.238,
+    "out.gltf": 1741140364801.2415,
+    ".fbm/45EB1573/dice.fbm/骰子贴图.png": 1741140364789.238
+  },
+  "options": {
+    "smartMaterialEnabled": true,
+    "matchMeshNames": true
+  }
+}

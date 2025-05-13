@@ -1,0 +1,454 @@
+{
+"skeleton": { "hash": "Pc1MsGWIwTO0DR9AAlC5UDbpIkI", "spine": "3.8.99", "images": "./images/", "audio": "E:/游戏集结项目文件/特效/UI动效/对战/对战动效Spine/ui_game_over/制作文件" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "1", "parent": "root" },
+	{ "name": "2", "parent": "root", "x": -4.74, "y": 18.94 },
+	{ "name": "3", "parent": "root", "x": -4.51, "y": 13.16 },
+	{ "name": "4", "parent": "root" },
+	{ "name": "0", "parent": "root" },
+	{ "name": "6", "parent": "3", "x": 4.14, "y": -13.16 },
+	{ "name": "7", "parent": "root" },
+	{ "name": "8", "parent": "2", "x": 3.17, "y": -18.59 },
+	{ "name": "2d1", "parent": "4", "x": -308.11, "y": 18.04 },
+	{ "name": "5", "parent": "root", "scaleX": -1 },
+	{ "name": "2d2", "parent": "5", "x": -308.11, "y": 18.04 }
+],
+"slots": [
+	{ "name": "black_00000", "bone": "root", "color": "000000ff" },
+	{ "name": "1", "bone": "1" },
+	{ "name": "4", "bone": "4" },
+	{ "name": "5", "bone": "5" },
+	{ "name": "3", "bone": "6" },
+	{ "name": "2d1", "bone": "2d1" },
+	{ "name": "2d2", "bone": "2d2" },
+	{ "name": "2d3", "bone": "2d1" },
+	{ "name": "2d4", "bone": "2d2" },
+	{ "name": "2", "bone": "8" },
+	{ "name": "6", "bone": "7" },
+	{ "name": "0", "bone": "0" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"0": {
+				"defeat": { "x": -10, "y": 18.5, "width": 386, "height": 175 }
+			},
+			"1": {
+				"2a": { "x": -6.5, "y": 10, "width": 425, "height": 276 }
+			},
+			"2": {
+				"2b": { "x": -7, "y": 13.5, "width": 488, "height": 491 }
+			},
+			"2d1": {
+				"2d1": { "x": -8.89, "y": 0.96, "width": 262, "height": 104 }
+			},
+			"2d2": {
+				"2d1": { "x": -8.89, "y": 0.96, "width": 262, "height": 104 }
+			},
+			"2d3": {
+				"2d1": { "x": 234.1, "y": 0.96, "width": 262, "height": 104 }
+			},
+			"2d4": {
+				"2d1": { "x": 234.1, "y": 0.96, "width": 262, "height": 104 }
+			},
+			"3": {
+				"2c": { "x": -6.5, "y": 14, "width": 483, "height": 488 }
+			},
+			"4": {
+				"2d2": { "x": -265.5, "y": 15, "width": 423, "height": 220 }
+			},
+			"5": {
+				"2d2": { "x": -265.5, "y": 15, "width": 423, "height": 220 }
+			},
+			"6": {
+				"defeat": { "x": -10, "y": 18.5, "width": 386, "height": 175 }
+			},
+			"black_00000": {
+				"black_00000": { "scaleX": 75, "scaleY": 25, "width": 32, "height": 32 }
+			}
+		}
+	}
+],
+"animations": {
+	"loop": {
+		"slots": {
+			"0": {
+				"color": [
+					{ "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "defeat" }
+				]
+			},
+			"1": {
+				"color": [
+					{ "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "2a" }
+				]
+			},
+			"2": {
+				"attachment": [
+					{ "name": "2b" }
+				]
+			},
+			"2d1": {
+				"color": [
+					{ "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "2d1" }
+				]
+			},
+			"2d2": {
+				"color": [
+					{ "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "2d1" }
+				]
+			},
+			"2d3": {
+				"color": [
+					{ "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "2d1" }
+				]
+			},
+			"2d4": {
+				"color": [
+					{ "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "2d1" }
+				]
+			},
+			"3": {
+				"attachment": [
+					{ "name": "2c" }
+				]
+			},
+			"4": {
+				"color": [
+					{ "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "2d2" }
+				]
+			},
+			"5": {
+				"color": [
+					{ "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "2d2" }
+				]
+			},
+			"6": {
+				"color": [
+					{ "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "defeat" }
+				]
+			},
+			"black_00000": {
+				"color": [
+					{ "color": "00000086" }
+				],
+				"attachment": [
+					{ "name": "black_00000" }
+				]
+			}
+		},
+		"bones": {
+			"2d1": {
+				"translate": [
+					{ "x": -51.22, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "x": -41.89, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "x": -51.22 }
+				]
+			},
+			"0": {
+				"scale": [
+					{}
+				]
+			},
+			"2": {
+				"rotate": [
+					{}
+				],
+				"scale": [
+					{}
+				]
+			},
+			"1": {
+				"scale": [
+					{},
+					{ "time": 1.1667, "x": 1.1, "y": 1.1 },
+					{ "time": 2.3333 }
+				]
+			},
+			"3": {
+				"rotate": [
+					{}
+				],
+				"scale": [
+					{}
+				]
+			},
+			"4": {
+				"scale": [
+					{}
+				]
+			},
+			"7": {
+				"scale": [
+					{ "x": 1.5, "y": 1.5 }
+				]
+			},
+			"2d2": {
+				"translate": [
+					{ "x": -51.22, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.1667, "x": -41.89, "curve": 0.25, "c3": 0.75 },
+					{ "time": 2.3333, "x": -51.22 }
+				]
+			},
+			"5": {
+				"scale": [
+					{}
+				]
+			}
+		}
+	},
+	"show": {
+		"slots": {
+			"0": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.3333, "color": "ffffff00", "curve": 0.5, "c2": 0.1, "c4": 0.58 },
+					{ "time": 0.6667, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "defeat" }
+				]
+			},
+			"1": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffff00" },
+					{ "time": 0.8333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "2a" }
+				]
+			},
+			"2": {
+				"attachment": [
+					{ "name": "2b" }
+				]
+			},
+			"2d1": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffff00" },
+					{ "time": 0.8333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "2d1" }
+				]
+			},
+			"2d2": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffff00" },
+					{ "time": 0.8333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "2d1" }
+				]
+			},
+			"2d3": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffff00" },
+					{ "time": 0.8333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "2d1" }
+				]
+			},
+			"2d4": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffff00" },
+					{ "time": 0.8333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "2d1" }
+				]
+			},
+			"3": {
+				"attachment": [
+					{ "name": "2c" }
+				]
+			},
+			"4": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffff00" },
+					{ "time": 0.8333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "2d2" }
+				]
+			},
+			"5": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffff00" },
+					{ "time": 0.8333, "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "2d2" }
+				]
+			},
+			"6": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6333, "color": "ffffff00", "curve": 0.973, "c2": -0.01, "c3": 0.875, "c4": 0.37 },
+					{ "time": 0.6667, "color": "ffffffc5", "curve": 0.811, "c2": -0.02, "c3": 0.675 },
+					{ "time": 1, "color": "ffffff00" }
+				],
+				"attachment": [
+					{ "name": "defeat" }
+				]
+			},
+			"black_00000": {
+				"color": [
+					{ "color": "00000000" },
+					{ "time": 0.1667, "color": "00000086" }
+				],
+				"attachment": [
+					{ "name": "black_00000" }
+				]
+			}
+		},
+		"bones": {
+			"0": {
+				"scale": [
+					{ "time": 0.3333, "x": 4, "y": 4 },
+					{
+						"time": 0.4,
+						"x": 5,
+						"y": 5,
+						"curve": 0.857,
+						"c2": -0.02,
+						"c3": 0.902,
+						"c4": 0.38
+					},
+					{
+						"time": 0.6667,
+						"x": 0.9,
+						"y": 0.9,
+						"curve": 0.857,
+						"c2": -0.02,
+						"c3": 0.902,
+						"c4": 0.38
+					},
+					{
+						"time": 0.7667,
+						"x": 1.05,
+						"y": 1.05,
+						"curve": 0.973,
+						"c2": -0.01,
+						"c3": 0.875,
+						"c4": 0.37
+					},
+					{ "time": 0.8667 }
+				]
+			},
+			"2": {
+				"rotate": [
+					{ "angle": 45, "curve": 1, "c2": -0.32, "c3": 0.336, "c4": 2.08 },
+					{ "time": 1 }
+				],
+				"scale": [
+					{ "x": 0, "y": 0, "curve": 1, "c3": 0, "c4": 1.02 },
+					{ "time": 0.3333, "x": 1.1, "y": 1.1, "curve": 1, "c3": 0.75 },
+					{ "time": 0.4, "x": 0.95, "y": 0.95, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4667, "curve": "stepped" },
+					{ "time": 0.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7333, "x": 1.1, "y": 1.1, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8, "x": 0.98, "y": 0.98, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "x": 1.02, "y": 1.02, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.9 }
+				]
+			},
+			"3": {
+				"rotate": [
+					{}
+				],
+				"scale": [
+					{ "x": 0, "y": 0, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3, "x": 1.1, "y": 1.1, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.3667, "x": 0.95, "y": 0.95, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.4333, "curve": "stepped" },
+					{ "time": 0.6667, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7333, "x": 1.1, "y": 1.1, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8, "x": 0.98, "y": 0.98, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "x": 1.02, "y": 1.02, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.9 }
+				]
+			},
+			"4": {
+				"scale": [
+					{ "time": 0.5, "x": 0, "curve": 0.832, "c3": 0.198 },
+					{ "time": 0.9333, "x": 1.1, "curve": 0.832, "c3": 0.198 },
+					{ "time": 1, "x": 0.95, "curve": 0.832, "c3": 0.198 },
+					{ "time": 1.0667 }
+				]
+			},
+			"1": {
+				"scale": [
+					{ "x": 0.8, "y": 0.8, "curve": "stepped" },
+					{ "time": 0.6667, "x": 0.8, "y": 0.8, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8333, "x": 1.05, "y": 1.05, "curve": 1, "c3": 0.095 },
+					{ "time": 0.9, "x": 0.98, "y": 0.98, "curve": 1, "c3": 0.095 },
+					{ "time": 1 }
+				]
+			},
+			"7": {
+				"scale": [
+					{ "time": 0.6667, "curve": 0, "c2": 1.02, "c3": 0.75 },
+					{ "time": 1, "x": 1.5, "y": 1.5 }
+				]
+			},
+			"2d1": {
+				"translate": [
+					{},
+					{ "time": 1.1667, "x": -51.22 }
+				]
+			},
+			"5": {
+				"scale": [
+					{ "time": 0.5, "x": 0, "curve": 0.832, "c3": 0.198 },
+					{ "time": 0.9333, "x": 1.1, "curve": 0.832, "c3": 0.198 },
+					{ "time": 1, "x": 0.95, "curve": 0.832, "c3": 0.198 },
+					{ "time": 1.0667 }
+				]
+			},
+			"2d2": {
+				"translate": [
+					{},
+					{ "time": 1.1667, "x": -51.22 }
+				]
+			}
+		}
+	}
+}
+}

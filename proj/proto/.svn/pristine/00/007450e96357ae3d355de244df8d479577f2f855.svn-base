@@ -1,0 +1,53 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/model.player.proto";
+
+message EventPlayerDataInit {
+  string player_id = 1;
+  base.PlayerData player_data = 2;
+  int64 timestamp = 3;
+}
+
+message EventPlayerItemChange {
+  string player_id = 1;
+  base.PlayerItemRecord record = 2;
+  string item_name = 3;
+  double item_value = 4;
+}
+
+message EventPlayerUseItemBenefitCard {
+  string player_id = 1;
+  uint64 item_id = 2;
+  string item_name = 3;
+  double item_value = 4;
+  int64  item_count = 5;
+  int32 benefit_card_id = 6;
+  int64 benefit_card_expires = 7;
+  string benefit_card_expires_show = 8;
+}
+
+message EventPlayerBattleCardAdd {
+  string player_id = 1;
+  string source = 2;
+  bytes data = 3;
+  base.BattleCard card = 4;
+  int64  timestamp = 5;
+}
+
+message EventPlayerBattleCardConsume {
+  string player_id = 1;
+  string source = 2;
+  bytes data = 3;
+  base.BattleCard card = 4;
+  int64  timestamp = 5;
+}
+
+message EventPlayerBattleCardUpdate {
+  string player_id = 1;
+  string source = 2;
+  bytes data = 3;
+  base.BattleCard card = 4;
+  base.BattleCard card_update = 5;
+  int64  timestamp = 6;
+}

@@ -1,0 +1,48 @@
+
+cardrole_0035.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 504, 568
+  size: 211, 192
+  orig: 213, 194
+  offset: 1, 1
+  index: -1
+head
+  rotate: false
+  xy: 2, 224
+  size: 500, 555
+  orig: 502, 557
+  offset: 1, 1
+  index: -1
+houfa
+  rotate: false
+  xy: 504, 407
+  size: 184, 159
+  orig: 184, 159
+  offset: 0, 0
+  index: -1
+shadow
+  rotate: false
+  xy: 255, 19
+  size: 372, 203
+  orig: 385, 217
+  offset: 7, 7
+  index: -1
+youshou
+  rotate: true
+  xy: 2, 2
+  size: 220, 251
+  orig: 220, 251
+  offset: 0, 0
+  index: -1
+zuoshou
+  rotate: false
+  xy: 504, 262
+  size: 143, 143
+  orig: 143, 143
+  offset: 0, 0
+  index: -1

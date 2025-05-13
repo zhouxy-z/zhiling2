@@ -1,0 +1,52 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.user.proto";
+
+message GetUserInfoRes {
+  base.Res res = 1;
+  base.PlayerInfo info = 2;
+}
+
+message SearchUserReq {
+  string uid = 1;
+}
+
+message SearchUserRes {
+  base.Res res = 1;
+  base.PlayerShowInfo info = 2;
+}
+
+message UserModifyNicknameReq {
+  string nick_name = 1;
+}
+
+message UserModifyNicknameRes {
+  base.Res res = 1;
+  base.PlayerInfo info = 2;
+}
+
+message UserBindFriendReq {
+  string inviter_id = 1;
+}
+
+message UserBindFriendRes {
+  base.Res res = 1;
+}
+
+message FriendInfo {
+  base.PlayerShowInfo player_info = 1;  // 用户展示信息
+  string friend_inviter_id = 2;         // 好友系统的邀请人（上级好友）
+  int32 friend_level = 3;               // 好友系统的关系层级
+}
+
+message GetFriendsReq {
+  string uid = 1;
+  int32 level = 2;
+}
+
+message GetFriendsRes {
+  base.Res res = 1;
+  repeated FriendInfo friends = 2;
+}

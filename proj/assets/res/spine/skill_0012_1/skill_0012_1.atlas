@@ -1,0 +1,34 @@
+
+skill_0012_1.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+grow
+  rotate: false
+  xy: 10, 10
+  size: 258, 258
+  orig: 287, 284
+  offset: 19, 13
+  index: -1
+wuqi1
+  rotate: false
+  xy: 504, 130
+  size: 196, 631
+  orig: 198, 633
+  offset: 1, 1
+  index: -1
+wuqi2
+  rotate: true
+  xy: 278, 48
+  size: 220, 123
+  orig: 220, 123
+  offset: 0, 0
+  index: -1
+wuqi3
+  rotate: false
+  xy: 10, 278
+  size: 484, 483
+  orig: 484, 483
+  offset: 0, 0
+  index: -1

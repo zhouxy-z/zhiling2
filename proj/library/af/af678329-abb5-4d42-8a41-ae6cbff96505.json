@@ -1,0 +1,242 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "skill_0009_3",
+  "_objFlags": 0,
+  "__editorExtras__": {},
+  "_native": "",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "nVEw0XSELxEnEBJilzHfh1kGdGU",
+      "spine": "3.8.99",
+      "x": -40,
+      "y": -66,
+      "width": 81,
+      "height": 133,
+      "images": "",
+      "audio": ""
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "hq",
+        "parent": "root"
+      },
+      {
+        "name": "dw",
+        "parent": "hq"
+      }
+    ],
+    "slots": [
+      {
+        "name": "image/fire05_1",
+        "bone": "dw",
+        "attachment": "image/fire05_1"
+      }
+    ],
+    "skins": [
+      {
+        "name": "default",
+        "attachments": {
+          "image/fire05_1": {
+            "image/fire05_1": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_2": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_3": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_4": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_5": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_6": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_7": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_8": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_9": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_10": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_11": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_12": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_13": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_14": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_15": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            },
+            "image/fire05_16": {
+              "x": 0.5,
+              "y": 0.5,
+              "width": 81,
+              "height": 133
+            }
+          }
+        }
+      }
+    ],
+    "animations": {
+      "animation": {
+        "slots": {
+          "image/fire05_1": {
+            "attachment": [
+              {
+                "name": "image/fire05_1"
+              },
+              {
+                "time": 0.0667,
+                "name": "image/fire05_2"
+              },
+              {
+                "time": 0.1333,
+                "name": "image/fire05_3"
+              },
+              {
+                "time": 0.2,
+                "name": "image/fire05_4"
+              },
+              {
+                "time": 0.2667,
+                "name": "image/fire05_5"
+              },
+              {
+                "time": 0.3333,
+                "name": "image/fire05_6"
+              },
+              {
+                "time": 0.4,
+                "name": "image/fire05_7"
+              },
+              {
+                "time": 0.4667,
+                "name": "image/fire05_8"
+              },
+              {
+                "time": 0.5333,
+                "name": "image/fire05_9"
+              },
+              {
+                "time": 0.6,
+                "name": "image/fire05_10"
+              },
+              {
+                "time": 0.6667,
+                "name": "image/fire05_11"
+              },
+              {
+                "time": 0.7333,
+                "name": "image/fire05_12"
+              },
+              {
+                "time": 0.8,
+                "name": "image/fire05_13"
+              },
+              {
+                "time": 0.8667,
+                "name": "image/fire05_14"
+              },
+              {
+                "time": 0.9333,
+                "name": "image/fire05_15"
+              },
+              {
+                "time": 1,
+                "name": "image/fire05_16"
+              },
+              {
+                "time": 1.0667,
+                "name": "image/fire05_1"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "dw": {
+            "translate": [
+              {
+                "x": -2.77,
+                "y": 35.64
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "textures": [
+    {
+      "__uuid__": "de0280ae-d98e-423a-acef-e972079c24c8@6c48a",
+      "__expectedType__": "cc.Texture2D"
+    }
+  ],
+  "textureNames": [
+    "skill_0009_3.png"
+  ],
+  "scale": 1,
+  "_atlasText": "\nskill_0009_3.png\nsize: 512,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nimage/fire05_1\n  rotate: false\n  xy: 208, 284\n  size: 63, 95\n  orig: 81, 133\n  offset: 14, 5\n  index: -1\nimage/fire05_10\n  rotate: false\n  xy: 72, 11\n  size: 70, 106\n  orig: 81, 133\n  offset: 6, 6\n  index: -1\nimage/fire05_11\n  rotate: false\n  xy: 77, 379\n  size: 68, 107\n  orig: 81, 133\n  offset: 9, 6\n  index: -1\nimage/fire05_12\n  rotate: false\n  xy: 2, 6\n  size: 68, 111\n  orig: 81, 133\n  offset: 9, 6\n  index: -1\nimage/fire05_13\n  rotate: false\n  xy: 144, 69\n  size: 67, 92\n  orig: 81, 133\n  offset: 11, 6\n  index: -1\nimage/fire05_14\n  rotate: true\n  xy: 144, 2\n  size: 65, 93\n  orig: 81, 133\n  offset: 10, 5\n  index: -1\nimage/fire05_15\n  rotate: false\n  xy: 208, 192\n  size: 65, 90\n  orig: 81, 133\n  offset: 10, 6\n  index: -1\nimage/fire05_16\n  rotate: false\n  xy: 214, 392\n  size: 63, 94\n  orig: 81, 133\n  offset: 13, 6\n  index: -1\nimage/fire05_2\n  rotate: false\n  xy: 144, 163\n  size: 62, 100\n  orig: 81, 133\n  offset: 12, 4\n  index: -1\nimage/fire05_3\n  rotate: false\n  xy: 147, 381\n  size: 65, 105\n  orig: 81, 133\n  offset: 11, 4\n  index: -1\nimage/fire05_4\n  rotate: false\n  xy: 76, 136\n  size: 66, 109\n  orig: 81, 133\n  offset: 10, 6\n  index: -1\nimage/fire05_5\n  rotate: false\n  xy: 143, 265\n  size: 63, 112\n  orig: 81, 133\n  offset: 11, 6\n  index: -1\nimage/fire05_6\n  rotate: false\n  xy: 76, 247\n  size: 65, 114\n  orig: 81, 133\n  offset: 9, 6\n  index: -1\nimage/fire05_7\n  rotate: false\n  xy: 2, 119\n  size: 72, 118\n  orig: 81, 133\n  offset: 5, 6\n  index: -1\nimage/fire05_8\n  rotate: false\n  xy: 2, 239\n  size: 72, 122\n  orig: 81, 133\n  offset: 4, 7\n  index: -1\nimage/fire05_9\n  rotate: false\n  xy: 2, 363\n  size: 73, 123\n  orig: 81, 133\n  offset: 4, 6\n  index: -1\n"
+}

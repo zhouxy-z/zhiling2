@@ -1,0 +1,84 @@
+{
+"skeleton": {
+	"hash": "n5riOi1tN5A6/DDJiNeZsVhNHvs",
+	"spine": "3.8.99",
+	"x": -27,
+	"y": -30,
+	"width": 54,
+	"height": 60,
+	"images": "./images/",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "xingxing1", "parent": "root" }
+],
+"slots": [
+	{ "name": "五角星亮", "bone": "xingxing1", "color": "ffffff00", "attachment": "五角星亮" },
+	{ "name": "五角星亮2", "bone": "xingxing1", "color": "ffffff00", "attachment": "五角星亮", "blend": "additive" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"五角星亮": {
+				"五角星亮": { "width": 54, "height": 60 }
+			},
+			"五角星亮2": {
+				"五角星亮": { "width": 54, "height": 60 }
+			}
+		}
+	}
+],
+"animations": {
+	"loop": {
+		"slots": {
+			"五角星亮": {
+				"color": [
+					{ "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"xingxing1": {
+				"scale": [
+					{}
+				]
+			},
+			"root": {
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 0.3333 }
+				]
+			}
+		}
+	},
+	"show": {
+		"slots": {
+			"五角星亮": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.0333, "color": "ffffffff" }
+				]
+			},
+			"五角星亮2": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" },
+					{ "time": 0.3, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"xingxing1": {
+				"scale": [
+					{ "x": 0.5, "y": 0.5 },
+					{ "time": 0.1667, "x": 1.5, "y": 1.5 },
+					{ "time": 0.3, "x": 0.8, "y": 0.8 },
+					{ "time": 0.3667 }
+				]
+			}
+		}
+	}
+}
+}

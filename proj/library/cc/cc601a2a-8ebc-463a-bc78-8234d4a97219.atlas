@@ -1,0 +1,20 @@
+
+cardrole_0010_1.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shadow
+  rotate: true
+  xy: 2, 2
+  size: 372, 203
+  orig: 385, 217
+  offset: 7, 7
+  index: -1
+石头
+  rotate: false
+  xy: 2, 376
+  size: 317, 351
+  orig: 318, 351
+  offset: 1, 0
+  index: -1

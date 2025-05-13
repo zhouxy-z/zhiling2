@@ -1,0 +1,118 @@
+
+skill_0009_3.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/fire05_1
+  rotate: false
+  xy: 208, 284
+  size: 63, 95
+  orig: 81, 133
+  offset: 14, 5
+  index: -1
+image/fire05_10
+  rotate: false
+  xy: 72, 11
+  size: 70, 106
+  orig: 81, 133
+  offset: 6, 6
+  index: -1
+image/fire05_11
+  rotate: false
+  xy: 77, 379
+  size: 68, 107
+  orig: 81, 133
+  offset: 9, 6
+  index: -1
+image/fire05_12
+  rotate: false
+  xy: 2, 6
+  size: 68, 111
+  orig: 81, 133
+  offset: 9, 6
+  index: -1
+image/fire05_13
+  rotate: false
+  xy: 144, 69
+  size: 67, 92
+  orig: 81, 133
+  offset: 11, 6
+  index: -1
+image/fire05_14
+  rotate: true
+  xy: 144, 2
+  size: 65, 93
+  orig: 81, 133
+  offset: 10, 5
+  index: -1
+image/fire05_15
+  rotate: false
+  xy: 208, 192
+  size: 65, 90
+  orig: 81, 133
+  offset: 10, 6
+  index: -1
+image/fire05_16
+  rotate: false
+  xy: 214, 392
+  size: 63, 94
+  orig: 81, 133
+  offset: 13, 6
+  index: -1
+image/fire05_2
+  rotate: false
+  xy: 144, 163
+  size: 62, 100
+  orig: 81, 133
+  offset: 12, 4
+  index: -1
+image/fire05_3
+  rotate: false
+  xy: 147, 381
+  size: 65, 105
+  orig: 81, 133
+  offset: 11, 4
+  index: -1
+image/fire05_4
+  rotate: false
+  xy: 76, 136
+  size: 66, 109
+  orig: 81, 133
+  offset: 10, 6
+  index: -1
+image/fire05_5
+  rotate: false
+  xy: 143, 265
+  size: 63, 112
+  orig: 81, 133
+  offset: 11, 6
+  index: -1
+image/fire05_6
+  rotate: false
+  xy: 76, 247
+  size: 65, 114
+  orig: 81, 133
+  offset: 9, 6
+  index: -1
+image/fire05_7
+  rotate: false
+  xy: 2, 119
+  size: 72, 118
+  orig: 81, 133
+  offset: 5, 6
+  index: -1
+image/fire05_8
+  rotate: false
+  xy: 2, 239
+  size: 72, 122
+  orig: 81, 133
+  offset: 4, 7
+  index: -1
+image/fire05_9
+  rotate: false
+  xy: 2, 363
+  size: 73, 123
+  orig: 81, 133
+  offset: 4, 6
+  index: -1

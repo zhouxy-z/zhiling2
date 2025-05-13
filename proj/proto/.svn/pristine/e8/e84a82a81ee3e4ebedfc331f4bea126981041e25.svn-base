@@ -1,0 +1,22 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/ps";
+package ps;
+import "base/base.proto";
+import "base/model.player.proto";
+
+message SendMailReq {
+  string player_id = 1;
+  string sender_player_id = 2;
+  string sender_player_name = 3;
+  int64 time = 4; // Timestamp when the mail was sent or received.
+  string title = 5; // The title of the mail.
+  string content = 6; // The content of the mail.
+  string source = 7;
+  string data = 8;
+  repeated base.Thing attachments = 9;
+  bool is_global = 10;
+}
+
+message SendMailRes {
+  base.Res res = 1;
+}

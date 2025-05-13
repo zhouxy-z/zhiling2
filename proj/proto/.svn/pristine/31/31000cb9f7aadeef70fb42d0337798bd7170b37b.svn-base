@@ -1,0 +1,27 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/base.proto";
+import "base/model.player.proto";
+
+message PlayerCreateReq {
+  string uid = 1;
+  string union_id = 2;
+}
+
+message PlayerCreateRes {
+  base.Res res = 1;
+}
+
+message PlayerChangeThingsReq {
+  string uid = 1;
+  string source = 2;
+  string data = 3;
+  repeated base.Thing things = 4;
+  uint64 multiplier = 5; // 生效协议：consumethings
+}
+
+message PlayerChangeThingsRes {
+  base.Res res = 1;
+}
+

@@ -1,0 +1,48 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.battle.proto";
+
+// 创建玩家自定义房间
+message CreateBattleMgrUserRoomReq {
+  base.BattleRoomContext context = 1;
+}
+
+message CreateBattleMgrUserRoomRes {
+  base.Res res = 1;
+  base.BattleRoomSummary room_summary = 2;
+}
+
+// 获取回放信息
+message GetBattleReplayRoomReq {
+  repeated string room_id = 1;
+}
+
+message GetBattleReplayRoomRes {
+  base.Res res = 1;
+  map<string, base.BattleRoomReplaySummary> replay_room_summary = 2;
+}
+
+// 请求创建回放房间
+message CreateBattleReplayRoomReq {
+  string replay_room_id = 1; // 请求回放的房间ID
+  uint32 begin_round = 2; // 回放起始回合数 (暂未支持)
+  string view_player_id = 3; // 以指定玩家角度回放
+  bool logic_replay = 4; // 逻辑回放
+}
+
+message CreateBattleReplayRoomRes {
+  base.Res res = 1;
+  base.BattleRoomSummary room_summary = 2;
+}
+
+// 尝试退出之前任何房间以解除状态锁定
+message LeaveAllBattleRoomReq {
+  
+}
+
+message LeaveAllBattleRoomRes {
+  base.Res res = 1;
+  repeated string leave_rooms = 2; // 成功离开的房间
+}

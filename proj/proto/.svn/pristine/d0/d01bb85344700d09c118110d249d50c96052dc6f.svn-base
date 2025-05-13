@@ -1,0 +1,35 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.pvp.proto";
+import "base/model.player.proto";
+
+message PlayerPvpInfoPush {
+  base.PlayerRankInfo rank_info = 1;
+}
+
+message PlayerPvpRankBattleSettlePush {
+  base.PlayerPvpRankRecord rank_record = 1;
+  repeated base.Thing reward_things = 2;
+}
+
+message GetPvpRankBattleRecordsReq {
+  int32 start = 1; // 开始，默认0
+  int32 limit = 2; // 单次查询数量，最大20
+}
+
+message GetPvpRankBattleRecordsRes {
+  base.Res res = 1;
+  repeated base.PlayerPvpRankRecord records = 2;
+}
+
+message GetPvpRankingReq {
+  int32 season_id = 1; // 赛季ID
+  int32 count = 2; // 榜单数量，最大100
+}
+
+message GetPvpRankingRes {
+  base.Res res = 1;
+  repeated base.PlayerRankInfo ranking = 2;
+}

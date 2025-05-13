@@ -1,0 +1,278 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+import "base/model.player.proto";
+import "base/model.battle.mode.proto";
+
+// 卡牌计算模型
+message BattleRoomAttrValue {
+  int32 final_value = 1;
+  repeated BaseAddMul base = 2;
+}
+
+message BaseAddMul {
+  string from = 1;
+  string source = 2;
+  float num = 3;
+  uint32 op = 4;//0=+ 1=- 2=* 3=/
+}
+
+message BattleRoomPlayerContext {
+  string player_id = 1; // 玩家ID
+  string name = 2; // 玩家名称
+  uint32 level = 3; // 玩家等级
+  bool is_ai = 4;  // 是否为AI
+  repeated BattleCard cards = 5; // 具体卡组数据，如果需要指定任意卡组，deck_id 留空
+  string deck_id = 6; // 卡组ID，会向逻辑服查询该玩家卡组信息，有了此字段 cards 字段可以不传
+  uint32 ai_group_id = 7; // AI等级，对应 AI_Group 表
+}
+
+message BattleRoomContext {
+  string room_id = 1; // 房间ID，外部创建房间时不需要指定，由 battle_mgr 生成
+  repeated BattleRoomPlayerContext players = 2; // 玩家列表
+  int64 wait_second = 3;//等待玩家输入时间默认为30秒
+  int64 ai_wait_second = 4; // AI 额外等待玩家时间，为0则从配置表中读取
+  repeated uint32 area_ids = 5; // 区域配置ID
+  bool ignore_shuffle = 6; // 跳过洗牌
+  int64 battle_level_id = 7; // battle level ID
+  uint32 area_group_id = 8;//area_group_id
+  bool slice_op_push = 9;// 因为测试用例bug，需要一个参数来控制op推送切片
+  int32 multiple_limit = 10; // 加倍次数上限
+  BattleModeInfo mode_info = 11; // 战斗模式信息
+  int64 seed = 12; // 随机数种子
+}
+
+// 结算信息，用于事件和其它记录
+message BattleRoomSettlement {
+  string winner_player_id = 1;
+  string leave_player_id = 2;
+  bool tie = 3;//是否平局
+  map<string, uint32> double_count = 4;//每个玩家的加倍次数
+  map<string, TerrainScore> terrain_score = 5;//每个玩家各自区域的分数
+}
+
+message TerrainScore {
+  repeated int32 score = 1;
+}
+
+// 最近战斗记录
+message BattleRecordData {
+  string room_id = 1;
+  int64 create_time = 2;
+  string player_id = 3;
+}
+
+// 回放房间数据摘要
+message BattleRoomReplaySummary {
+  BattleRoomContext create_context = 1;
+  uint32 round_total = 2; // 最大回合数
+  uint32 version = 3; // 回放版本
+  uint32 is_complete = 4; // 正常结束
+  string build_info = 5; // 构建版本信息
+}
+
+// 房间数据摘要
+message BattleRoomSummary {
+  string room_id = 1;
+  string server_id = 2;
+  uint64 create_time = 3;
+  repeated string player_ids = 4;
+  bool is_replay = 5;
+  string view_player_id = 6; // 如果是回放房间，将以此玩家视角播放回放
+}
+
+// 游戏状态
+message BattleRoomGamePlayData {
+  map<string, BattleRoomPlayerData> players = 1;
+  repeated BattleRoomTerrainData terrains = 2;
+  uint32 alloc_id = 3;
+  uint32 current_round = 4; // 当前回合
+  BattleRoomLevelData level_data = 5; // 关卡相关配置数据
+
+  map<string, SkillDataList> skill_listener = 6;
+  map<string, ActOnCardData> act_on_card = 7;//持续状态记录器
+  map<string, ActOnTerrainData> act_on_terrain = 8;//持续状态记录器
+  map<string, ActOnTerrainCountData> act_on_terrain_count = 9;
+  map<string, ActOnPlayerData> act_on_player = 10;//持续状态记录器
+}
+
+message ActOnPlayerData {
+  string from_inst_id = 1;//来源实例id
+  uint32 from_skill_id = 2;//来源技能id
+  repeated string effect_inst_id = 3;//玩家实例id
+  uint32 state = 4;//记录的状态b
+}
+
+message ActOnCardData {
+  string from_inst_id = 1;//来源实例id
+  uint32 from_skill_id = 2;//来源技能id
+  repeated string effect_inst_id = 3;
+  uint32 state = 4;//记录的状态b
+}
+
+message ActOnTerrainData {
+  string from_inst_id = 1;//来源实例id
+  uint32 from_skill_id = 2;//来源技能id
+  repeated int32 effect_area = 3;
+  repeated string effect_player_id = 4;
+  uint32 state = 5;//记录的状态b
+}
+
+message ActOnTerrainCountData {
+  string from_inst_id = 1;//来源实例id
+  uint32 from_skill_id = 2;//来源技能id
+  repeated int32 effect_area = 3;
+  repeated string effect_player_id = 4;
+  uint32 state = 5;//记录的状态
+  repeated string effect_inst_id = 6;//影响的实例id
+  bool effect_status = 7;//生效情况
+}
+
+// 关卡信息
+message BattleRoomLevelData {
+  BattleRoomAttrValue round_max = 1; // 最大回合数
+  uint32 hand_card_init = 2; // 初始卡牌数量
+  uint32 terrain_card_max = 3; // 最大地放置排数量
+  uint32 terrain_max = 4; // 最大地形数量
+  string room_id = 5; // 房间id
+  BattleRoomAttrValue round_init = 6; // 初始回合数
+  repeated uint32 reveal = 7;//揭示回合数 1-6
+  repeated uint32 area_id = 8;//区域id
+  uint32 area_group_id = 9;//area_group_id
+}
+
+enum BattleRoomCardLocation {
+  Unknown = 0; // 未知
+  Deck = 1; // 卡组
+  Hand = 2; // 手牌
+  Drop = 3; // 丢弃
+  Del = 4; // 删除
+  Terrain = 5; // 地形
+}
+
+enum BattleRoomCardSource {
+  None = 0;
+  Put = 1;//放置
+  Copy = 2;//复制
+  Call = 3;//召唤
+  Move = 4;//移动
+}
+
+// 卡片实例状态
+message BattleRoomCardData {
+  uint32 config_id = 1; // 卡片系统实例ID
+  string inst_id = 2; // 战斗内部实例ID
+  string bag_id = 3; // 系统玩法背包中的实例id
+  uint32 card_type = 4;
+  uint32 quality = 5;
+
+  BattleRoomCardLocation location = 6;
+  BattleRoomInCardState terrain_state = 7;
+  int32 area = 8; // 所在区域
+
+  BattleRoomAttrValue power = 9; // 卡牌战力
+  BattleRoomAttrValue cost = 10; // 卡牌消耗
+  repeated BattleRoomSkillData skills = 11; // 技能列表
+
+  string player_id = 12;
+  BattleRoomCardSource source = 13;//若在场上，该值为来源
+  map<string, uint32> persistent_state = 14;//持续状态
+}
+
+message BattleRoomSkillData {
+  uint32 skill_id = 1; // 读表
+  repeated int32 count = 2;//每回合已触发次数 [0]-累计触发 [1-]代表每回合已触发次数 特殊地方特殊意义
+}
+
+// 玩家实例状态
+message BattleRoomPlayerData {
+  string player_id = 1;
+  string inst_id = 2;
+  string name = 3;
+  uint32 level = 4;
+  bool is_ai = 5; // AI 托管
+
+  repeated BattleRoomCardData deck_cards = 6; // 卡组卡牌
+  repeated BattleRoomCardData hand_cards = 7; // 手牌
+  repeated BattleRoomCardData drop_cards = 8; // 丢弃卡牌
+  repeated BattleRoomCardData del_cards = 9; // 删除卡牌
+  repeated BattleRoomAttrValue round_energy = 10; // 每回合能量
+  repeated BattleRoomAttrValue round_card_draw = 11; // 每回合抽卡数量
+  repeated BattleRoomTerrainPlayerData terrain = 12; // 地形数据
+  BattleRoomAttrValue hand_card_max = 13; // 最大手牌数
+  map<string, uint32> persistent_state = 14;//持续状态
+}
+
+// 玩家非战斗数据
+message BattleRoomPlayerDataNotGamePlay {
+  string player_id = 1;
+
+  uint32 double_count = 2;
+  uint32 double_available = 3;
+}
+
+message BattleRoomTerrainPlayerData {
+  repeated BattleRoomCardData cards = 1; // 已放置再地形上的卡片
+  BattleRoomAttrValue base_power = 2; // 玩家在每个地形上的基础战力
+  string inst_id = 3;//对应卡牌区域的实例id
+  map<string, uint32> persistent_state = 4;//持续状态
+  BattleRoomAttrValue card_mul = 5; // 玩家在每个地形上卡牌战力总和应该乘以的乘积
+  string self_inst_id = 6;//自身实例id
+}
+
+enum BattleRoomPersistentState{
+  PersistentStateUnknown = 0;//未知
+
+  PersistentStateAll = 5;//全部
+  PersistentStateTransform = 6;//能否被转换
+  PersistentStatePower = 7;//能否修改战力
+  PersistentStateSkill = 8;//能否被修改技能
+  PersistentStateDel = 9;//能否被删除
+  PersistentStateMove = 10;//能否被移动
+  PersistentStatePut = 11;//能否被放置
+  PersistentStateCost = 12;//能否修改费率
+  PersistentStateReveal = 13;//能否被揭示
+  PersistentStateActiveMove = 14;//是否能主动移动
+  PersistentStateForbidCost1 = 15;//禁止费率1卡牌放置
+  PersistentStateForbidCost2 = 16;//禁止费率2卡牌放置
+  PersistentStateForbidCost3 = 17;//禁止费率3卡牌放置
+  PersistentStateMax1Card = 18;//最多放置一张卡
+  PersistentStatePlace = 19;//能否从手牌到场上
+  PersistentStatePlaceCount1 = 20;//此回合只允许放置一张卡牌,作用在玩家上则对玩家生效,作用在区域上则只对改区域生效
+
+  PersistentStateMax = 21;//最大占位符,一定与上一个相差1
+}
+
+enum BattleRoomInTerrainState {
+  TerrainStateUnknown = 0; // 未知
+  TerrainStateHide = 1; // 未揭示
+  TerrainStateShow = 2; // 揭示
+  TerrainStateDestroy = 3; // 销毁
+}
+
+enum BattleRoomInCardState {
+  CardStateUnknown = 0; // 未知
+  CardStateHide = 1; // 盖牌
+  CardStateShow = 2; // 展示
+}
+
+// 环境
+message BattleRoomTerrainData {
+  uint32 config_id = 1;//地形配置id
+  string inst_id = 2;//实例id
+  BattleRoomInTerrainState terrain_state = 3;
+  repeated string peek = 4;//可窥视未揭示地形的玩家
+  repeated BattleRoomSkillData skills = 5;
+  int32 area = 6; // 所在区域
+}
+
+message SkillData {
+  string from_inst_id = 1;//实例id
+  string timing_status = 2;//需要触发时的状态
+  BattleRoomSkillData from_skill = 3;//实例上某个技能
+  BattleRoomCardLocation location = 4;//触发所在区域
+}
+
+message SkillDataList {
+  repeated SkillData list = 1;
+}

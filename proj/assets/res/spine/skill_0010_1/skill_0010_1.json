@@ -1,0 +1,65 @@
+{
+"skeleton": {
+	"hash": "DbilTqsbNws7qBVZJ7yGi7gFyA8",
+	"spine": "3.8.99",
+	"x": -171.98,
+	"y": -217,
+	"width": 341.86,
+	"height": 461.51,
+	"images": "",
+	"audio": ""
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "card", "parent": "root" }
+],
+"slots": [
+	{ "name": "image/bg_1", "bone": "card", "attachment": "image/bg_1" },
+	{ "name": "image/nameframe_1", "bone": "card", "attachment": "image/nameframe_1" },
+	{ "name": "image/st", "bone": "card", "attachment": "image/st" },
+	{ "name": "image/战力", "bone": "card", "attachment": "image/战力" },
+	{ "name": "image/能量", "bone": "card", "attachment": "image/能量" },
+	{ "name": "card", "bone": "card", "attachment": "image/石块1" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"card": {
+				"image/石块1": { "y": -176.97, "scaleX": 0.9, "scaleY": 0.9, "width": 118, "height": 61 }
+			},
+			"image/bg_1": {
+				"image/bg_1": { "width": 320, "height": 434 }
+			},
+			"image/nameframe_1": {
+				"image/nameframe_1": { "x": 1.18, "y": -87.99, "width": 322, "height": 255 }
+			},
+			"image/st": {
+				"image/st": { "width": 320, "height": 434 }
+			},
+			"image/战力": {
+				"image/战力": { "x": 126.88, "y": 191.01, "width": 86, "height": 107 }
+			},
+			"image/能量": {
+				"image/能量": { "x": -129.48, "y": 185.96, "width": 85, "height": 95 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"card": {
+				"rotate": [
+					{},
+					{ "time": 0.8, "angle": -30 }
+				],
+				"scale": [
+					{ "x": 0.5, "y": 0.5 },
+					{ "time": 0.8, "x": 2, "y": 2 }
+				]
+			}
+		}
+	}
+}
+}

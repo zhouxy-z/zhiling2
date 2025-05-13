@@ -1,0 +1,62 @@
+
+ui_gamestart.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/black
+  rotate: false
+  xy: 2023, 2023
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+image/blue
+  rotate: false
+  xy: 2, 1474
+  size: 800, 569
+  orig: 800, 569
+  offset: 0, 0
+  index: -1
+image/mingzi1
+  rotate: true
+  xy: 1951, 1856
+  size: 187, 35
+  orig: 187, 35
+  offset: 0, 0
+  index: -1
+image/mingzi2
+  rotate: true
+  xy: 1988, 1860
+  size: 183, 33
+  orig: 183, 33
+  offset: 0, 0
+  index: -1
+image/red
+  rotate: false
+  xy: 804, 1474
+  size: 800, 569
+  orig: 800, 569
+  offset: 0, 0
+  index: -1
+image/vsmark
+  rotate: false
+  xy: 1606, 1563
+  size: 343, 480
+  orig: 353, 480
+  offset: 5, 0
+  index: -1
+image/头像1
+  rotate: false
+  xy: 1606, 1397
+  size: 165, 164
+  orig: 165, 164
+  offset: 0, 0
+  index: -1
+image/头像2
+  rotate: true
+  xy: 1773, 1397
+  size: 164, 165
+  orig: 164, 165
+  offset: 0, 0
+  index: -1

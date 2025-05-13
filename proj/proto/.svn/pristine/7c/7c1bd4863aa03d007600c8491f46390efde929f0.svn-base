@@ -1,0 +1,35 @@
+syntax = "proto3";
+option go_package = "./;ps";
+package ps;
+import "base/base.proto";
+import "base/model.risk.proto";
+
+message GetPlayerRiskInfoReq {
+  string player_id = 1;
+}
+
+message GetPlayerRiskInfoRes {
+  base.Res res = 1;
+  base.RiskLevel level = 2;
+  int32 score = 3;
+  string info = 4;
+  repeated string ip_history = 5;
+  repeated string device_history = 6;
+}
+
+message RiskCheckRes {
+  base.Res res = 1;
+  base.RiskAction action = 2;
+}
+
+message RiskPassVerify {
+  string player_id = 1;
+  bool valid_pass = 2;
+}
+
+message RiskCheckGiveItemReq {
+  string player_id = 1;
+  string target_id = 2;
+  map<uint64, uint64> item_amounts = 3;
+}
+

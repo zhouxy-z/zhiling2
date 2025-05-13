@@ -1,0 +1,39 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+
+message PlayerInfoChange {
+  int32 nick_name_chang_times = 1;
+}
+
+message PlayerInfo {
+  string id = 1;               // 对应 primitive.ObjectID 转为字符串存储
+  string player_id = 2;
+  string inviter_id = 3;
+  string union_id = 4;
+  string wechat_id = 5;
+  string qq_id = 6;
+  string contact_wechat = 7;
+  string contact_qq = 8;
+  string nick_name = 9;
+  string avatar_url = 10;
+  PlayerInfoChange change = 11; // 嵌套结构
+  bool password_set = 12;
+}
+
+message PlayerShowInfo {
+  string player_id = 1;
+  string inviter_id = 2;
+  string contact_wechat = 3;
+  string contact_qq = 4;
+  string nick_name = 5;
+  string avatar_url = 6;
+}
+
+message Friend {
+  string id = 1;         // BSON ObjectID 转换为 string
+  string user_id = 2;    // 用户ID
+  string inviter = 3;    // 邀请人（上级好友）
+  repeated string path = 4; // 好友链（自顶向下到当前 Inviter）
+  int32 level = 5;       // 关系层级
+}

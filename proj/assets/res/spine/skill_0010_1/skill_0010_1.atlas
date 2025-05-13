@@ -1,0 +1,48 @@
+
+skill_0010_1.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/bg_1
+  rotate: false
+  xy: 2, 307
+  size: 310, 422
+  orig: 320, 434
+  offset: 6, 7
+  index: -1
+image/nameframe_1
+  rotate: false
+  xy: 314, 496
+  size: 310, 233
+  orig: 322, 255
+  offset: 6, 5
+  index: -1
+image/st
+  rotate: true
+  xy: 2, 2
+  size: 303, 406
+  orig: 320, 434
+  offset: 8, 14
+  index: -1
+image/战力
+  rotate: true
+  xy: 314, 408
+  size: 86, 107
+  orig: 86, 107
+  offset: 0, 0
+  index: -1
+image/石块1
+  rotate: false
+  xy: 423, 437
+  size: 114, 57
+  orig: 118, 61
+  offset: 2, 2
+  index: -1
+image/能量
+  rotate: false
+  xy: 410, 311
+  size: 85, 95
+  orig: 85, 95
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "name_bojin_4",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 303,
+      "height": 68
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 303,
+      "height": 68
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "vertices": {
+      "rawPosition": [
+        -151.5,
+        -34,
+        0,
+        151.5,
+        -34,
+        0,
+        -151.5,
+        34,
+        0,
+        151.5,
+        34,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        68,
+        303,
+        68,
+        0,
+        0,
+        303,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -151.5,
+        "y": -34,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 151.5,
+        "y": 34,
+        "z": 0
+      }
+    },
+    "texture": "fe5b90ee-a3af-41a6-8a45-fdf97643b383@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

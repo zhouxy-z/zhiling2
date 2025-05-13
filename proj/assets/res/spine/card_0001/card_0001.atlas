@@ -1,0 +1,13 @@
+
+card_0001.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+juese1
+  rotate: false
+  xy: 2, 2
+  size: 308, 422
+  orig: 330, 442
+  offset: 12, 10
+  index: -1

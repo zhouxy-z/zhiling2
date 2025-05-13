@@ -1,0 +1,17 @@
+[
+    {
+        "name": "PlayerLoginPush", "msg_type": "pb.PlayerLoginPush", "desc": "登录玩家数据推送"
+    },
+    {
+        "name": "PlayerItemChangedPush", "msg_type": "pb.PlayerItemChangedPush", "desc": "道具数量变更推送"
+    },
+    {
+        "name": "PlayerItemsChangedPush", "msg_type": "pb.PlayerItemsChangedPush", "desc": "道具数量变更推送"
+    },
+    {
+        "name": "PlayerTasksChangedPush", "msg_type": "pb.PlayerTasksChangedPush", "desc": "任务变更推送"
+    },
+    {
+        "name": "BattleRoomOpOutputPush", "msg_type": "pb.BattleRoomOpOutputPush", "desc": "战斗房间操作输出推送"
+    }
+]

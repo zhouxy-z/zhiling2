@@ -1,0 +1,74 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/base";
+package base;
+import "base/model.battle.proto";
+
+enum BattleRoomOpOutputType {
+  Out_NewRound = 0; // 新回合
+  Out_CardDeckFrontToHandTail = 1; // 卡牌由卡组最前到手牌末尾
+  Out_WaitPlayerInput = 2; // 等待客户端玩家操作
+  Out_WaitPlayerShow = 3; // 等待客户端表现完毕
+  Out_CardDataChange = 4; //卡牌数据变化
+  Out_CardMove = 5;//卡牌位置变化
+  Out_CopyCard = 6;//复制卡牌
+  Out_HandToTerrain = 7;
+}
+
+message BattleRoomOpOutput {
+  string owner_player_id = 1;
+  string recv_player_id = 2;
+  BattleRoomOpOutputType op_type = 3;
+  BattleRoomOpOutput_NewRound new_round = 4;
+  BattleRoomOpOutput_CardDeckTopToHandTail card_deck_top_to_hand_tail = 5;
+  BattleRoomOpOutput_WaitPlayerInput wait_player_input = 6;
+  BattleRoomOpOutput_WaitPlayerShow wait_player_show = 7;
+  BattleRoomOpOutput_CardDataChange card_data_change = 8;
+  BattleRoomOpOutput_CardMove card_move = 9;
+  BattleRoomOpOutput_CopyCard copy_card = 10;
+  BattleRoomOpOutput_HandToTerrain hand_to_terrain = 11;
+  
+}
+
+message BattleRoomOpOutput_NewRound {
+  uint32 new_round = 1;
+  base.BattleRoomGamePlayData gamePlayData = 2; // 整个场内数据
+}
+
+message BattleRoomOpOutput_CardDeckTopToHandTail {
+  repeated base.BattleRoomCardData cards = 1;
+}
+
+message BattleRoomOpOutput_WaitPlayerInput {
+  int64 timeout = 1; // 超时时间
+}
+
+message BattleRoomOpOutput_WaitPlayerShow {
+  int64 timeout = 1; // 超时时间
+}
+
+message BattleRoomOpOutput_CardDataChange {
+  string from_inst_id = 1;
+  base.BattleRoomCardData card = 2;
+}
+
+message BattleRoomOpOutput_CardMove {
+  bool success = 1;
+  string from_inst_id = 2;
+  BattleRoomCardLocation from_location = 3;
+  BattleRoomCardLocation to_location = 4;
+  int32 from_area = 5;//如果来源方为场上，该数值为己方区域对应from_area区域(1-6)
+  int32 to_area = 6;//如果目标方为场上，该数值为己方区域对应to_area区域(1-6)
+  base.BattleRoomCardData card = 7;//被移动的卡牌
+}
+
+message BattleRoomOpOutput_CopyCard{
+  string from_inst_id = 1;
+  string to_inst_id = 2;
+  base.BattleRoomCardData card = 3;
+  BattleRoomCardLocation to_location = 4;
+  int32 to_area = 5;//如果目标方为场上，该数值为己方区域对应to_area区域(1-6)
+}
+
+message BattleRoomOpOutput_HandToTerrain {
+
+}

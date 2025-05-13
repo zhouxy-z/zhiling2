@@ -1,0 +1,13 @@
+{
+  "name": "yxjj",
+  "uuid": "ef5a5ac8-5190-4679-b1a7-3352622d0508",
+  "creator": {
+    "version": "3.8.4"
+  },
+  "scripts": {
+    "proto": "node ./tool/protojs.js"
+  },
+  "dependencies": {
+    "protobufjs": "^7.4.0"
+  }
+}

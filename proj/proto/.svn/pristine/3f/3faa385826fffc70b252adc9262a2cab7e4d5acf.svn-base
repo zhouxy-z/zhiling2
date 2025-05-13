@@ -1,0 +1,9 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/ps";
+package ps;
+import "base/model.battle.proto";
+
+message EventBattleSettlement {
+  base.BattleRoomContext room_context = 1;
+  base.BattleRoomSettlement settlement = 2;
+}

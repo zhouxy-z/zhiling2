@@ -1,0 +1,167 @@
+
+card_0012.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bd
+  rotate: true
+  xy: 662, 778
+  size: 241, 261
+  orig: 241, 261
+  offset: 0, 0
+  index: -1
+bi
+  rotate: false
+  xy: 992, 821
+  size: 25, 24
+  orig: 26, 27
+  offset: 0, 1
+  index: -1
+eye1
+  rotate: true
+  xy: 1005, 924
+  size: 18, 14
+  orig: 75, 21
+  offset: 1, 3
+  index: -1
+eye2
+  rotate: true
+  xy: 1005, 984
+  size: 35, 13
+  orig: 75, 21
+  offset: 39, 0
+  index: -1
+eyes
+  rotate: true
+  xy: 1005, 944
+  size: 38, 8
+  orig: 75, 21
+  offset: 14, 12
+  index: -1
+huajuan
+  rotate: false
+  xy: 2, 759
+  size: 658, 260
+  orig: 662, 264
+  offset: 0, 4
+  index: -1
+huxu1
+  rotate: false
+  xy: 230, 462
+  size: 142, 127
+  orig: 142, 127
+  offset: 0, 0
+  index: -1
+huxu2
+  rotate: false
+  xy: 925, 890
+  size: 78, 129
+  orig: 78, 129
+  offset: 0, 0
+  index: -1
+maozi
+  rotate: false
+  xy: 910, 518
+  size: 97, 93
+  orig: 97, 93
+  offset: 0, 0
+  index: -1
+mei1
+  rotate: true
+  xy: 374, 430
+  size: 50, 55
+  orig: 50, 55
+  offset: 0, 0
+  index: -1
+mei2
+  rotate: false
+  xy: 130, 502
+  size: 87, 84
+  orig: 87, 84
+  offset: 0, 0
+  index: -1
+piaodai
+  rotate: false
+  xy: 925, 734
+  size: 65, 154
+  orig: 65, 154
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 461
+  size: 126, 125
+  orig: 126, 125
+  offset: 0, 0
+  index: -1
+wuqi1
+  rotate: false
+  xy: 662, 553
+  size: 246, 223
+  orig: 246, 223
+  offset: 0, 0
+  index: -1
+wuqi2
+  rotate: false
+  xy: 374, 482
+  size: 63, 107
+  orig: 63, 107
+  offset: 0, 0
+  index: -1
+yiling
+  rotate: false
+  xy: 2, 588
+  size: 226, 169
+  orig: 226, 169
+  offset: 0, 0
+  index: -1
+yilingnei
+  rotate: false
+  xy: 455, 473
+  size: 189, 142
+  orig: 189, 142
+  offset: 0, 0
+  index: -1
+ysb
+  rotate: false
+  xy: 910, 613
+  size: 100, 119
+  orig: 100, 119
+  offset: 0, 0
+  index: -1
+ysz
+  rotate: false
+  xy: 130, 456
+  size: 57, 44
+  orig: 57, 44
+  offset: 0, 0
+  index: -1
+zs
+  rotate: false
+  xy: 230, 591
+  size: 223, 166
+  orig: 223, 166
+  offset: 0, 0
+  index: -1
+zs1
+  rotate: true
+  xy: 455, 617
+  size: 140, 201
+  orig: 140, 201
+  offset: 0, 0
+  index: -1
+zsz
+  rotate: true
+  xy: 992, 847
+  size: 41, 23
+  orig: 41, 23
+  offset: 0, 0
+  index: -1
+zsz1
+  rotate: true
+  xy: 189, 443
+  size: 57, 39
+  orig: 57, 39
+  offset: 0, 0
+  index: -1

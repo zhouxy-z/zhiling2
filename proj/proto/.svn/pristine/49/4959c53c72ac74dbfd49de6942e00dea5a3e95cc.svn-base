@@ -1,0 +1,67 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/ps";
+package ps;
+import "base/base.proto";
+import "base/model.player.proto";
+import "base/model.mail.proto";
+
+message BaseRes{
+  base.Res res = 1;
+}
+
+message MailSendInfo {
+  string player_id = 1;
+  string sender_player_id = 2;
+  string sender_player_name = 3;
+  int64 time = 4; // Timestamp when the mail was sent or received.
+  string title = 5; // The title of the mail.
+  string content = 6; // The content of the mail.
+  string source = 7;
+  bytes data = 8;
+  repeated base.Thing attachments = 9;
+}
+
+message SendMailReq {
+  MailSendInfo info = 1;
+  bool is_global = 2;
+}
+
+message SendMailRes {
+  base.Res res = 1;
+}
+
+message SendMailBatchReq {
+  repeated MailSendInfo list = 1;
+}
+
+message SendMailBatchRes {
+  base.Res res = 1;
+  map<int32, string> failed_info = 2; // 失败信息，批次邮件中失败的数组下标对应错误信息
+}
+
+message GetMailsReq {
+  string player_id = 1;
+  int32 read_flag = 2;// 邮件读取状态筛选条件: 0-所有邮件, 1-已读邮件, 2-未读邮件
+  string start = 3;// 邮件列表起始id,用于分页
+  int32 limit = 4;// 每页的邮件数量,用于分页
+  repeated string sources = 5; // 来源筛选
+  int32 contains_mode = 6;// 邮件包含模式，0只含自己的邮件，1只含自己发送的邮件，2混合都有
+  bool contains_del = 7;
+}
+
+message GetMailsRes {
+  base.Res res = 1;
+  repeated base.PlayerMailData mails = 2;
+  int64 total = 3;
+}
+
+message DeleteMailsReq {
+  string player_id = 1;
+  bool force_delete = 2;
+  repeated string mail_ids = 3;
+}
+
+message DeleteMailRes {
+  base.Res res = 1;
+  repeated string deleted_mail_ids = 2;//为空则删除全部邮件
+}

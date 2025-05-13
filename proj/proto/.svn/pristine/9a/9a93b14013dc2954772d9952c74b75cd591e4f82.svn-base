@@ -1,0 +1,39 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.player.proto";
+
+message GetPlayerDataRes {
+  base.Res res = 1;
+  base.PlayerData data = 2;
+}
+
+// 推送route同名：PlayerItemChangedPush
+message PlayerItemChangedPush {
+  string player_id = 1;   // 玩家ID
+  uint64 item_id = 2;     // 道具ID
+  int64 count = 3;        // 变化数量
+  int64 count_after = 4;  // 最新数量
+  int64 count_before = 5; // 变更前数量
+  string source = 6;      // 来源标识
+  int64 time = 7;         // 时间戳
+}
+
+// 推送route同名：PlayerItemsChangedPush
+message PlayerItemsChangedPush {
+  repeated PlayerItemChangedPush list = 1;
+}
+
+message PlayerTasksChangedPush {
+  repeated base.PlayerDataTask list = 1;
+}
+
+message CompleteTaskReq {
+  int32 taskId = 1;
+}
+
+message CompleteTaskRes {
+  base.Res res = 1;
+  base.PlayerDataTask Data = 2;
+}

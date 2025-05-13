@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "点击保存相册",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 459,
+      "height": 77
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 459,
+      "height": 77
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "vertices": {
+      "rawPosition": [
+        -229.5,
+        -38.5,
+        0,
+        229.5,
+        -38.5,
+        0,
+        -229.5,
+        38.5,
+        0,
+        229.5,
+        38.5,
+        0
+      ],
+      "indexes": [
+        0,
+        1,
+        2,
+        2,
+        1,
+        3
+      ],
+      "uv": [
+        0,
+        77,
+        459,
+        77,
+        0,
+        0,
+        459,
+        0
+      ],
+      "nuv": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "minPos": {
+        "x": -229.5,
+        "y": -38.5,
+        "z": 0
+      },
+      "maxPos": {
+        "x": 229.5,
+        "y": 38.5,
+        "z": 0
+      }
+    },
+    "texture": "0aa5cfd1-6976-4494-a2b4-4894636f2b58@6c48a",
+    "packable": true,
+    "pixelsToUnit": 100,
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "meshType": 0
+  }
+}

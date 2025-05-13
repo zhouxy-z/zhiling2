@@ -1,0 +1,41 @@
+syntax = "proto3";
+option go_package = "plants_server/proto/pb";
+package pb;
+import "base/base.proto";
+import "base/model.battle.proto";
+import "pb/common.proto";
+
+// 进入房间
+message BattleRoomEnterReq {
+  Server server = 1;
+  string room_id = 2;
+}
+
+message BattleRoomEnterRes {
+  base.Res res = 1;
+}
+
+// 离开房间
+message BattleRoomLeaveReq {
+  Server server = 1;
+  string room_id = 2;
+}
+
+message BattleRoomLeaveRes {
+  base.Res res = 1;
+}
+
+// 保活房间服务，如果玩家长时间和房间服务未通讯则视为掉线
+message BattleRoomPingReq {
+  base.BattleRoomContext context = 1;
+}
+
+message BattleRoomPingRes {
+  base.Res res = 1;
+}
+
+// 推送房间开始
+message PushBattleRoomStart {
+  base.BattleRoomSummary summary = 1;
+  base.BattleRoomGamePlayData game_data = 2;
+}
